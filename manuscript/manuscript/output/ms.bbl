@@ -1,0 +1,1102 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{5}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{bouckaertBEASTSoftwarePlatform2014}{article}{}
+      \name{author}{9}{}{%
+        {{un=1,uniquepart=given,hash=fee3f4bd114e3bec861be846a08d1e3e}{%
+           family={Bouckaert},
+           familyi={B\bibinitperiod},
+           given={Remco},
+           giveni={R\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=9cafd2d82e6bf08a7652434abb81a179}{%
+           family={Heled},
+           familyi={H\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=138d97332d376a871d64f62287080683}{%
+           family={Kühnert},
+           familyi={K\bibinitperiod},
+           given={Denise},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d6f4cb6a633f026f8e8aa15c59d4f49f}{%
+           family={Vaughan},
+           familyi={V\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a0f4aab7f16c03e81b485e630de24db}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Chieh-Hsi},
+           giveni={C\bibinithyphendelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6f80382332a4ac1680a51551b01661fe}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Dong},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=135ba156b16173bcb8d8126034cb9211}{%
+           family={Suchard},
+           familyi={S\bibinitperiod},
+           given={Marc\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=71fff5713ff2edb668cf2202fe191353}{%
+           family={Rambaut},
+           familyi={R\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5f0657992a7412c92808635205f99f43}{%
+           family={Drummond},
+           familyi={D\bibinitperiod},
+           given={Alexei\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=7ac42693c495085a052e0b43ead2aa67}{%
+           family={Prlic},
+           familyi={P\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{d493c40ed4e85062e7f2665f24df676e}
+      \strng{fullhash}{a293dc1f01e28d1d154b20bd09b22d6b}
+      \strng{bibnamehash}{d493c40ed4e85062e7f2665f24df676e}
+      \strng{authorbibnamehash}{d493c40ed4e85062e7f2665f24df676e}
+      \strng{authornamehash}{d493c40ed4e85062e7f2665f24df676e}
+      \strng{authorfullhash}{a293dc1f01e28d1d154b20bd09b22d6b}
+      \strng{editorbibnamehash}{7ac42693c495085a052e0b43ead2aa67}
+      \strng{editornamehash}{7ac42693c495085a052e0b43ead2aa67}
+      \strng{editorfullhash}{7ac42693c495085a052e0b43ead2aa67}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1553-7358}
+      \field{journaltitle}{PLoS Computational Biology}
+      \field{month}{4}
+      \field{number}{4}
+      \field{shorttitle}{{{BEAST}} 2}
+      \field{title}{{{BEAST}} 2: {{A Software Platform}} for {{Bayesian Evolutionary Analysis}}}
+      \field{volume}{10}
+      \field{year}{2014}
+      \field{pages}{e1003537}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pcbi.1003537
+      \endverb
+    \endentry
+    \entry{Brooks1998}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a65a7fc66b8942b8bcefdc46cf1bfb90}{%
+           family={Brooks},
+           familyi={B\bibinitperiod},
+           given={Stephen\bibnamedelima P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1e1eb60e3b6e222217bf8e9b24070b28}{%
+           family={Gelman},
+           familyi={G\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c3bdc78f5e327da7a284e96090de3732}
+      \strng{fullhash}{c3bdc78f5e327da7a284e96090de3732}
+      \strng{bibnamehash}{c3bdc78f5e327da7a284e96090de3732}
+      \strng{authorbibnamehash}{c3bdc78f5e327da7a284e96090de3732}
+      \strng{authornamehash}{c3bdc78f5e327da7a284e96090de3732}
+      \strng{authorfullhash}{c3bdc78f5e327da7a284e96090de3732}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational and Graphical Statistics}
+      \field{number}{4}
+      \field{title}{General Methods for Monitoring Convergence of Iterative Simulations}
+      \field{volume}{7}
+      \field{year}{1998}
+      \field{pages}{434\bibrangedash 455}
+      \range{pages}{22}
+    \endentry
+    \entry{bryantInferringSpeciesTrees2012}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=17d844761cdec480fe5c1fcfca96979f}{%
+           family={Bryant},
+           familyi={B\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fee3f4bd114e3bec861be846a08d1e3e}{%
+           family={Bouckaert},
+           familyi={B\bibinitperiod},
+           given={Remco},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a9a7aeb8d3c34e3da316b87101984cda}{%
+           family={Felsenstein},
+           familyi={F\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=571f02b2dc262eab24acf21dab487a24}{%
+           family={Rosenberg},
+           familyi={R\bibinitperiod},
+           given={Noah\bibnamedelima A.},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eddb103e066614e3c8dd57ac2d71f545}{%
+           family={RoyChoudhury},
+           familyi={R\bibinitperiod},
+           given={Arindam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{92b191916584aa9517038fb580b36fba}
+      \strng{fullhash}{dc3bfd06baa468c7cace65d89a0b4f6a}
+      \strng{bibnamehash}{92b191916584aa9517038fb580b36fba}
+      \strng{authorbibnamehash}{92b191916584aa9517038fb580b36fba}
+      \strng{authornamehash}{92b191916584aa9517038fb580b36fba}
+      \strng{authorfullhash}{dc3bfd06baa468c7cace65d89a0b4f6a}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1537-1719, 0737-4038}
+      \field{journaltitle}{Molecular Biology and Evolution}
+      \field{month}{8}
+      \field{number}{8}
+      \field{shorttitle}{Inferring {{Species Trees Directly}} from {{Biallelic Genetic Markers}}}
+      \field{title}{Inferring {{Species Trees Directly}} from {{Biallelic Genetic Markers}}: {{Bypassing Gene Trees}} in a {{Full Coalescent Analysis}}}
+      \field{volume}{29}
+      \field{year}{2012}
+      \field{pages}{1917\bibrangedash 1932}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1093/molbev/mss086
+      \endverb
+    \endentry
+    \entry{Gong2014}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b1676b44d8762174afcaadbf2caa8b77}{%
+           family={Gong},
+           familyi={G\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62642d3bb5f1c46d3f8b1216c2b66212}{%
+           family={Flegal},
+           familyi={F\bibinitperiod},
+           given={James\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d399c72414b0bd2d79fd278b83699394}
+      \strng{fullhash}{d399c72414b0bd2d79fd278b83699394}
+      \strng{bibnamehash}{d399c72414b0bd2d79fd278b83699394}
+      \strng{authorbibnamehash}{d399c72414b0bd2d79fd278b83699394}
+      \strng{authornamehash}{d399c72414b0bd2d79fd278b83699394}
+      \strng{authorfullhash}{d399c72414b0bd2d79fd278b83699394}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Computational and Graphical Statistics}
+      \field{number}{3}
+      \field{title}{A Practical Sequential Stopping Rule for High-Dimensional {M}arkov Chain {M}onte {C}arlo}
+      \field{volume}{25}
+      \field{year}{2016}
+      \field{pages}{684\bibrangedash 700}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1080/10618600.2015.1044092
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/10618600.2015.1044092
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/10618600.2015.1044092
+      \endverb
+    \endentry
+    \entry{harveySimilarityThresholdsUsed2015}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=4bc4676ac3e00cad03ec1f2cc64a9f01}{%
+           family={Harvey},
+           familyi={H\bibinitperiod},
+           given={Michael\bibnamedelima G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f0aebb644eb983a99d7934cb87ecff26}{%
+           family={Judy},
+           familyi={J\bibinitperiod},
+           given={Caroline\bibnamedelima Duffie},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0d820921d486e61209067c21be87a039}{%
+           family={Seeholzer},
+           familyi={S\bibinitperiod},
+           given={Glenn\bibnamedelima F.},
+           giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8cb4fd8fc2180e0fa48d3fc7fe36fb5e}{%
+           family={Maley},
+           familyi={M\bibinitperiod},
+           given={James\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54dca240499380f59d96a571e049ee98}{%
+           family={Graves},
+           familyi={G\bibinitperiod},
+           given={Gary\bibnamedelima R.},
+           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c58d4421605de796801e4c40e3189784}{%
+           family={Brumfield},
+           familyi={B\bibinitperiod},
+           given={Robb\bibnamedelima T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{64d49570ce8f1498b8c8715eaa9632c6}
+      \strng{fullhash}{29ccf9cc4cc98699ecd57509b3728f47}
+      \strng{bibnamehash}{64d49570ce8f1498b8c8715eaa9632c6}
+      \strng{authorbibnamehash}{64d49570ce8f1498b8c8715eaa9632c6}
+      \strng{authornamehash}{64d49570ce8f1498b8c8715eaa9632c6}
+      \strng{authorfullhash}{29ccf9cc4cc98699ecd57509b3728f47}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2167-8359}
+      \field{journaltitle}{PeerJ}
+      \field{month}{4}
+      \field{title}{Similarity Thresholds Used in {{DNA}} Sequence Assembly from Short Reads Can Reduce the Comparability of Population Histories across Species}
+      \field{volume}{3}
+      \field{year}{2015}
+      \field{pages}{e895}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.7717/peerj.895
+      \endverb
+    \endentry
+    \entry{heledBayesianInferenceSpecies2010}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=82801b753f6e8721fec33aa143c5d6d9}{%
+           family={Heled},
+           familyi={H\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=2,uniquepart=given,hash=c08e064b620fdf839b8fb8174c3cc654}{%
+           family={Drummond},
+           familyi={D\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=2}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{cf5d897601737cb043b5e4881b1085c9}
+      \strng{fullhash}{cf5d897601737cb043b5e4881b1085c9}
+      \strng{bibnamehash}{cf5d897601737cb043b5e4881b1085c9}
+      \strng{authorbibnamehash}{cf5d897601737cb043b5e4881b1085c9}
+      \strng{authornamehash}{cf5d897601737cb043b5e4881b1085c9}
+      \strng{authorfullhash}{cf5d897601737cb043b5e4881b1085c9}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0737-4038, 1537-1719}
+      \field{journaltitle}{Molecular Biology and Evolution}
+      \field{month}{3}
+      \field{number}{3}
+      \field{title}{Bayesian {{Inference}} of {{Species Trees}} from {{Multilocus Data}}}
+      \field{volume}{27}
+      \field{year}{2010}
+      \field{pages}{570\bibrangedash 580}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1093/molbev/msp274
+      \endverb
+    \endentry
+    \entry{huang2016unforeseen}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f9e3aca597903b000c96c8b3c5524015}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Huateng},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b6e66185737f4a794376377ce22d681a}{%
+           family={Knowles},
+           familyi={K\bibinitperiod},
+           given={L\bibnamedelima Lacey},
+           giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{70010d7047efd29fff329946668b12b5}
+      \strng{fullhash}{70010d7047efd29fff329946668b12b5}
+      \strng{bibnamehash}{70010d7047efd29fff329946668b12b5}
+      \strng{authorbibnamehash}{70010d7047efd29fff329946668b12b5}
+      \strng{authornamehash}{70010d7047efd29fff329946668b12b5}
+      \strng{authorfullhash}{70010d7047efd29fff329946668b12b5}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Systematic biology}
+      \field{number}{3}
+      \field{title}{Unforeseen Consequences of Excluding Missing Data from Next-Generation Sequences: Simulation Study of RAD Sequences}
+      \field{volume}{65}
+      \field{year}{2016}
+      \field{pages}{357\bibrangedash 365}
+      \range{pages}{9}
+    \endentry
+    \entry{matplotlib}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a27d092a3c70c59360ac990a48514314}{%
+           family={Hunter},
+           familyi={H\bibinitperiod},
+           given={J.\bibnamedelimi D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE COMPUTER SOC}%
+      }
+      \strng{namehash}{a27d092a3c70c59360ac990a48514314}
+      \strng{fullhash}{a27d092a3c70c59360ac990a48514314}
+      \strng{bibnamehash}{a27d092a3c70c59360ac990a48514314}
+      \strng{authorbibnamehash}{a27d092a3c70c59360ac990a48514314}
+      \strng{authornamehash}{a27d092a3c70c59360ac990a48514314}
+      \strng{authorfullhash}{a27d092a3c70c59360ac990a48514314}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computing In Science \& Engineering}
+      \field{number}{3}
+      \field{title}{Matplotlib: A {2D} graphics environment}
+      \field{volume}{9}
+      \field{year}{2007}
+      \field{pages}{90\bibrangedash 95}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/MCSE.2007.55
+      \endverb
+    \endentry
+    \entry{leacheUtilitySingleNucleotide2017}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5cf076e5fabb3bc01ff6025add0a7987}{%
+           family={Leaché},
+           familyi={L\bibinitperiod},
+           given={Adam\bibnamedelima D.},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=2,uniquepart=given,hash=50b87eb96ddff13872976ce96ec272ad}{%
+           family={Oaks},
+           familyi={O\bibinitperiod},
+           given={Jamie\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=2}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{a65432f0ec311ab6b4d699233b899397}
+      \strng{fullhash}{a65432f0ec311ab6b4d699233b899397}
+      \strng{bibnamehash}{a65432f0ec311ab6b4d699233b899397}
+      \strng{authorbibnamehash}{a65432f0ec311ab6b4d699233b899397}
+      \strng{authornamehash}{a65432f0ec311ab6b4d699233b899397}
+      \strng{authorfullhash}{a65432f0ec311ab6b4d699233b899397}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1543-592X, 1545-2069}
+      \field{journaltitle}{Annual Review of Ecology, Evolution, and Systematics}
+      \field{month}{11}
+      \field{number}{1}
+      \field{title}{The {{Utility}} of {{Single Nucleotide Polymorphism}} ({{SNP}}) {{Data}} in {{Phylogenetics}}}
+      \field{volume}{48}
+      \field{year}{2017}
+      \field{pages}{69\bibrangedash 84}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1146/annurev-ecolsys-110316-022645
+      \endverb
+    \endentry
+    \entry{linckMinorAlleleFrequency2019}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=008c0f3a1eff00f885e2cd9bf0e7e7f6}{%
+           family={Linck},
+           familyi={L\bibinitperiod},
+           given={Ethan},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=67e80a412d33293b89a27c96c5956643}{%
+           family={Battey},
+           familyi={B\bibinitperiod},
+           given={C.\bibnamedelimi J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{947a993ada0e4f5ea41fb3b49650430b}
+      \strng{fullhash}{947a993ada0e4f5ea41fb3b49650430b}
+      \strng{bibnamehash}{947a993ada0e4f5ea41fb3b49650430b}
+      \strng{authorbibnamehash}{947a993ada0e4f5ea41fb3b49650430b}
+      \strng{authornamehash}{947a993ada0e4f5ea41fb3b49650430b}
+      \strng{authorfullhash}{947a993ada0e4f5ea41fb3b49650430b}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1755-098X, 1755-0998}
+      \field{journaltitle}{Molecular Ecology Resources}
+      \field{month}{5}
+      \field{number}{3}
+      \field{title}{Minor Allele Frequency Thresholds Strongly Affect Population Structure Inference with Genomic Data Sets}
+      \field{volume}{19}
+      \field{year}{2019}
+      \field{pages}{639\bibrangedash 647}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1111/1755-0998.12995
+      \endverb
+    \endentry
+    \entry{liuSpeciesTreesGene2007}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=883bc21bc18b1ae1bf85c3afcd6e584a}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Liang},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=33c7b90fcefe4b1202606409c5638b1d}{%
+           family={Pearl},
+           familyi={P\bibinitperiod},
+           given={Dennis\bibnamedelima K.},
+           giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=8cb896bfa76da90688ff6534178ac4cc}{%
+           family={Buckley},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{d015934b6d30456fd8a78cabf630235f}
+      \strng{fullhash}{d015934b6d30456fd8a78cabf630235f}
+      \strng{bibnamehash}{d015934b6d30456fd8a78cabf630235f}
+      \strng{authorbibnamehash}{d015934b6d30456fd8a78cabf630235f}
+      \strng{authornamehash}{d015934b6d30456fd8a78cabf630235f}
+      \strng{authorfullhash}{d015934b6d30456fd8a78cabf630235f}
+      \strng{editorbibnamehash}{8cb896bfa76da90688ff6534178ac4cc}
+      \strng{editornamehash}{8cb896bfa76da90688ff6534178ac4cc}
+      \strng{editorfullhash}{8cb896bfa76da90688ff6534178ac4cc}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1076-836X, 1063-5157}
+      \field{journaltitle}{Systematic Biology}
+      \field{month}{6}
+      \field{number}{3}
+      \field{shorttitle}{Species {{Trees}} from {{Gene Trees}}}
+      \field{title}{Species {{Trees}} from {{Gene Trees}}: {{Reconstructing Bayesian Posterior Distributions}} of a {{Species Phylogeny Using Estimated Gene Tree Distributions}}}
+      \field{volume}{56}
+      \field{year}{2007}
+      \field{pages}{504\bibrangedash 514}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1080/10635150701429982
+      \endverb
+    \endentry
+    \entry{maioPoMoAlleleFrequencyBased2015}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=349e1a8b42cd6f8dadb8816b7a10d0aa}{%
+           family={Maio},
+           familyi={M\bibinitperiod},
+           given={Nicola\bibnamedelima De},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9bb73946e4e74a5bab1fbfc07d97bf62}{%
+           family={Schrempf},
+           familyi={S\bibinitperiod},
+           given={Dominik},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27f303b2f563765426ab5b8f2ca72f51}{%
+           family={Kosiol},
+           familyi={K\bibinitperiod},
+           given={Carolin},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{312a67bacd30fe7fed6c9e179c146904}
+      \strng{fullhash}{312a67bacd30fe7fed6c9e179c146904}
+      \strng{bibnamehash}{312a67bacd30fe7fed6c9e179c146904}
+      \strng{authorbibnamehash}{312a67bacd30fe7fed6c9e179c146904}
+      \strng{authornamehash}{312a67bacd30fe7fed6c9e179c146904}
+      \strng{authorfullhash}{312a67bacd30fe7fed6c9e179c146904}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Systematic Biology}
+      \field{title}{{{PoMo}}: {{An Allele Frequency}}-{{Based Approach}} for {{Species Tree Estimation}}}
+      \field{volume}{64}
+      \field{year}{2015}
+      \field{pages}{14}
+      \range{pages}{1}
+    \endentry
+    \entry{oaksFullBayesianComparative2019}{article}{}
+      \name{author}{1}{}{%
+        {{un=2,uniquepart=given,hash=50b87eb96ddff13872976ce96ec272ad}{%
+           family={Oaks},
+           familyi={O\bibinitperiod},
+           given={Jamie\bibnamedelima R},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=2}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=66ace859183e4fdace3ea2769bb490ab}{%
+           family={Kubatko},
+           familyi={K\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{50b87eb96ddff13872976ce96ec272ad}
+      \strng{fullhash}{50b87eb96ddff13872976ce96ec272ad}
+      \strng{bibnamehash}{50b87eb96ddff13872976ce96ec272ad}
+      \strng{authorbibnamehash}{50b87eb96ddff13872976ce96ec272ad}
+      \strng{authornamehash}{50b87eb96ddff13872976ce96ec272ad}
+      \strng{authorfullhash}{50b87eb96ddff13872976ce96ec272ad}
+      \strng{editorbibnamehash}{66ace859183e4fdace3ea2769bb490ab}
+      \strng{editornamehash}{66ace859183e4fdace3ea2769bb490ab}
+      \strng{editorfullhash}{66ace859183e4fdace3ea2769bb490ab}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1063-5157, 1076-836X}
+      \field{journaltitle}{Systematic Biology}
+      \field{month}{5}
+      \field{number}{3}
+      \field{title}{Full {{Bayesian Comparative Phylogeography}} from {{Genomic Data}}}
+      \field{volume}{68}
+      \field{year}{2019}
+      \field{pages}{371\bibrangedash 395}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1093/sysbio/syy063
+      \endverb
+    \endentry
+    \entry{oaks2019comparative}{article}{}
+      \name{author}{3}{}{%
+        {{un=2,uniquepart=given,hash=50b87eb96ddff13872976ce96ec272ad}{%
+           family={Oaks},
+           familyi={O\bibinitperiod},
+           given={Jamie\bibnamedelima R},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=2}}%
+        {{un=0,uniquepart=base,hash=53582e2d63b081874ad49f6dd5efcb62}{%
+           family={Siler},
+           familyi={S\bibinitperiod},
+           given={Cameron\bibnamedelima D},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2cf1cca89d6f8e90fe4cc973bd03c1f0}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Rafe\bibnamedelima M},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{a304a39f53c11543796e980d9e4ced11}
+      \strng{fullhash}{a304a39f53c11543796e980d9e4ced11}
+      \strng{bibnamehash}{a304a39f53c11543796e980d9e4ced11}
+      \strng{authorbibnamehash}{a304a39f53c11543796e980d9e4ced11}
+      \strng{authornamehash}{a304a39f53c11543796e980d9e4ced11}
+      \strng{authorfullhash}{a304a39f53c11543796e980d9e4ced11}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Evolution}
+      \field{number}{6}
+      \field{title}{The comparative biogeography of Philippine geckos challenges predictions from a paradigm of climate-driven vicariant diversification across an island archipelago}
+      \field{volume}{73}
+      \field{year}{2019}
+      \field{pages}{1151\bibrangedash 1167}
+      \range{pages}{17}
+    \endentry
+    \entry{ogilvieStarBEAST2BringsFaster2017}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=a8a91467f5eab67306f522eafd11b729}{%
+           family={Ogilvie},
+           familyi={O\bibinitperiod},
+           given={Huw\bibnamedelima A.},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=54bdd3067448d4cfd5f94ca76dcba53a}{%
+           family={Bouckaert},
+           familyi={B\bibinitperiod},
+           given={Remco\bibnamedelima R.},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=1}}%
+        {{un=2,uniquepart=given,hash=5f0657992a7412c92808635205f99f43}{%
+           family={Drummond},
+           familyi={D\bibinitperiod},
+           given={Alexei\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=2}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{e861fe27abc4544fbd2206e31d0e1e58}
+      \strng{fullhash}{e861fe27abc4544fbd2206e31d0e1e58}
+      \strng{bibnamehash}{e861fe27abc4544fbd2206e31d0e1e58}
+      \strng{authorbibnamehash}{e861fe27abc4544fbd2206e31d0e1e58}
+      \strng{authornamehash}{e861fe27abc4544fbd2206e31d0e1e58}
+      \strng{authorfullhash}{e861fe27abc4544fbd2206e31d0e1e58}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0737-4038, 1537-1719}
+      \field{journaltitle}{Molecular Biology and Evolution}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{{{StarBEAST2 Brings Faster Species Tree Inference}} and {{Accurate Estimates}} of {{Substitution Rates}}}
+      \field{volume}{34}
+      \field{year}{2017}
+      \field{pages}{2101\bibrangedash 2114}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1093/molbev/msx126
+      \endverb
+    \endentry
+    \entry{pfeifferSystematicEvaluationError2018}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=7aea67deb00597f5b684d4531e39c9a9}{%
+           family={Pfeiffer},
+           familyi={P\bibinitperiod},
+           given={Franziska},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=da5733ac569da77668312199b6397ade}{%
+           family={Gröber},
+           familyi={G\bibinitperiod},
+           given={Carsten},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=86567d5066a0186629d9a81ab930975f}{%
+           family={Blank},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0309bc440bae3516cf0b19ed9fefdb10}{%
+           family={Händler},
+           familyi={H\bibinitperiod},
+           given={Kristian},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dc02b7109bb1b0c4c5fbade63afc6f49}{%
+           family={Beyer},
+           familyi={B\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eafdeafd9e376570b5dff63e7d4b63e4}{%
+           family={Schultze},
+           familyi={S\bibinitperiod},
+           given={Joachim\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c002d935f044e4e6ba531522496c65d1}{%
+           family={Mayer},
+           familyi={M\bibinitperiod},
+           given={Günter},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{a1e300805b39a66f5f543b5d469415d6}
+      \strng{fullhash}{2aff336626d038e2656bfe5c7c925f60}
+      \strng{bibnamehash}{a1e300805b39a66f5f543b5d469415d6}
+      \strng{authorbibnamehash}{a1e300805b39a66f5f543b5d469415d6}
+      \strng{authornamehash}{a1e300805b39a66f5f543b5d469415d6}
+      \strng{authorfullhash}{2aff336626d038e2656bfe5c7c925f60}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2045-2322}
+      \field{journaltitle}{Scientific Reports}
+      \field{month}{12}
+      \field{number}{1}
+      \field{title}{Systematic Evaluation of Error Rates and Causes in Short Samples in Next-Generation Sequencing}
+      \field{volume}{8}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1038/s41598-018-29325-6
+      \endverb
+    \endentry
+    \entry{potapovExaminingSourcesError2017}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8cdc2f56a017aa7d0318a2d8f42c91fc}{%
+           family={Potapov},
+           familyi={P\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea69e7e355f6c6855cbb15b8e866aa50}{%
+           family={Ong},
+           familyi={O\bibinitperiod},
+           given={Jennifer\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=d7e17cb2cbead8978f1d25d0d8d228ab}{%
+           family={Kalendar},
+           familyi={K\bibinitperiod},
+           given={Ruslan},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{857506567a2e13e6d5908d3d423668df}
+      \strng{fullhash}{857506567a2e13e6d5908d3d423668df}
+      \strng{bibnamehash}{857506567a2e13e6d5908d3d423668df}
+      \strng{authorbibnamehash}{857506567a2e13e6d5908d3d423668df}
+      \strng{authornamehash}{857506567a2e13e6d5908d3d423668df}
+      \strng{authorfullhash}{857506567a2e13e6d5908d3d423668df}
+      \strng{editorbibnamehash}{d7e17cb2cbead8978f1d25d0d8d228ab}
+      \strng{editornamehash}{d7e17cb2cbead8978f1d25d0d8d228ab}
+      \strng{editorfullhash}{d7e17cb2cbead8978f1d25d0d8d228ab}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1932-6203}
+      \field{journaltitle}{PLOS ONE}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Examining {{Sources}} of {{Error}} in {{PCR}} by {{Single}}-{{Molecule Sequencing}}}
+      \field{volume}{12}
+      \field{year}{2017}
+      \field{pages}{e0169774}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pone.0169774
+      \endverb
+    \endentry
+    \entry{rambautSeqGenApplicationMonte1997}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=71fff5713ff2edb668cf2202fe191353}{%
+           family={Rambaut},
+           familyi={R\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=556e836ff3437f6600a18241e6ef98ba}{%
+           family={Grass},
+           familyi={G\bibinitperiod},
+           given={Nicholas\bibnamedelima C.},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{9a076ca7f41f81d9f72b226681c049ea}
+      \strng{fullhash}{9a076ca7f41f81d9f72b226681c049ea}
+      \strng{bibnamehash}{9a076ca7f41f81d9f72b226681c049ea}
+      \strng{authorbibnamehash}{9a076ca7f41f81d9f72b226681c049ea}
+      \strng{authornamehash}{9a076ca7f41f81d9f72b226681c049ea}
+      \strng{authorfullhash}{9a076ca7f41f81d9f72b226681c049ea}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1367-4803, 1460-2059}
+      \field{journaltitle}{Bioinformatics}
+      \field{number}{3}
+      \field{shorttitle}{Seq-{{Gen}}}
+      \field{title}{Seq-{{Gen}}: An Application for the {{Monte Carlo}} Simulation of {{DNA}} Sequence Evolution along Phylogenetic Trees}
+      \field{volume}{13}
+      \field{year}{1997}
+      \field{pages}{235\bibrangedash 238}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1093/bioinformatics/13.3.235
+      \endverb
+    \endentry
+    \entry{rochetteStacksAnalyticalMethods2019}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e4afe63e6bf0b206cd1c42962dd046dc}{%
+           family={Rochette},
+           familyi={R\bibinitperiod},
+           given={Nicolas\bibnamedelima C.},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a5e03ca622955e1c6c43c9c5c3a9e810}{%
+           family={Rivera-Colón},
+           familyi={R\bibinithyphendelim C\bibinitperiod},
+           given={Angel\bibnamedelima G.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=66140d0fb962077d6fadcd43716c3f34}{%
+           family={Catchen},
+           familyi={C\bibinitperiod},
+           given={Julian\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{b206c4b768724acdb88a5aa8907b9b5b}
+      \strng{fullhash}{b206c4b768724acdb88a5aa8907b9b5b}
+      \strng{bibnamehash}{b206c4b768724acdb88a5aa8907b9b5b}
+      \strng{authorbibnamehash}{b206c4b768724acdb88a5aa8907b9b5b}
+      \strng{authornamehash}{b206c4b768724acdb88a5aa8907b9b5b}
+      \strng{authorfullhash}{b206c4b768724acdb88a5aa8907b9b5b}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1365-294X}
+      \field{journaltitle}{Molecular Ecology}
+      \field{number}{21}
+      \field{shorttitle}{Stacks 2}
+      \field{title}{Stacks 2: {{Analytical}} Methods for Paired-End Sequencing Improve {{RADseq}}-Based Population Genomics}
+      \field{volume}{28}
+      \field{year}{2019}
+      \field{pages}{4737\bibrangedash 4754}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1111/mec.15253
+      \endverb
+      \keyw{bioinformatics,conservation genetics,genotype calling,haplotype phasing,population genetics,restriction-site associated DNA sequencing}
+    \endentry
+    \entry{sukumaranDendroPyPythonLibrary2010}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0927d01fbdf1bce2f17c49d1b8dc6132}{%
+           family={Sukumaran},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27fd8baf999a096fc13c2656884c59ea}{%
+           family={Holder},
+           familyi={H\bibinitperiod},
+           given={M.\bibnamedelimi T.},
+           giveni={M\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{816c951383388e9d901cafa1a1557c27}
+      \strng{fullhash}{816c951383388e9d901cafa1a1557c27}
+      \strng{bibnamehash}{816c951383388e9d901cafa1a1557c27}
+      \strng{authorbibnamehash}{816c951383388e9d901cafa1a1557c27}
+      \strng{authornamehash}{816c951383388e9d901cafa1a1557c27}
+      \strng{authorfullhash}{816c951383388e9d901cafa1a1557c27}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{1367-4803, 1460-2059}
+      \field{journaltitle}{Bioinformatics}
+      \field{month}{6}
+      \field{number}{12}
+      \field{shorttitle}{{{DendroPy}}}
+      \field{title}{{{DendroPy}}: A {{Python}} Library for Phylogenetic Computing}
+      \field{volume}{26}
+      \field{year}{2010}
+      \field{pages}{1569\bibrangedash 1571}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1093/bioinformatics/btq228
+      \endverb
+    \endentry
+    \entry{yangBPPProgramSpecies2015}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4d0bece89adf0d22a7586a8927bc4a66}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Ziheng},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{4d0bece89adf0d22a7586a8927bc4a66}
+      \strng{fullhash}{4d0bece89adf0d22a7586a8927bc4a66}
+      \strng{bibnamehash}{4d0bece89adf0d22a7586a8927bc4a66}
+      \strng{authorbibnamehash}{4d0bece89adf0d22a7586a8927bc4a66}
+      \strng{authornamehash}{4d0bece89adf0d22a7586a8927bc4a66}
+      \strng{authorfullhash}{4d0bece89adf0d22a7586a8927bc4a66}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1674-5507, 2396-9814}
+      \field{journaltitle}{Current Zoology}
+      \field{month}{10}
+      \field{number}{5}
+      \field{title}{The {{BPP}} Program for Species Tree Estimation and Species Delimitation}
+      \field{volume}{61}
+      \field{year}{2015}
+      \field{pages}{854\bibrangedash 865}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1093/czoolo/61.5.854
+      \endverb
+    \endentry
+    \entry{Yule1925}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3eb194bc3d4288bbe5dd20d9266ac0a1}{%
+           family={Yule},
+           familyi={Y\bibinitperiod},
+           given={George\bibnamedelima Udny},
+           giveni={G\bibinitperiod\bibinitdelim U\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3eb194bc3d4288bbe5dd20d9266ac0a1}
+      \strng{fullhash}{3eb194bc3d4288bbe5dd20d9266ac0a1}
+      \strng{bibnamehash}{3eb194bc3d4288bbe5dd20d9266ac0a1}
+      \strng{authorbibnamehash}{3eb194bc3d4288bbe5dd20d9266ac0a1}
+      \strng{authornamehash}{3eb194bc3d4288bbe5dd20d9266ac0a1}
+      \strng{authorfullhash}{3eb194bc3d4288bbe5dd20d9266ac0a1}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Philosphical Transactions of the Royal Society B}
+      \field{title}{A mathematical theory of evolution, based on the conclusions of {D}r.\ {J}.\ {C}.\ {W}illis, {F.R.S}}
+      \field{volume}{213}
+      \field{year}{1925}
+      \field{pages}{21\bibrangedash 87}
+      \range{pages}{67}
+      \verb{doi}
+      \verb 10.1098/rstb.1925.0002
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1098/rstb.1925.0002
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1098/rstb.1925.0002
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

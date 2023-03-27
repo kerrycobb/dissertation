@@ -1,0 +1,4 @@
+#!/usr/bin/env fish
+
+latexmk -output-directory=output -pdf ms.tex
+mv output/ms.pdf .

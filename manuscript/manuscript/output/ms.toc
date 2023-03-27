@@ -1,0 +1,36 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{5}\relax 
+\contentsline {section}{\numberline {0.1}Introduction}{9}{section.0.1}%
+\defcounter {refsection}{5}\relax 
+\contentsline {section}{\numberline {0.2}Methods}{10}{section.0.2}%
+\defcounter {refsection}{5}\relax 
+\contentsline {subsection}{\numberline {0.2.1}Simulations of error-free data sets}{10}{subsection.0.2.1}%
+\defcounter {refsection}{5}\relax 
+\contentsline {subsection}{\numberline {0.2.2}Introducing Site-pattern Errors}{11}{subsection.0.2.2}%
+\defcounter {refsection}{5}\relax 
+\contentsline {subsection}{\numberline {0.2.3}Assessing Sensitivity to Errors}{11}{subsection.0.2.3}%
+\defcounter {refsection}{5}\relax 
+\contentsline {subsection}{\numberline {0.2.4}Project repository}{12}{subsection.0.2.4}%
+\defcounter {refsection}{5}\relax 
+\contentsline {section}{\numberline {0.3}Results}{12}{section.0.3}%
+\defcounter {refsection}{5}\relax 
+\contentsline {subsection}{\numberline {0.3.1}Behavior of linked (StarBEAST2\xspace ) versus unlinked (ecoevolity\xspace ) character models}{12}{subsection.0.3.1}%
+\defcounter {refsection}{5}\relax 
+\contentsline {subsection}{\numberline {0.3.2}Analyzing all sites versus SNPs with ecoevolity\xspace }{13}{subsection.0.3.2}%
+\defcounter {refsection}{5}\relax 
+\contentsline {subsection}{\numberline {0.3.3}Coverage of credible intervals}{13}{subsection.0.3.3}%
+\defcounter {refsection}{5}\relax 
+\contentsline {subsection}{\numberline {0.3.4}MCMC convergence and mixing}{14}{subsection.0.3.4}%
+\defcounter {refsection}{5}\relax 
+\contentsline {section}{\numberline {0.4}Discussion}{14}{section.0.4}%
+\defcounter {refsection}{5}\relax 
+\contentsline {subsection}{\numberline {0.4.1}Robustness to character-pattern errors}{14}{subsection.0.4.1}%
+\defcounter {refsection}{5}\relax 
+\contentsline {subsection}{\numberline {0.4.2}Relevance to empirical data sets}{15}{subsection.0.4.2}%
+\defcounter {refsection}{5}\relax 
+\contentsline {subsection}{\numberline {0.4.3}Recommendations for using unlinked-character models}{16}{subsection.0.4.3}%
+\defcounter {refsection}{5}\relax 
+\contentsline {subsection}{\numberline {0.4.4}Other complexities of empirical data in need of exploration}{17}{subsection.0.4.4}%
+\defcounter {refsection}{5}\relax 
+\contentsline {section}{References}{18}{section*.6}%
