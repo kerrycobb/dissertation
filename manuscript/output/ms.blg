@@ -1,25 +1,25 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'output/ms.blg'
-[85] biber-darwin:340> INFO - === Mon Mar 27, 2023, 14:10:30
-[105] Biber.pm:415> INFO - Reading 'output/ms.bcf'
-[217] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
-[218] Biber.pm:952> INFO - Found 0 citekeys in bib section 1
-[218] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
-[218] Biber.pm:952> INFO - Found 0 citekeys in bib section 2
-[218] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
-[219] Biber.pm:952> INFO - Found 0 citekeys in bib section 3
-[219] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
-[219] Biber.pm:952> INFO - Found 0 citekeys in bib section 4
-[219] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
-[223] Biber.pm:952> INFO - Found 22 citekeys in bib section 5
-[223] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
-[283] Biber.pm:4340> INFO - Processing section 5
-[321] Biber.pm:4531> INFO - Looking for bibtex format file 'bib/kac_zotero.bib' for section 5
-[344] bibtex.pm:1689> INFO - LaTeX decoding ...
-[951] bibtex.pm:1494> INFO - Found BibTeX data source 'bib/kac_zotero.bib'
-[1213] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1214] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1214] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[1214] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[1251] bbl.pm:654> INFO - Writing 'output/ms.bbl' with encoding 'UTF-8'
-[1273] bbl.pm:757> INFO - Output to output/ms.bbl
+[94] biber-darwin:340> INFO - === Mon Mar 27, 2023, 18:59:06
+[168] Biber.pm:415> INFO - Reading 'output/ms.bcf'
+[305] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[306] Biber.pm:952> INFO - Found 0 citekeys in bib section 1
+[306] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[306] Biber.pm:952> INFO - Found 0 citekeys in bib section 2
+[306] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[306] Biber.pm:952> INFO - Found 0 citekeys in bib section 3
+[306] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[306] Biber.pm:952> INFO - Found 0 citekeys in bib section 4
+[306] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[310] Biber.pm:952> INFO - Found 22 citekeys in bib section 5
+[310] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[357] Biber.pm:4340> INFO - Processing section 5
+[372] Biber.pm:4531> INFO - Looking for bibtex format file 'bib/kac_zotero.bib' for section 5
+[390] bibtex.pm:1689> INFO - LaTeX decoding ...
+[924] bibtex.pm:1494> INFO - Found BibTeX data source 'bib/kac_zotero.bib'
+[1160] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1160] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1160] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1160] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[1200] bbl.pm:654> INFO - Writing 'output/ms.bbl' with encoding 'UTF-8'
+[1222] bbl.pm:757> INFO - Output to output/ms.bbl

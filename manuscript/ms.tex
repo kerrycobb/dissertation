@@ -15,7 +15,7 @@
 \setlength{\RaggedRightParindent}{\parindent}
 \usepackage{upgreek}
 \usepackage[T1]{fontenc}
-\usepackage[titles]{tocloft}
+% \usepackage[titles]{tocloft}
 \usepackage{xspace}
 % xcolor allows rowcolors for tables
 \usepackage[table,x11names,dvipsnames,table]{xcolor}
@@ -60,7 +60,8 @@
 \usepackage{subcaption}
 \usepackage[format=plain, labelsep=period, singlelinecheck=true, skip=2pt, font=sf]{caption}
 \DeclareCaptionLabelFormat{noSpace}{{#1}{#2}}
-\DeclareCaptionListFormat{figList}{Figure {#2}.}
+% \DeclareCaptionListFormat{figList}{Figure {#2}.}
+\DeclareCaptionListFormat{figList}{{#2}.}
 \DeclareCaptionListFormat{sFigList}{Figure S{#2}.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -85,15 +86,15 @@
 \tableofcontents
 \listoffigures
 
-\chapter*{Chapter 1 Title}
+\chapter{Chapter 1 Title}
 \input{sections/chapter-1/chapter-1.tex}
 % \printbibliography[heading=subbibintoc]
 
-\chapter*{Chapter 2 Title}
+\chapter{Chapter 2 Title}
 \input{sections/chapter-2/chapter-2.tex}
 % \printbibliography[heading=subbibintoc]
 
-\chapter*{Chapter 3 Title}
+\chapter{Chapter 3 Title}
 \input{sections/chapter-3/fig-2-10-legend.tex} %Captions for figures 2-10
 \input{sections/chapter-3/chapter-3.tex}
 \printbibliography[heading=subbibintoc]

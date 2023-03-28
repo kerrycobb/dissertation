@@ -1,36 +1,54 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
+\defcounter {refsection}{2}\relax 
+\contentsline {chapter}{\numberline {1}Chapter 1 Title}{3}{chapter.1}%
+\defcounter {refsection}{3}\relax 
+\contentsline {section}{\numberline {1.1}Introduction}{3}{section.1.1}%
+\defcounter {refsection}{3}\relax 
+\contentsline {section}{\numberline {1.2}Methods}{3}{section.1.2}%
+\defcounter {refsection}{3}\relax 
+\contentsline {subsection}{\numberline {1.2.1}Specific Method}{3}{subsection.1.2.1}%
+\defcounter {refsection}{3}\relax 
+\contentsline {chapter}{\numberline {2}Chapter 2 Title}{4}{chapter.2}%
+\defcounter {refsection}{4}\relax 
+\contentsline {section}{\numberline {2.1}Introduction}{4}{section.2.1}%
+\defcounter {refsection}{4}\relax 
+\contentsline {section}{\numberline {2.2}Methods}{4}{section.2.2}%
+\defcounter {refsection}{4}\relax 
+\contentsline {section}{\numberline {2.3}Specific method}{4}{section.2.3}%
+\defcounter {refsection}{4}\relax 
+\contentsline {chapter}{\numberline {3}Chapter 3 Title}{5}{chapter.3}%
 \defcounter {refsection}{5}\relax 
-\contentsline {section}{\numberline {0.1}Introduction}{9}{section.0.1}%
+\contentsline {section}{\numberline {3.1}Introduction}{5}{section.3.1}%
 \defcounter {refsection}{5}\relax 
-\contentsline {section}{\numberline {0.2}Methods}{10}{section.0.2}%
+\contentsline {section}{\numberline {3.2}Methods}{7}{section.3.2}%
 \defcounter {refsection}{5}\relax 
-\contentsline {subsection}{\numberline {0.2.1}Simulations of error-free data sets}{10}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}Simulations of error-free data sets}{7}{subsection.3.2.1}%
 \defcounter {refsection}{5}\relax 
-\contentsline {subsection}{\numberline {0.2.2}Introducing Site-pattern Errors}{11}{subsection.0.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Introducing Site-pattern Errors}{7}{subsection.3.2.2}%
 \defcounter {refsection}{5}\relax 
-\contentsline {subsection}{\numberline {0.2.3}Assessing Sensitivity to Errors}{11}{subsection.0.2.3}%
+\contentsline {subsection}{\numberline {3.2.3}Assessing Sensitivity to Errors}{8}{subsection.3.2.3}%
 \defcounter {refsection}{5}\relax 
-\contentsline {subsection}{\numberline {0.2.4}Project repository}{12}{subsection.0.2.4}%
+\contentsline {subsection}{\numberline {3.2.4}Project repository}{8}{subsection.3.2.4}%
 \defcounter {refsection}{5}\relax 
-\contentsline {section}{\numberline {0.3}Results}{12}{section.0.3}%
+\contentsline {section}{\numberline {3.3}Results}{8}{section.3.3}%
 \defcounter {refsection}{5}\relax 
-\contentsline {subsection}{\numberline {0.3.1}Behavior of linked (StarBEAST2\xspace ) versus unlinked (ecoevolity\xspace ) character models}{12}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {3.3.1}Behavior of linked (StarBEAST2\xspace ) versus unlinked (ecoevolity\xspace ) character models}{8}{subsection.3.3.1}%
 \defcounter {refsection}{5}\relax 
-\contentsline {subsection}{\numberline {0.3.2}Analyzing all sites versus SNPs with ecoevolity\xspace }{13}{subsection.0.3.2}%
+\contentsline {subsection}{\numberline {3.3.2}Analyzing all sites versus SNPs with ecoevolity\xspace }{9}{subsection.3.3.2}%
 \defcounter {refsection}{5}\relax 
-\contentsline {subsection}{\numberline {0.3.3}Coverage of credible intervals}{13}{subsection.0.3.3}%
+\contentsline {subsection}{\numberline {3.3.3}Coverage of credible intervals}{9}{subsection.3.3.3}%
 \defcounter {refsection}{5}\relax 
-\contentsline {subsection}{\numberline {0.3.4}MCMC convergence and mixing}{14}{subsection.0.3.4}%
+\contentsline {subsection}{\numberline {3.3.4}MCMC convergence and mixing}{10}{subsection.3.3.4}%
 \defcounter {refsection}{5}\relax 
-\contentsline {section}{\numberline {0.4}Discussion}{14}{section.0.4}%
+\contentsline {section}{\numberline {3.4}Discussion}{10}{section.3.4}%
 \defcounter {refsection}{5}\relax 
-\contentsline {subsection}{\numberline {0.4.1}Robustness to character-pattern errors}{14}{subsection.0.4.1}%
+\contentsline {subsection}{\numberline {3.4.1}Robustness to character-pattern errors}{11}{subsection.3.4.1}%
 \defcounter {refsection}{5}\relax 
-\contentsline {subsection}{\numberline {0.4.2}Relevance to empirical data sets}{15}{subsection.0.4.2}%
+\contentsline {subsection}{\numberline {3.4.2}Relevance to empirical data sets}{12}{subsection.3.4.2}%
 \defcounter {refsection}{5}\relax 
-\contentsline {subsection}{\numberline {0.4.3}Recommendations for using unlinked-character models}{16}{subsection.0.4.3}%
+\contentsline {subsection}{\numberline {3.4.3}Recommendations for using unlinked-character models}{12}{subsection.3.4.3}%
 \defcounter {refsection}{5}\relax 
-\contentsline {subsection}{\numberline {0.4.4}Other complexities of empirical data in need of exploration}{17}{subsection.0.4.4}%
+\contentsline {subsection}{\numberline {3.4.4}Other complexities of empirical data in need of exploration}{13}{subsection.3.4.4}%
 \defcounter {refsection}{5}\relax 
-\contentsline {section}{References}{18}{section*.6}%
+\contentsline {section}{References}{14}{section*.5}%
