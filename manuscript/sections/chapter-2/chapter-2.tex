@@ -1,18 +1,100 @@
 \section{Introduction}
-Test test test
-
+\ldots
 \section{Methods}
-\section{Specific method}
-Test test test
+\subsection{Sampling and DNA Isolation}
+I collected genetic samples from \textit{A. americanus} and \textit{A. terrestris}
+by driving roads during rainy nights between 2017 and 2020
+in an a region of central Alabama where hybridization has previously been
+inferred from the presence of morphological intermediates \parencite{weatherby1982}. 
+I euthanized individuals with immersion in MS-222.
+I removed liver and/or toes and preserved them in 100\% ethanol.
+Samples and formalin fixed specimens were deposited in the Auburn Museum of Natural History.
+Additional samples were also provided by museums.
+I isolated DNA by first lysing a small piece of liver or toe approximately 
+the size of a grain of rice in 300 \uL\ of a solution of 10mM Tris-HCL, 10mM EDTA, 
+1\% SDS (w/v), and nuclease free water along with 6 mg Proteinase K that was 
+incubated for 4-16 hours at 55\degree C in a 1.5 mL microcentrifuge tube.  
+To purify the DNA and separate it from the lysis product, I mixed the lysis 
+product with a 2X volume of SpeedBead solution containing 1 mM EDTA,  
+10 mM Tris-HCl, 1 M NaCl, 0.275\% Tween-20 (v/v), 18\% PEG 8000 (w/v), 
+2\% Sera-Mag SpeedBeads (GE Healthcare PN 65152105050250) (v/v), and nuclease free water.
+I then incubated the samples at room tempearture for 5 minutes, placed the 
+beads on a magnetic rack, and discarded the supernatant once the beads had collected
+on the side of the tube.  
+I then performed two ethanol washes by adding 1 mL of 70\% ETOH to the beads
+while still placed in the magnet stand and allowing it to stand for 5 minutes
+before discarding the ethanol. 
+After removing all ethanol from the second wash, I removed the tube from the magnet 
+stand and allowed the sample to dry for 1 minute before mixing the beads with 100 \uL\ of 
+TLE solution containing 10 mM Tris-HCL, 0.1 mm EDTA, and nuclease free water.
+After allowing the bead mixture to stand at room temperature for 5 minutes I returned
+the beads to the magnet stand, pipetted all of the TLE solution into another 
+microcentrifuge tube, and discarded the beads.
 
-\embedHeightFigure{0.3}{sections/chapter-3/sp-tree.pdf}{
-  Simulation model
-}{
-  \footnotesize An illsustration of the species-tree model we used to simulate
-  data. \rootpopsize, \tippopsize[1], and \tippopsize[2] represent the constant 
-  effective population sizes of the root, and each of the two terminal populations.
-  \divtime reperesents the instantaneous separation of the ancestral population into
-  two descendant populations. One hypothetical gene tree is shown to illustrate the 
-  gene trees simulated under a contained coalescent process for 4 haploid gene 
-  copies sampled from each of the terminal branches of the species tree.
-}{fig:spTreeModel}
+\subsection{RADseq Library Preparation}
+I prepared RADseq libraries using the 2RAD approach outlined by \cite{Bayona-vasquez2019}. 
+On 96 well plates I ligated 100 ng of sample DNA in 15 \uL\ of a solution with 
+1X Cutsmart Buffer (New Englad Biolabs, USA; NEB), 10 units of XbaI,
+10 units of EcoRI, 0.33 \uM\ XbaI compatible adapter, 0.33 \uM\ EcoRI compatible adapter,
+and nuclease free water with a 1 hour incubation at 37\degree C. 
+I then immediately added 5 \uL\ of a solution with 1X Ligase Buffer (NEB),
+0.75 mM ATP (NEB), 100 units DNA Ligase (NEB), and nuclease free water 
+and incubated at 22\degree C for 20 min and 37\degree C for 10 min for two cycles, 
+followed by 80\degree C for 20 min to stop enzyme activity.
+For each 96 well plate, I pooled 10 \uL\ of each sample and split this pool 
+equally between two microcentrifuge tubes.
+I purified each pool of libraries with a 1X volume of SpeedBead solution followed 
+by two ethanol washes as described in the previous section except that the DNA 
+was resuspended in 25 \uL\ of TLE solution. 
+In order to be able to detect and remove PCR duplicates, I performed a single   
+cycle of PCR with the iTru5-8N primer which adds a random 8 nucleotide barcode to 
+each library construct.  
+For each plate I prepared 4 iTrue5-8N PCR reactions with a total volume of 
+50 \uL\ containing 1X Kapa Hifi Buffer (Kapa Biosystems, USA; Kapa),
+0.3 \uM\ iTru5-8N Primer, 0.3 mM dNTP, 1 unit Kapa HiFi DNA Polymerase,
+10 \uL\ of purified ligation product, and nuclease free water.
+I ran the single cycle of PCR on a thermocycler at 98\degree C for 2 min, 60\degree C 
+for 30 s, and 72\degree C for 5 min. 
+
+Pooled into single tube.
+Bead cleanup and two ethanol washes.
+
+1X Kapa Hifi (Kapa),
+0.3 \uM\ iTru7 Primer,
+0.3 \uM\ P5 Primer,
+0.3 mM dNTP,
+1 unit of Kapa Hifi DNA Polymerase (Kapa),
+10 \uL\ purified iTru5-8N PCR product,
+nuclease free water.
+
+Initial denaturation at 98\degree C for 3 min, followed by 6 cycles of 
+98\degree C for 20 s, 60\degree C for 15 s, 72\degree C for 30 s and a final 
+extension of 72\degree C for 5 min.
+
+
+Pooled into single tube, bead cleanup and two ethanol washes.
+
+Size selection with Blue Pippin 1.5\% gel, dye free with internal standards R2
+Size selection range was 450-650
+Blue Pippin (Sage Science, USA) following manufacturer protocol.
+
+Bead cleanup?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Sequencing and Assembly}
+\ldots
+
+\subsection{Population Structure \& Identification Of Hybrids}
+\ldots

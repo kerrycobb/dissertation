@@ -14,8 +14,10 @@
 \usepackage{ragged2e}
 \setlength{\RaggedRightParindent}{\parindent}
 \usepackage{upgreek}
+\usepackage{gensymb}
 \usepackage[T1]{fontenc}
-% \usepackage[titles]{tocloft}
+\usepackage[titles]{tocloft}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}} % Force chapters to have dot fill
 \usepackage{xspace}
 % xcolor allows rowcolors for tables
 \usepackage[table,x11names,dvipsnames,table]{xcolor}
@@ -60,12 +62,11 @@
 \usepackage{subcaption}
 \usepackage[format=plain, labelsep=period, singlelinecheck=true, skip=2pt, font=sf]{caption}
 \DeclareCaptionLabelFormat{noSpace}{{#1}{#2}}
-% \DeclareCaptionListFormat{figList}{Figure {#2}.}
 \DeclareCaptionListFormat{figList}{{#2}.}
 \DeclareCaptionListFormat{sFigList}{Figure S{#2}.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{utils/environments.tex}
+% \input{utils/environments.tex}
 \input{utils/macros.tex}
 \input{utils/notation.tex}
 
@@ -73,50 +74,70 @@
 \usepackage[style=authoryear, backend=biber, url=false, refsection=chapter]{biblatex}
 \addbibresource{bib/kac_zotero.bib}
 \addbibresource{bib/references.bib}
+\addbibresource{~/Documents/library.bib}
 
 % Graphics
 \usepackage{graphicx}
-\graphicspath{{../sims/plots-tex/}}
+\graphicspath{
+  {../sims/plots-tex/}
+  {../structure2/}
+  {../maps}
+  {../pca}
+  {../iqtree}
+}
 
-
+% Manuscript %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-
 \begin{linenumbers}
 
-\tableofcontents
-\listoffigures
+% \input{sections/abstract.tex}
+% \addcontentsline{toc}{chapter}{Abstract}
 
-\chapter{Chapter 1 Title}
-\input{sections/chapter-1/chapter-1.tex}
-% \printbibliography[heading=subbibintoc]
+% \input{sections/acknowledgments.tex}
+% \addcontentsline{toc}{chapter}{Acknowledgedments}
 
-\chapter{Chapter 2 Title}
-\input{sections/chapter-2/chapter-2.tex}
-% \printbibliography[heading=subbibintoc]
+% \tableofcontents
+% \addcontentsline{toc}{chapter}{Table of Contents}
 
-\chapter{Chapter 3 Title}
-\input{sections/chapter-3/fig-2-10-legend.tex} %Captions for figures 2-10
-\input{sections/chapter-3/chapter-3.tex}
-\printbibliography[heading=subbibintoc]
-\input{sections/chapter-3/chapter-3-figures.tex}
-
-
-% \section{Acknowledgments}
-% \input{acknowledgments.tex}
-
-
-% %% LIST OF FIGURES %%%%%%%%%%%%%%%%%%%%%%%%%%
-% \ifincludefigcaptionlist{
-% \newpage
-% \singlespacing
-
-% \renewcommand\listfigurename{Figure Captions}
-% \cftsetindents{fig}{0cm}{2.2cm}
-% \renewcommand\cftdotsep{\cftnodots}
-% \setlength\cftbeforefigskip{10pt}
-% \cftpagenumbersoff{fig}
 % \listoffigures
-% }{}
+% \addcontentsline{toc}{chapter}{List of Figures}
+
+% \listoftables
+% \addcontentsline{toc}{chapter}{List of Tables}
+
+
+% % Chapter 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \chapter{Chapter 1 Title}
+% \input{sections/chapter-1/chapter-1-abstract.tex}
+% \input{sections/chapter-1/chapter-1.tex}
+% \input{sections/chapter-1/chapter-1-acknowledgments.tex}
+% % \printbibliography[heading=subbibintoc]
+% \input{sections/chapter-1/chapter-1-figures.tex}
+
+
+% Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Chapter 2 Title}
+\input{sections/chapter-2/chapter-2-abstract.tex}
+\input{sections/chapter-2/chapter-2.tex}
+\input{sections/chapter-2/chapter-2-acknowledgments.tex}
+% \printbibliography[heading=subbibintoc]
+\input{sections/chapter-2/chapter-2-figures.tex}
+
+
+% % Chapter 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \chapter{Chapter 3 Title}
+% \input{sections/chapter-3/fig-2-10-legend.tex} %Captions for figures 2-10
+% \input{sections/chapter-3/chapter-3.tex}
+% \input{sections/chapter-3/chapter-3-acknowledgments.tex}
+% % \printbibliography[heading=subbibintoc]
+% \input{sections/chapter-3/chapter-3-figures.tex}
+
+
+% References %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\printbibliography[heading=bibintoc]
+
+% Appendices %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 
 \end{linenumbers}

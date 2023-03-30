@@ -2344,6 +2344,7 @@
   <bcf:bibdata section="0">
     <bcf:datasource type="file" datatype="bibtex" glob="false">bib/kac_zotero.bib</bcf:datasource>
     <bcf:datasource type="file" datatype="bibtex" glob="false">bib/references.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex" glob="false">~/Documents/library.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
   </bcf:section>
@@ -2351,112 +2352,11 @@
   <bcf:bibdata section="1">
     <bcf:datasource type="file" datatype="bibtex" glob="false">bib/kac_zotero.bib</bcf:datasource>
     <bcf:datasource type="file" datatype="bibtex" glob="false">bib/references.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex" glob="false">~/Documents/library.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="1">
-  </bcf:section>
-  <!-- SECTION 0 (cont.) -->
-  <bcf:section number="0">
-  </bcf:section>
-  <!-- SECTION 2 -->
-  <bcf:bibdata section="2">
-    <bcf:datasource type="file" datatype="bibtex" glob="false">bib/kac_zotero.bib</bcf:datasource>
-    <bcf:datasource type="file" datatype="bibtex" glob="false">bib/references.bib</bcf:datasource>
-  </bcf:bibdata>
-  <bcf:section number="2">
-  </bcf:section>
-  <!-- SECTION 0 (cont.) -->
-  <bcf:section number="0">
-  </bcf:section>
-  <!-- SECTION 3 -->
-  <bcf:bibdata section="3">
-    <bcf:datasource type="file" datatype="bibtex" glob="false">bib/kac_zotero.bib</bcf:datasource>
-    <bcf:datasource type="file" datatype="bibtex" glob="false">bib/references.bib</bcf:datasource>
-  </bcf:bibdata>
-  <bcf:section number="3">
-  </bcf:section>
-  <!-- SECTION 0 (cont.) -->
-  <bcf:section number="0">
-  </bcf:section>
-  <!-- SECTION 4 -->
-  <bcf:bibdata section="4">
-    <bcf:datasource type="file" datatype="bibtex" glob="false">bib/kac_zotero.bib</bcf:datasource>
-    <bcf:datasource type="file" datatype="bibtex" glob="false">bib/references.bib</bcf:datasource>
-  </bcf:bibdata>
-  <bcf:section number="4">
-  </bcf:section>
-  <!-- SECTION 0 (cont.) -->
-  <bcf:section number="0">
-  </bcf:section>
-  <!-- SECTION 5 -->
-  <bcf:bibdata section="5">
-    <bcf:datasource type="file" datatype="bibtex" glob="false">bib/kac_zotero.bib</bcf:datasource>
-    <bcf:datasource type="file" datatype="bibtex" glob="false">bib/references.bib</bcf:datasource>
-  </bcf:bibdata>
-  <bcf:section number="5">
-    <bcf:citekey order="1">leacheUtilitySingleNucleotide2017</bcf:citekey>
-    <bcf:citekey order="2">bryantInferringSpeciesTrees2012</bcf:citekey>
-    <bcf:citekey order="2">maioPoMoAlleleFrequencyBased2015</bcf:citekey>
-    <bcf:citekey order="3">liuSpeciesTreesGene2007</bcf:citekey>
-    <bcf:citekey order="3">heledBayesianInferenceSpecies2010</bcf:citekey>
-    <bcf:citekey order="3">ogilvieStarBEAST2BringsFaster2017</bcf:citekey>
-    <bcf:citekey order="3">yangBPPProgramSpecies2015</bcf:citekey>
-    <bcf:citekey order="4">yangBPPProgramSpecies2015</bcf:citekey>
-    <bcf:citekey order="4">ogilvieStarBEAST2BringsFaster2017</bcf:citekey>
-    <bcf:citekey order="5">bryantInferringSpeciesTrees2012</bcf:citekey>
-    <bcf:citekey order="5">maioPoMoAlleleFrequencyBased2015</bcf:citekey>
-    <bcf:citekey order="6">potapovExaminingSourcesError2017</bcf:citekey>
-    <bcf:citekey order="7">pfeifferSystematicEvaluationError2018</bcf:citekey>
-    <bcf:citekey order="8">rochetteStacksAnalyticalMethods2019</bcf:citekey>
-    <bcf:citekey order="8">linckMinorAlleleFrequency2019</bcf:citekey>
-    <bcf:citekey order="9">harveySimilarityThresholdsUsed2015</bcf:citekey>
-    <bcf:citekey order="10">harveySimilarityThresholdsUsed2015</bcf:citekey>
-    <bcf:citekey order="10">huang2016unforeseen</bcf:citekey>
-    <bcf:citekey order="10">linckMinorAlleleFrequency2019</bcf:citekey>
-    <bcf:citekey order="11">bryantInferringSpeciesTrees2012</bcf:citekey>
-    <bcf:citekey order="11">oaksFullBayesianComparative2019</bcf:citekey>
-    <bcf:citekey order="12">heledBayesianInferenceSpecies2010</bcf:citekey>
-    <bcf:citekey order="12">ogilvieStarBEAST2BringsFaster2017</bcf:citekey>
-    <bcf:citekey order="13">Yule1925</bcf:citekey>
-    <bcf:citekey order="14">sukumaranDendroPyPythonLibrary2010</bcf:citekey>
-    <bcf:citekey order="15">rambautSeqGenApplicationMonte1997</bcf:citekey>
-    <bcf:citekey order="16">oaksFullBayesianComparative2019</bcf:citekey>
-    <bcf:citekey order="17">ogilvieStarBEAST2BringsFaster2017</bcf:citekey>
-    <bcf:citekey order="18">bouckaertBEASTSoftwarePlatform2014</bcf:citekey>
-    <bcf:citekey order="19">bryantInferringSpeciesTrees2012</bcf:citekey>
-    <bcf:citekey order="19">oaksFullBayesianComparative2019</bcf:citekey>
-    <bcf:citekey order="20">Gong2014</bcf:citekey>
-    <bcf:citekey order="21">Brooks1998</bcf:citekey>
-    <bcf:citekey order="22">Brooks1998</bcf:citekey>
-    <bcf:citekey order="23">oaksFullBayesianComparative2019</bcf:citekey>
-    <bcf:citekey order="24">huang2016unforeseen</bcf:citekey>
-    <bcf:citekey order="24">linckMinorAlleleFrequency2019</bcf:citekey>
-    <bcf:citekey order="25">oaksFullBayesianComparative2019</bcf:citekey>
-    <bcf:citekey order="25">oaks2019comparative</bcf:citekey>
-    <bcf:citekey order="26">bryantInferringSpeciesTrees2012</bcf:citekey>
-    <bcf:citekey order="26">oaksFullBayesianComparative2019</bcf:citekey>
-    <bcf:citekey order="27">oaksFullBayesianComparative2019</bcf:citekey>
-    <bcf:citekey order="27">oaks2019comparative</bcf:citekey>
-    <bcf:citekey order="28">huang2016unforeseen</bcf:citekey>
-    <bcf:citekey order="29">matplotlib</bcf:citekey>
-    <bcf:citekey order="30">matplotlib</bcf:citekey>
-    <bcf:citekey order="31">matplotlib</bcf:citekey>
-    <bcf:citekey order="32">matplotlib</bcf:citekey>
-    <bcf:citekey order="33">matplotlib</bcf:citekey>
-    <bcf:citekey order="34">matplotlib</bcf:citekey>
-    <bcf:citekey order="35">matplotlib</bcf:citekey>
-    <bcf:citekey order="36">matplotlib</bcf:citekey>
-    <bcf:citekey order="37">matplotlib</bcf:citekey>
-    <bcf:citekey order="38">matplotlib</bcf:citekey>
-    <bcf:citekey order="39">matplotlib</bcf:citekey>
-    <bcf:citekey order="40">matplotlib</bcf:citekey>
-    <bcf:citekey order="41">matplotlib</bcf:citekey>
-    <bcf:citekey order="42">matplotlib</bcf:citekey>
-    <bcf:citekey order="43">matplotlib</bcf:citekey>
-    <bcf:citekey order="44">matplotlib</bcf:citekey>
-    <bcf:citekey order="45">matplotlib</bcf:citekey>
-    <bcf:citekey order="46">matplotlib</bcf:citekey>
-    <bcf:citekey order="47">matplotlib</bcf:citekey>
-    <bcf:citekey order="48">matplotlib</bcf:citekey>
+    <bcf:citekey order="1">weatherby1982</bcf:citekey>
+    <bcf:citekey order="2">Bayona-vasquez2019</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
@@ -2491,7 +2391,7 @@
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
-  <bcf:datalist section="5"
+  <bcf:datalist section="1"
                 name="nyt/global//global/global"
                 type="entry"
                 sortingtemplatename="nyt"

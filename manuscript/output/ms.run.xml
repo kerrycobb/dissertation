@@ -81,6 +81,7 @@
     <requires type="editable">
       <file>bib/kac_zotero.bib</file>
       <file>bib/references.bib</file>
+      <file>~/Documents/library.bib</file>
     </requires>
   </external>
 </requests>
