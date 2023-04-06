@@ -18,7 +18,7 @@ To purify the DNA and separate it from the lysis product, I mixed the lysis
 product with a 2X volume of SPRI bead solution containing 1 mM EDTA,  
 10 mM Tris-HCl, 1 M NaCl, 0.275\% Tween-20 (v/v), 18\% PEG 8000 (w/v), 
 2\% Sera-Mag SpeedBeads (GE Healthcare PN 65152105050250) (v/v), and nuclease free water.
-I then incubated the samples at room tempearture for 5 minutes, placed the 
+I then incubated the samples at room temperature for 5 minutes, placed the 
 beads on a magnetic rack, and discarded the supernatant once the beads had collected
 on the side of the tube.  
 I then performed two ethanol washes by adding 1 mL of 70\% ETOH to the beads
@@ -30,13 +30,13 @@ TLE solution containing 10 mM Tris-HCL, 0.1 mm EDTA, and nuclease free water.
 After allowing the bead mixture to stand at room temperature for 5 minutes I returned
 the beads to the magnet stand, pipetted all of the TLE solution into another 
 microcentrifuge tube, and discarded the beads. I quantified DNA with a Qubit
-flurometer (Life Technologies, USA) and diluted samples with TLE solution to 
+fluorometer (Life Technologies, USA) and diluted samples with TLE solution to 
 bring the concentration to 20 ng/\uL.
 
-\subsection{RADseq Library Preparation and Sequencing}
-I prepared RADseq libraries using the 2RAD approach outlined by \cite{Bayona-vasquez2019}. 
-On 96 well plates I ligated 100 ng of sample DNA in 15 \uL\ of a solution with 
-1X Cutsmart Buffer (New Englad Biolabs, USA; NEB), 10 units of XbaI,
+\subsection{RADseq Library Preparation}
+I prepared RADseq libraries using the 2RAD approach outlined by \cite{bayona-vasquez2019}. 
+On 96 well plates, I ligated 100 ng of sample DNA in 15 \uL\ of a solution with 
+1X CutSmart Buffer (New England Biolabs, USA; NEB), 10 units of XbaI,
 10 units of EcoRI, 0.33 \uM\ XbaI compatible adapter, 0.33 \uM\ EcoRI compatible adapter,
 and nuclease free water with a 1 hour incubation at 37\degree C. 
 I then immediately added 5 \uL\ of a solution with 1X Ligase Buffer (NEB),
@@ -49,11 +49,10 @@ I purified each pool of libraries with a 1X volume of SpeedBead solution followe
 by two ethanol washes as described in the previous section except that the DNA 
 was resuspended in 25 \uL\ of TLE solution. 
 
-% In order to be able to detect and remove PCR duplicates, I performed a single   
-I performed a single   
+In order to be able to detect and remove PCR duplicates, I performed a single   
 cycle of PCR with the iTru5-8N primer which adds a random 8 nucleotide barcode to 
 each library construct.  
-For each plate I prepared four PCR reactions with a total volume of 
+For each plate, I prepared four PCR reactions with a total volume of 
 50 \uL\ containing 1X Kapa Hifi Buffer (Kapa Biosystems, USA; Kapa),
 0.3 \uM\ iTru5-8N Primer, 0.3 mM dNTP, 1 unit Kapa HiFi DNA Polymerase,
 10 \uL\ of purified ligation product, and nuclease free water.
@@ -91,11 +90,13 @@ HiSeqX by Novogene (China) to obtain paired end, 150 base pair sequences.
 
 \subsection{Data Processing}
 
-I demultiplexed plate indexes using the process_radtags command from Stacks2 v2.6.1 \parencite{catchen2013},
-allowing for 2 mismatches for rescuing reads. 
-
-
-
+% I demultiplexed plate indexes using the process\_radtags command from 
+Stacks2 v2.6.1 \parencite{rochette2019}, allowing for 2 mismatches for rescuing reads. 
+I demultiplexed samples and trimmed, filtered, and assembled reads with 
+ipyrad v0.9.84 \parencite{eaton2020}. I specified the datatype as "pair3rad", 
+used a clustering threshold of 90\% sequence similarity, and left the remaining
+parameters with the default values. 
+vcftools v0.1.17 \parencite{danecek2011} 
 
 
 
@@ -109,4 +110,15 @@ allowing for 2 mismatches for rescuing reads.
 
 
 \section{Results}
-\subsection{Data Processing}
+\subsection{Sampling and Data Processing}
+\ldots
+% I collected *** toads that most closely resembled \textit{A. americanus}
+% and *** toads that most closely resembled \textit{A. terrestris}.
+
+% Table 1
+
+
+% *** samples were borrowed from museum collections. 
+
+% Table 2
+
