@@ -82,7 +82,7 @@
 \usepackage{graphicx}
 \graphicspath{
   {../sims/plots-tex/}
-  {../structure2/}
+  {../structure/}
   {../maps}
   {../pca}
   {../iqtree}
@@ -92,11 +92,11 @@
 \begin{document}
 \begin{linenumbers}
 
-\input{sections/abstract.tex}
-\addcontentsline{toc}{chapter}{Abstract}
+% \input{sections/abstract.tex}
+% \addcontentsline{toc}{chapter}{Abstract}
 
-\input{sections/acknowledgments.tex}
-\addcontentsline{toc}{chapter}{Acknowledgedments}
+% \input{sections/acknowledgments.tex}
+% \addcontentsline{toc}{chapter}{Acknowledgedments}
 
 \tableofcontents
 \addcontentsline{toc}{chapter}{Table of Contents}
@@ -109,32 +109,32 @@
 
 
 % % Chapter 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \chapter{Chapter 1 Title}
-% \input{sections/chapter-1/chapter-1-abstract.tex}
-% \input{sections/chapter-1/chapter-1.tex}
-% \input{sections/chapter-1/chapter-1-acknowledgments.tex}
-% % \printbibliography[heading=subbibintoc]
-% \input{sections/chapter-1/chapter-1-figures.tex}
+\chapter{Title}
+% \input{sections/phylogeny/phylogeny-abstract.tex}
+% \input{sections/phylogeny/phylogeny.tex}
+\input{sections/phylogeny/phylogeny-acknowledgments.tex}
+% \printbibliography[heading=subbibintoc]
+\input{sections/phylogeny/phylogeny-figures.tex}
+\input{sections/phylogeny/phylogeny-tables.tex}
 
 
 % Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Chapter 2 Title}
+\chapter{Title}
 % \input{sections/chapter-2/chapter-2-abstract.tex}
-\input{sections/chapter-2/chapter-2.tex}
+\input{sections/hybrid/hybrid.tex}
 % \input{sections/chapter-2/chapter-2-acknowledgments.tex}
 \printbibliography[heading=subbibintoc]
-\input{sections/chapter-2/chapter-2-figures.tex}
-\input{sections/chapter-2/chapter-2-tables.tex}
+\input{sections/hybrid/hybrid-figures.tex}
+\input{sections/hybrid/hybrid-tables.tex}
 
 
-
-Chapter 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Chapter 3 Title}
-\input{sections/chapter-3/fig-2-10-legend.tex} %Captions for figures 2-10
-\input{sections/chapter-3/chapter-3.tex}
-\input{sections/chapter-3/chapter-3-acknowledgments.tex}
+% Chapter 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Title}
+\input{sections/simulation/simulation.tex}
+\input{sections/simulation/simulation-acknowledgments.tex}
 \printbibliography[heading=subbibintoc]
-\input{sections/chapter-3/chapter-3-figures.tex}
+\input{sections/simulation/fig-2-10-legend.tex} %Captions for figures 2-10
+\input{sections/simulation/simulation-figures.tex}
 
 
 % References %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -64,3 +64,41 @@
 % \def\xHyphen@te{\@ifnextchar${\@gobble}{\sw@p{\hskip 0pt plus 1pt\xHyphen@te}}}
 \def\sw@p#1#2{#2#1}
 \makeatother
+
+
+\newcommand{\makeSampleTable}[3]{
+\begin{longtable}{llll}
+  \caption{#1} \label{tab:#2} \\
+  
+  \hline 
+  \multicolumn{1}{c}{Sample ID} & 
+  \multicolumn{1}{c}{Species} & 
+  \multicolumn{1}{c}{Latitude} & 
+  \multicolumn{1}{c}{Longitude} \\ 
+  \hline 
+  \endfirsthead
+  
+  \multicolumn{4}{c}%
+  {{\tablename\ \thetable{} -- continued from previous page}} \\
+  
+  \hline 
+  \multicolumn{1}{c}{Sample ID} & 
+  \multicolumn{1}{c} {Species} & 
+  \multicolumn{1}{c} {Latitude} & 
+  \multicolumn{1}{c} {Longitude} \\ 
+  \hline 
+  \endhead
+  
+  \hline \multicolumn{4}{r}{{Continued on next page}} \\
+  \endfoot
+  
+  \hline 
+  % \hline
+  \endlastfoot
+  
+  \input{#3}
+
+\end{longtable}
+\clearpage
+
+}
