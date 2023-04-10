@@ -49,7 +49,7 @@ def makeMap(output, data, include=None, exclude=None):
 
     m = folium.Map(tiles="Stamen Terrain")
     tot = 0
-    for name, group in df.groupby(by="reassign"):
+    for name, group in df.groupby(by="species"):
         tot += len(group)
         print("{}: {}".format(name, len(group)))
         # feature_group = folium.FeatureGroup(name=name).add_to(m)
@@ -58,7 +58,7 @@ def makeMap(output, data, include=None, exclude=None):
             feature_group.add_child(folium.Marker(
                 location=[row["latitude"], row["longitude"]],
                 popup=folium.Popup(
-                    "{}<br>{}".format(row["reassign"], row["sample_id2"]),
+                    "{}<br>{}".format(row["species"], row["sample_id"]),
                     max_width=200),
                 icon=folium.Icon(color=colors[name])))
 
