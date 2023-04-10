@@ -7,3 +7,8 @@ ecori <- c("CTAACGT", "TCGGTACT", "GATCGTTGT", "AGCTACACTT", "ACGCATT", "GTATGCA
 barcode.set.distances(i7, metric="hamming")
 barcode.set.distances(i7, metric="levenshtein")
                       
+barcode.set.distances(nhei, metric="hamming")
+barcode.set.distances(nhei, metric="levenshtein")
+
+barcode.set.distances(ecori, metric="hamming")
+barcode.set.distances(ecori, metric="levenshtein")
