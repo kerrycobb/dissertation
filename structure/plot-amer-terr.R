@@ -3,10 +3,10 @@ library(gridExtra)
 # library(RColorBrewer)
 # library(ggplot2)
 
-setwd("~/Desktop/toad-project/structure/")
-# name <- "clust-90-indel-16-samples-149-include-amer-terr-1"
-name <- "clust-90-indel-16-samples-139-include-amer-terr-2"
-dir <- paste0("~/Desktop/toad-project/structure/", name)
+setwd("~/Desktop/toad-project/structure2/")
+name <- "clust-90-missing-0.9-exclude-1"
+
+dir <- paste0("~/Desktop/toad-project/structure2/", name)
 
 colors <- c("#a6cee3","#1f78b4","#b2df8a","#33a02c","#fb9a99","#fdbf6f","#e31a1c")
 colors <- c("#1D72F5","#DF0101","#77CE61", "#FF9326","#A945FF","#0089B2","#FDF060","#FFA6B2","#BFF217","#60D5FD","#CC1577","#F2B950","#7FB21D","#EC496F","#326397","#B26314","#027368","#A4A4A4","#610B5E")
@@ -14,7 +14,7 @@ colors <- c("#1D72F5","#DF0101","#77CE61", "#FF9326","#A945FF","#0089B2","#FDF06
 files <- list.files(dir, full.names=TRUE)
 qlist <- readQ(files=files, filetype="structure", indlabfromfile=T)
 t <- tabulateQ(qlist=qlist)
-t$iter <- as.numeric(sapply(strsplit(t$file, "\\-|\\."), getElement, 14)) # Make column with iteration number
+t$iter <- as.numeric(sapply(strsplit(t$file, "\\-|\\."), getElement, 11)) # Make column with iteration number
 t <- t[order(t$k, t$iter), ] # sort dataframe on k and iteration
 t
 s <- summariseQ(t)
