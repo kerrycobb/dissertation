@@ -90,23 +90,39 @@ HiSeqX by Novogene (China) to obtain paired end, 150 base pair sequences.
 
 \subsection{Data Processing}
 
-% I demultiplexed plate indexes using the process\_radtags command from 
-Stacks2 v2.6.1 \parencite{rochette2019}, allowing for 2 mismatches for rescuing reads. 
+I demultiplexed plate indexes using the process\_radtags command from 
+Stacks2 v2.6.1 \parencite{rochette2019} and allowed for 2 mismatches for rescuing reads. 
 I demultiplexed samples and trimmed, filtered, and assembled reads with 
 ipyrad v0.9.84 \parencite{eaton2020}. I specified the datatype as "pair3rad", 
-used a clustering threshold of 90\% sequence similarity, and left the remaining
-parameters with the default values. 
-vcftools v0.1.17 \parencite{danecek2011} 
+used a clustering threshold of 90\% sequence similarity, and allowed for two  
+mismatches in the barcode sequence. The remaining parameters were left with the 
+default settings.
+I randomly sampled a single SNP from each locus from each locus using a  
+custom python script relying on the scikit-allel v1.3.5 package.
+Using vcftools v0.1.17 \parencite{danecek2011}, I dropped any individuals that 
+had more than 25\% missing sites and filtered individuals that had more than 
+35\% missing data after the missing sites filter was applied. 
+
+\subsection{Ancestry Proportions}
+I used the program STRUCTURE v2.3.4 \parencite{pritchard2000} to infer population structure and ancestry 
+proportions of sampled individuals with STRUCTURE's admixture model .
+I ran structure with values of K ranging from 1 to 4. For each value of K I 
+ran 20 iterations for 250,000 steps with 50,000 burnin steps. 
+I used the program POPHELPER v2.3.1 \parencite{francis2017} to combine
+iterations for each value of K and to compute \Delta K as described by \parencite{evanno2005}
+I considered a sample to be a putative hybrid if it had an ancestry coefficient
+<95\% for one of the parent species under the K=2 STRUCTURE model.
+
+
+\subsection{Genomic Cline Analysis}
+I excluded ** samples from cline analysis that were inferred as putative hybrids
+but were from locations not in proximity to the hybrid zone.
+I used bgc v1.03 \parencite{gompert2012}
 
 
 
 
 
-
-
-
-\subsection{Population Structure \& Identification Of Hybrids}
-\ldots
 
 
 \section{Results}
