@@ -2,6 +2,5 @@
 
 set name $argv[1]
 
-mkdir $name
-
-scp -r "kac0070@easley.auburn.edu:toad-phyl/dsuite/"$name"/fbranch.svg" $name 
+scp -r "kac0070@easley.auburn.edu:toad-phyl/dsuite/"$name"/fbranch.svg" $name-fbranch.svg 
+rsvg-convert -f pdf -o $name-fbranch.pdf $name-fbranch.svg
