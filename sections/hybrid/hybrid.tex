@@ -1,0 +1,140 @@
+\section{Introduction}
+\ldots
+\section{Methods}
+\subsection{Sampling and DNA Isolation}
+I collected genetic samples from \textit{A. americanus} and \textit{A. terrestris}
+by driving roads during rainy nights between 2017 and 2020
+in an a region of central Alabama where hybridization has previously been
+inferred from the presence of morphological intermediates \parencite{weatherby1982}. 
+I euthanized individuals with immersion in MS-222.
+I removed liver and/or toes and preserved them in 100\% ethanol.
+Samples and formalin fixed specimens were deposited in the Auburn Museum of Natural History.
+Additional samples were also provided by museums.
+I isolated DNA by first lysing a small piece of liver or toe approximately 
+the size of a grain of rice in 300 \uL\ of a solution of 10mM Tris-HCL, 10mM EDTA, 
+1\% SDS (w/v), and nuclease free water along with 6 mg Proteinase K that was 
+incubated for 4-16 hours at 55\degree C in a 1.5 mL microcentrifuge tube.  
+To purify the DNA and separate it from the lysis product, I mixed the lysis 
+product with a 2X volume of SPRI bead solution containing 1 mM EDTA,  
+10 mM Tris-HCl, 1 M NaCl, 0.275\% Tween-20 (v/v), 18\% PEG 8000 (w/v), 
+2\% Sera-Mag SpeedBeads (GE Healthcare PN 65152105050250) (v/v), and nuclease free water.
+I then incubated the samples at room temperature for 5 minutes, placed the 
+beads on a magnetic rack, and discarded the supernatant once the beads had collected
+on the side of the tube.  
+I then performed two ethanol washes by adding 1 mL of 70\% ETOH to the beads
+while still placed in the magnet stand and allowing it to stand for 5 minutes
+before discarding the ethanol. 
+After removing all ethanol from the second wash, I removed the tube from the magnet 
+stand and allowed the sample to dry for 1 minute before mixing the beads with 100 \uL\ of 
+TLE solution containing 10 mM Tris-HCL, 0.1 mm EDTA, and nuclease free water.
+After allowing the bead mixture to stand at room temperature for 5 minutes I returned
+the beads to the magnet stand, pipetted all of the TLE solution into another 
+microcentrifuge tube, and discarded the beads. I quantified DNA with a Qubit
+fluorometer (Life Technologies, USA) and diluted samples with TLE solution to 
+bring the concentration to 20 ng/\uL.
+
+\subsection{RADseq Library Preparation}
+I prepared RADseq libraries using the 2RAD approach outlined by \cite{bayona-vasquez2019}. 
+On 96 well plates, I ligated 100 ng of sample DNA in 15 \uL\ of a solution with 
+1X CutSmart Buffer (New England Biolabs, USA; NEB), 10 units of XbaI,
+10 units of EcoRI, 0.33 \uM\ XbaI compatible adapter, 0.33 \uM\ EcoRI compatible adapter,
+and nuclease free water with a 1 hour incubation at 37\degree C. 
+I then immediately added 5 \uL\ of a solution with 1X Ligase Buffer (NEB),
+0.75 mM ATP (NEB), 100 units DNA Ligase (NEB), and nuclease free water 
+and incubated at 22\degree C for 20 min and 37\degree C for 10 min for two cycles, 
+followed by 80\degree C for 20 min to stop enzyme activity.
+For each 96 well plate, I pooled 10 \uL\ of each sample and split this pool 
+equally between two microcentrifuge tubes.
+I purified each pool of libraries with a 1X volume of SpeedBead solution followed 
+by two ethanol washes as described in the previous section except that the DNA 
+was resuspended in 25 \uL\ of TLE solution. 
+
+In order to be able to detect and remove PCR duplicates, I performed a single   
+cycle of PCR with the iTru5-8N primer which adds a random 8 nucleotide barcode to 
+each library construct.  
+For each plate, I prepared four PCR reactions with a total volume of 
+50 \uL\ containing 1X Kapa Hifi Buffer (Kapa Biosystems, USA; Kapa),
+0.3 \uM\ iTru5-8N Primer, 0.3 mM dNTP, 1 unit Kapa HiFi DNA Polymerase,
+10 \uL\ of purified ligation product, and nuclease free water.
+I ran reactions through a single cycle of PCR on a thermocycler at 98\degree C for 2 min, 
+60\degree C for 30 s, and 72\degree C for 5 min. 
+I pooled all of the PCR products for a plate into a single tube and purified the
+libraries with a 2X volume of SpeedBead solution as described before and 
+resuspended in 25 \uL\ TLE.
+I added the remaining adapter and index sequences unique to each plate with four PCR
+reactions with a total volume of 50 \uL\ containing 1X Kapa Hifi (Kapa),
+0.3 \uM\ iTru7 Primer, 0.3 \uM\ P5 Primer, 0.3 mM dNTP, 1 unit of Kapa Hifi DNA Polymerase (Kapa),
+10 \uL\ purified iTru5-8N PCR product, and nuclease free water.
+I ran reactions on a thermocycler with an initial denaturation at 98\degree C for 2 min, 
+followed by 6 cycles of 98\degree C for 20 s, 60\degree C for 15 s, 72\degree C 
+for 30 s and a final extension of 72\degree C for 5 min.
+I pooled all of the PCR products for a plate into a single tube and purified the
+product with a 2X volume of SpeedBead solution as described before and 
+resuspended in 45 \uL\ TLE.
+
+I size selected the library DNA from each plate in the range of 450-650 base pairs using
+a BluePippin (Sage Science, USA) with a 1.5\% dye free gel with internal R2 standards. 
+To increase the final DNA concentrations I prepared four PCR reactions for each 
+plate with 1X Kapa Hifi (Kapa), 0.3 \uM\ P5 Primer, 0.3 \uM\ P7 Primer, 0.3 mM dNTP, 
+1 unit of Kapa HiFi DNA Polymerase (Kapa), 10 \uL\ size selected DNA, and 
+nuclease free water and used the same thermocycling conditions as the previous
+(P5-iTru7) amplification.
+I pooled all of the PCR products for a plate into a single tube and purified 
+the product with a 2X volume of SpeedBead solution as before and resuspended in 20 \uL\ TLE. 
+I quantified the DNA concentration for each plate with a Qubit fluorometer 
+(Life Technologies, USA) then pooled each plate in equimolar amounts relative 
+to the number of samples on the plate and diluted the pooled DNA to 5 nM with
+TLE solution. 
+The pooled libraries were pooled with other projects and sequenced on an Illumina 
+HiSeqX by Novogene (China) to obtain paired end, 150 base pair sequences. 
+
+\subsection{Data Processing}
+
+I demultiplexed plate indexes using the process\_radtags command from 
+Stacks2 v2.6.1 \parencite{rochette2019} and allowed for 2 mismatches for rescuing reads. 
+I demultiplexed samples and trimmed, filtered, and assembled reads with 
+ipyrad v0.9.84 \parencite{eaton2020}. I specified the datatype as "pair3rad", 
+used a clustering threshold of 90\% sequence similarity, and allowed for two  
+mismatches in the barcode sequence. The remaining parameters were left with the 
+default settings.
+I randomly sampled a single SNP from each locus from each locus using a  
+custom python script relying on the scikit-allel v1.3.5 package.
+Using vcftools v0.1.17 \parencite{danecek2011}, I dropped any individuals that 
+had more than 25\% missing sites and filtered individuals that had more than 
+35\% missing data after the missing sites filter was applied. 
+
+\subsection{Ancestry Proportions}
+I used the program STRUCTURE v2.3.4 \parencite{pritchard2000} to infer population structure and ancestry 
+proportions of sampled individuals with STRUCTURE's admixture model .
+I ran structure with values of K ranging from 1 to 4. For each value of K I 
+ran 20 iterations for 250,000 steps with 50,000 burnin steps. 
+I used the program POPHELPER v2.3.1 \parencite{francis2017} to combine
+iterations for each value of K and to compute $\Delta$K as described by \parencite{evanno2005}
+I considered a sample to be a putative hybrid if it had an ancestry coefficient
+<95\% for one of the parent species under the K=2 STRUCTURE model.
+
+
+\subsection{Genomic Cline Analysis}
+I excluded ** samples from cline analysis that were inferred as putative hybrids
+but were from locations not in proximity to the hybrid zone.
+I used bgc v1.03 \parencite{gompert2012}
+
+
+
+
+
+
+
+\section{Results}
+\subsection{Sampling and Data Processing}
+\ldots
+% I collected *** toads that most closely resembled \textit{A. americanus}
+% and *** toads that most closely resembled \textit{A. terrestris}.
+
+% Table 1
+
+
+% *** samples were borrowed from museum collections. 
+
+% Table 2
+
