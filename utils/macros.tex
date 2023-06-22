@@ -67,14 +67,15 @@
 
 
 \newcommand{\makeSampleTable}[3]{
-\begin{longtable}{llll}
-  \caption{#1} \label{tab:#2} \\
+\begin{longtable}{lllll}
+  \caption{#1} \label{table:#2} \\
   
   \hline 
   \multicolumn{1}{c}{Sample ID} & 
   \multicolumn{1}{c}{Species} & 
   \multicolumn{1}{c}{Latitude} & 
-  \multicolumn{1}{c}{Longitude} \\ 
+  \multicolumn{1}{c}{Longitude} & 
+  \multicolumn{1}{c}{Passed Filtering} \\ 
   \hline 
   \endfirsthead
   
@@ -85,7 +86,8 @@
   \multicolumn{1}{c}{Sample ID} & 
   \multicolumn{1}{c} {Species} & 
   \multicolumn{1}{c} {Latitude} & 
-  \multicolumn{1}{c} {Longitude} \\ 
+  \multicolumn{1}{c} {Longitude} & 
+  \multicolumn{1}{c} {Passed Filtering} \\ 
   \hline 
   \endhead
   
@@ -97,7 +99,6 @@
   \endlastfoot
   
   \input{#3}
-
 \end{longtable}
 \clearpage
 

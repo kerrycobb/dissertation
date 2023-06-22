@@ -1,19 +1,52 @@
 \section{Introduction}
-\ldots
+
+Hybrid zones have drawn the attention of biologist because they can teach us
+about the process of speciation and may also have important consequences in the
+evolution of hybridizing populations.
+
+Hybridization in Bufonid toads has been appreciated for a long time. 
+
+Hybridization experiments in the laboratory have demonstrated a high degree 
+of compatibility between many species pairs.
+
+Numerous reports of hybridization have been reported.
+
+Several hybrid zones have been studied to understand the patterns of introgression within them. (Give examples)
+
+Bufo bufo x Bufo spinosus in France \parencite{vanriemsdijk2023}
+Bufo siculus x Bufo balearicus in Italy \parencite{colliard2010}
+Anaxyrus americanus x Anaxyrus hemiophrys in Canada \parencite{green1983}
+
+
+Here, I investigate a hybrid zone between two species of North American toad.
+The American toad (\textit{Anaxyrus americanus}) and the southern toad 
+(\textit{Anaxyrus terrestris}). The ranges of these two species do not overlap
+but meet at a long zone of contact in the Southern United States. This contact 
+zone corresponds closely with a prominent physiographic feature known as the fall  
+line which is the boundary that separates the coastal plain to the South from the 
+Appalachian Highlands to the North \parencite{shankman2007}.
+The two species have slight differences in male advertisement call and in 
+morphological appearance. They differ somewhat in the timing of their spawn  
+with some overlap in periods.
+
+
+
 \section{Methods}
 \subsection{Sampling and DNA Isolation}
 I collected genetic samples from \textit{A. americanus} and \textit{A. terrestris}
 by driving roads during rainy nights between 2017 and 2020
 in an a region of central Alabama where hybridization has previously been
 inferred from the presence of morphological intermediates \parencite{weatherby1982}. 
-I euthanized individuals with immersion in MS-222.
-I removed liver and/or toes and preserved them in 100\% ethanol.
-Samples and formalin fixed specimens were deposited in the Auburn Museum of Natural History.
-Additional samples were also provided by museums.
-I isolated DNA by first lysing a small piece of liver or toe approximately 
+I euthanized individuals with immersion in buffered MS-222.
+I removed liver and/or toes and preserved them in 100\% ethanol and fixed 
+specimens with XXX M (ask David how he makes Formalin) Formalin solution.
+Genetic samples and formalin fixed specimens were deposited in the Auburn Museum of Natural History.
+Additional samples were also provided by museums (see Table 1).
+
+I isolated DNA by lysing a small piece of liver or toe approximately 
 the size of a grain of rice in 300 \uL\ of a solution of 10mM Tris-HCL, 10mM EDTA, 
-1\% SDS (w/v), and nuclease free water along with 6 mg Proteinase K that was 
-incubated for 4-16 hours at 55\degree C in a 1.5 mL microcentrifuge tube.  
+1\% SDS (w/v), and nuclease free water along with 6 mg Proteinase K and 
+incubating for 4-16 hours at 55\degree C.  
 To purify the DNA and separate it from the lysis product, I mixed the lysis 
 product with a 2X volume of SPRI bead solution containing 1 mM EDTA,  
 10 mM Tris-HCl, 1 M NaCl, 0.275\% Tween-20 (v/v), 18\% PEG 8000 (w/v), 
@@ -23,18 +56,18 @@ beads on a magnetic rack, and discarded the supernatant once the beads had colle
 on the side of the tube.  
 I then performed two ethanol washes by adding 1 mL of 70\% ETOH to the beads
 while still placed in the magnet stand and allowing it to stand for 5 minutes
-before discarding the ethanol. 
+before removing and discarding the ethanol. 
 After removing all ethanol from the second wash, I removed the tube from the magnet 
-stand and allowed the sample to dry for 1 minute before mixing the beads with 100 \uL\ of 
+stand and allowed the sample to dry for 1 minute before thoroughly mixing the beads with 100 \uL\ of 
 TLE solution containing 10 mM Tris-HCL, 0.1 mm EDTA, and nuclease free water.
 After allowing the bead mixture to stand at room temperature for 5 minutes I returned
-the beads to the magnet stand, pipetted all of the TLE solution into another 
-microcentrifuge tube, and discarded the beads. I quantified DNA with a Qubit
-fluorometer (Life Technologies, USA) and diluted samples with TLE solution to 
+the beads to the magnet stand, collected the TLE solution, and discarded the beads. 
+I quantified DNA in the TLE solution with a Qubit
+fluorometer (Life Technologies, USA) and diluted samples with additional TLE solution to 
 bring the concentration to 20 ng/\uL.
 
 \subsection{RADseq Library Preparation}
-I prepared RADseq libraries using the 2RAD approach outlined by \cite{bayona-vasquez2019}. 
+I prepared RADseq libraries using the 2RAD approach developed by \cite{bayona-vasquez2019}. 
 On 96 well plates, I ligated 100 ng of sample DNA in 15 \uL\ of a solution with 
 1X CutSmart Buffer (New England Biolabs, USA; NEB), 10 units of XbaI,
 10 units of EcoRI, 0.33 \uM\ XbaI compatible adapter, 0.33 \uM\ EcoRI compatible adapter,
@@ -47,7 +80,8 @@ For each 96 well plate, I pooled 10 \uL\ of each sample and split this pool
 equally between two microcentrifuge tubes.
 I purified each pool of libraries with a 1X volume of SpeedBead solution followed 
 by two ethanol washes as described in the previous section except that the DNA 
-was resuspended in 25 \uL\ of TLE solution. 
+was resuspended in 25 \uL\ of TLE solution and combined the two pools of cleaned 
+ligation product. 
 
 In order to be able to detect and remove PCR duplicates, I performed a single   
 cycle of PCR with the iTru5-8N primer which adds a random 8 nucleotide barcode to 
@@ -61,7 +95,7 @@ I ran reactions through a single cycle of PCR on a thermocycler at 98\degree C f
 I pooled all of the PCR products for a plate into a single tube and purified the
 libraries with a 2X volume of SpeedBead solution as described before and 
 resuspended in 25 \uL\ TLE.
-I added the remaining adapter and index sequences unique to each plate with four PCR
+I added the remaining adapter and index sequences which were unique to each plate with four PCR
 reactions with a total volume of 50 \uL\ containing 1X Kapa Hifi (Kapa),
 0.3 \uM\ iTru7 Primer, 0.3 \uM\ P5 Primer, 0.3 mM dNTP, 1 unit of Kapa Hifi DNA Polymerase (Kapa),
 10 \uL\ purified iTru5-8N PCR product, and nuclease free water.
@@ -89,52 +123,169 @@ The pooled libraries were pooled with other projects and sequenced on an Illumin
 HiSeqX by Novogene (China) to obtain paired end, 150 base pair sequences. 
 
 \subsection{Data Processing}
+I demultiplexed the iTru7 indexes using the \processradtags command from 
+\stacks v2.6.4 \parencites{rochette2019} and allowed for two mismatches for rescuing reads.
+To remove PCR duplicates, I used the \clonefilter command from \stacks.
+I demultiplexed inline sample barcodes, trimmed adapter sequence, and filtered 
+reads with low quality scores as well as reads with any uncalled bases using the  
+\processradtags command again and allowed for the rescue of restriction site sequence 
+as well as barcodes with up to two mismatches.  
+I built alignments from the processed reads using the \stacks pipeline. 
+I allowed for 14 mismatches between alleles within, as well as between individuals
+(M and n parameters). This is equivalent to a sequence similarity threshold of   
+90\% for the 140 bp length of reads post trimming. 
+I also allowed for up to 7 gaps between alleles within and between individuals.
+I used the \populations command from \stacks to filter loci missing in more than   
+5\% of individuals, filter all sites with minor allele counts less than 3, filter 
+any individuals with more than 90\% missing loci, and randomly sample a single
+SNP from each locus.
 
-I demultiplexed plate indexes using the process\_radtags command from 
-Stacks2 v2.6.1 \parencite{rochette2019} and allowed for 2 mismatches for rescuing reads. 
-I demultiplexed samples and trimmed, filtered, and assembled reads with 
-ipyrad v0.9.84 \parencite{eaton2020}. I specified the datatype as "pair3rad", 
-used a clustering threshold of 90\% sequence similarity, and allowed for two  
-mismatches in the barcode sequence. The remaining parameters were left with the 
-default settings.
-I randomly sampled a single SNP from each locus from each locus using a  
-custom python script relying on the scikit-allel v1.3.5 package.
-Using vcftools v0.1.17 \parencite{danecek2011}, I dropped any individuals that 
-had more than 25\% missing sites and filtered individuals that had more than 
-35\% missing data after the missing sites filter was applied. 
-
-\subsection{Ancestry Proportions}
-I used the program STRUCTURE v2.3.4 \parencite{pritchard2000} to infer population structure and ancestry 
-proportions of sampled individuals with STRUCTURE's admixture model .
-I ran structure with values of K ranging from 1 to 4. For each value of K I 
-ran 20 iterations for 250,000 steps with 50,000 burnin steps. 
-I used the program POPHELPER v2.3.1 \parencite{francis2017} to combine
-iterations for each value of K and to compute $\Delta$K as described by \parencite{evanno2005}
-I considered a sample to be a putative hybrid if it had an ancestry coefficient
-<95\% for one of the parent species under the K=2 STRUCTURE model.
-
+\subsection{Genetic Clustering \& Ancestry Proportions}
+To cluster individuals and characterize patterns of genetic differentiation and 
+admixture between clusters, I used the Bayesian inference program 
+\structure v2.3.4 \parencite{pritchard2000} with \structure's 
+admixture model which returns an estimate of ancestry proportions for each sample. 
+To evaluate the assumption that samples are best modeled as inheriting their    
+genetic variation just two groups corresponding to the species identification  
+made in the field, I ran \structure under four different models, each with a different number of 
+assumed clusters of individuals (K parameter) ranging from 1 to 4. For each value of K, I 
+ran 20 iterations for 100,000 total steps with the first 50,000 as burnin. 
+I used the R package \pophelper v2.3.1 \parencite{francis2017} to combine
+iterations for each value of K and to select the model producing the largest
+$\Delta$K which is the the model that has the greatest increase in likelihood 
+score from the previous model with K-1 as described by \parencite{evanno2005}.
+I also examined genetic clustering and evidence of admixture using a non-parametric 
+approach with a principal component analysis (PCA) implemented in the R package \adegenet v2.1.10 \parencite{jombart2008}. 
+I visualized the relationship between the first principal component axis and the 
+estimated admixture proportion for each individual to check for agreement  
+between the parametric \structure analysis and the non-parametric PCA analysis.
 
 \subsection{Genomic Cline Analysis}
-I excluded ** samples from cline analysis that were inferred as putative hybrids
-but were from locations not in proximity to the hybrid zone.
-I used bgc v1.03 \parencite{gompert2012}
+To investigate patterns of introgression across the hybrid zone I     
+used the bayesian genomic cline inference tool \bgc v1.03 \parencite{gompert2012} 
+to infer parameters under a genomic cline model.
+I classified a sample as being admixed if it had an inferred admixture proportion
+of <95\% for one of the parent species under the model with a K of two in 
+the \structure analysis.
+I used \vcftools vXX.XX.XX to filter all non-biallelic sites from the the VCF file 
+produced by the \populations program. 
+I converted the VCF formatted data into the \bgc format using \bgcutils v0.1.0 
+\url{https://github.com/kerrycobb/bgc_utils}.
+I ran \bgc with 5 independent chains, each for 1,000,000 steps and sampling every 1000.
+I discarded the first 10\% of samples from the posterior, combined the independent 
+chains, summarized the posterior samples, and identified exceptional loci with \bgcutils. 
+
+I classified loci as exceptional and therefore expected to be enriched for 
+incompatibility loci with two different approaches, (1) if locus specific 
+introgression differed from the genome-wide average and (2) if locus specific 
+introgression is statistically unlikely relative to the genome-wide distribution
+of locus specific introgression. 
+
+More specifically, in the first approach I classified a locus as exceptional 
+if the 90\% highest posterior density interval (HPDI) for the alpha or beta 
+parameter did not cover zero.
+
+
+% TODO: Combine the two paragraphs
+In the second approach, I classified a locus as exceptional if the median of the  
+posterior sample for the $\alpha$ or $\beta$ parameters for a locus were outside of 
+the interval from 0.05 to 0.95 of the probability density functions $Normal(0, \tau_\alpha)$  
+or $Normal(0, \tau_\beta)$ respectively, where $\tau_\alpha$ and $\tau_\beta$ are  
+the median values from the posterior sample for the genome wide average 
+
+
+the median of the posterior probability distribution was not contained within the interval from  
+0.05 to 0.95 of the probability density function $Normal(0, \tau_\alpha)$ or 
+$Normal(0, \tau_\beta)$ with $\tau_{\alpha}$ and $\tau_{\beta}$ being the medians of 
+the posterior samples for conditional random effect priors on $\tau_\alpha$ 
+and $\tau_\beta$ parameters as described by \parencite{gompert2011}.
 
 
 
-
+\subsection{Genetic differentiation and Introgression}
+I calculated \fst for each site used in the \bgc analysis using \vcftools  
 
 
 
 \section{Results}
 \subsection{Sampling and Data Processing}
-\ldots
-% I collected *** toads that most closely resembled \textit{A. americanus}
-% and *** toads that most closely resembled \textit{A. terrestris}.
 
-% Table 1
+I prepared reduced-representation sequencing libraries from 173 samples collected 
+for this study (\cref{table:collectedHyb}) and 19 samples available from existing 
+collections (\cref{table:loanedHyb})). After assembly and filtering, 43 samples
+were excluded from analyses leaving a total of 149. 
+Of the remaining samples, 56 had been identified 
+as most closely resembling \amer and 93 had been identified as most closely
+resembling \terr.
+\stacks assembled reads into 432,336 loci with a mean length of 253.31 bp.
+Prior to filtering the mean coverage per sample was 32X.
+After filtering loci missing in greater than 5\% of samples, filtering sites with   
+minor allele counts less than 3, filtering individuals with greater than 90\% 
+missing loci, and randomly sampling a single SNP from each locus, 1194 sites
+remained. 
+
+A visual inspection of the \structure results shows that each iteration with  
+same value for K converged on very similar results (\cref{fig:structureIter}). 
+
+Using the method described by \parencite{evanno2005} indicates that a K of two
+is the best model for \structure \cref{fig:deltak}.
+Describe the approach...
+Furthermore, individuals are inferred as having ancestry deriving from largely 
+from two ancestral groups even for K values of three and four. \cref{fig:allk} 
+
+Using 95\% ancestry proportion as a cutoff for considering individuals to have
+pure ancestry, 
+
+36 pure americanus
+75 pure terrestris
+38 admixed individuals
+
+The admixed individuals are concentrated near the contact zone \cref{fig:hybrid-main} 
+Some admixed individuals found quite far from the hybrid zone.
 
 
-% *** samples were borrowed from museum collections. 
+\section{Discussion}
 
-% Table 2
+% Effects of selection, idiosyncracies
+With weak selection and low dispersal the false discovery rate will be higher \parencite{gompert2011}
+Outlier loci are still expected to be enriched for genetic regions under selection.
+False discovery rate when patterns of introgression are affected by epistasis
+is quite high. Not all regions affecting introgression may be among outliers.  
+
+
+% Multiple populations, potentially differing dynamics
+One limitation of this study is samples included in analysis are sampled from 
+a fairly broad area and may be more appropriately treated as separate populations.
+They could be affected by different processes. %Cite study showing spatial and temporal differences across a hybrid zone
+This hybrid zone could serve as an excellent system to explore such things
+given the large extent. Many important environmental factors likely differ 
+across the hybrid zone.
+
+
+% Reference Genome
+A reference genome for these species would greatly enhance the explanatory power of
+this analysis allowing for an exploration of the genomic architecture of the   
+reproductive isolation between these lineages. Which regions of the genome are 
+involved in isolation. Are they more associated with sex chromosomes?
+The availability of vertebrate genomes is increasing rapidly so it will likely 
+be possible to map the outlier loci identified in this study to a reference genome
+for \amer or \terr to reveal patterns in the distribution of these putative 
+markers for genetic incompatibility. 
+
+
+% Mitochondria
+Mitochondrial data would also be valuable. Would allow for the detection of 
+mitonuclear incompatibilities that could be contributing to reproductive isolation.
+Could also be used to test for the effect of Haldane's rule which would predict  
+that females would be more affected by hybridization. The estimated cline
+for mitochondria would be expected to be much steeper \parencite{carling2008}.
+
+% Geographic cline
+With this study I have provided a characterization of this hybrid zone that can
+serve as a guide for future sampling. 
+Sampling along transects.
+Could then apply geographic cline methods
+Would give spatial insights.
+
+
 

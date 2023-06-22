@@ -2,11 +2,11 @@
 \ldots
 \section{Methods}
 \subsection{Sampling and DNA Isolation}
-I obtained tissue samples from museum tissue collections as well as from individuals   
-that i collected from 2017 to 2020.
-
-One \textit{Rhinella marina} and one \textit{Incillius nebulifer} were included 
-to be used as outgroups for phylogenetic analyses.
+I obtained tissue samples museum tissue collections as well as from individuals   
+that I collected from 2017 to 2020. I selected samples to represent as much
+of the range of each species of \textit{Anaxyrus} as possible.
+I also included one \textit{Rhinella marina} and one \textit{Incillius nebulifer} 
+for use as outgroups for phylogenetic analyses.
 
 I isolated DNA from tissues by first lysing a piece of tissue approximately 
 the size of a grain of rice in 300 \uL\ of a solution of 10mM Tris-HCL, 10mM EDTA, 
@@ -88,15 +88,25 @@ HiSeqX by Novogene (China) to obtain paired end, 150 base pair sequences.
 
 \subsection{Data Processing}
 
-I demultiplexed plate indexes using the process\_radtags command from 
-Stacks2 v2.6.1 \parencite{rochette2019} and allowed for 2 mismatches for rescuing reads. 
-I demultiplexed samples and trimmed, filtered, and assembled reads with 
-ipyrad v0.9.9 \parencite{eaton2020}. I specified the datatype as "pair3rad", 
-used a clustering threshold of 80\% sequence similarity, and allowed for two  
-mismatches in the barcode sequence. The remaining parameters were left with the 
-default settings.
-I used Ipyrad to filter loci that were absent in greater than 50\% of samples and then filtered
-samples with fewer than 200 loci. 
+I demultiplexed the iTru7 indexes using the \processradtags command from 
+Stacks2 v2.6.4 \parencites{rochette2019} and allowed for two mismatches for rescuing reads.
+To remove PCR duplicates, I used the \clonefilter command from \stacks.
+I demultiplexed inline sample barcodes, trimmed adapter sequence, and filtered 
+reads with low quality scores as well as reads with any uncalled bases using the  
+\processradtags command again and allowed for the rescue of restriction site sequence 
+as well as barcodes with up to two mismatches.  
+
+
+
+% I demultiplexed plate indexes using the \processradtags command from 
+% Stacks2 v2.6.1 \parencite{rochette2019} and allowed for 2 mismatches for rescuing reads. 
+% I demultiplexed samples and trimmed, filtered, and assembled reads with 
+% ipyrad v0.9.9 \parencite{eaton2020}. I specified the datatype as "pair3rad", 
+% used a clustering threshold of 80\% sequence similarity, and allowed for two  
+% mismatches in the barcode sequence. The remaining parameters were left with the 
+% default settings.
+% I used Ipyrad to filter loci that were absent in greater than 50\% of samples and then filtered
+% samples with fewer than 200 loci. 
 
 
 
@@ -117,12 +127,33 @@ with 1000 ultrafast bootstrap replicates \parencite{hoang2018}
 under GTR substitution model.
 
 \subsection{Structure}
+
+Run for 100,000 iterations with 50,000 burnin
+
+
 Run structure with all americanus group to make sure there aren't hybrids.
 Run structure with american toad, southern toad, woodhousii, and fowleri to see if there is population structure 
 
+Filtered loci not found in 75%
+Filtered variants with minor allele count less than 3.
+Filtered sites with more than 2 alleles
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \subsection{Phycoeval}
 To see if there is evidence of shared divergence times and to estimate a species tree under multispecies coalescent
-Phycoeval v1.0.0 \parencite{oaks2020} 
+Phycoeval v1.0.0 \parencite{oaks2022} 
 
 \subsection{Dsuite}
 To look for evidence of past admixture.
@@ -142,3 +173,28 @@ Total loci and snps after filtering
 
 \subsection{Maximum Likelihood}
 Inferred a single well supported clade (>***\%) for each recognized species. 
+
+
+
+
+\section{Discussion}
+
+
+Population structure in A. woodhousii with two overlapping mtdDNA clades 
+with one more associated with the Southwest and one more associated with the 
+great planes \parencite{masta2003}
+
+Phylogeny of toads, doesn't place Americanus and Terrestris as sister, finds
+mitonuclear discordance and Finds two fowleri clades \parencite{fontenot2011}
+
+Inconsistent phylogeny \parencite{masta2002}
+Inconsistent phylogeny \parencite{pramuk2007}
+Inconsistent phylogeny \parencite{graybeal1997}
+Inconsistent phylogeny \parencite{pyron2011}
+
+Idea:
+Given the appearance that there are many secondary contact zones. It seems 
+probable that toad species have undergone range expansions. Following these
+range expansions, are there any barriers that are now reducing gene flow?
+We can test that by looking for population structure within species that 
+aligns with possible biogeographic barriers.
