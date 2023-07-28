@@ -123,8 +123,11 @@
 % Effects of hybridization
 Speciation is the process by which genetic divergence leads to a reduction 
 in the ability of populations of organisms to exchange genes.
-It is a gradual and continuous process during which the exchange of genetic  
-variants through hybridization can occur \parencite{mallet2008,wu2001}.
+It is a gradual and continuous process during which introgression of genetic  
+variants via hybridization can occur \parencite{mallet2008,wu2001}.
+Introgression is possible because genetic barriers to introgression that build up 
+within the genome effect only some regions of the genome rather than the entirety 
+\parencite{wu2001,gompert2012b}.
 Natural hybridization has become increasingly appreciated as a widespread phenomenon 
 in recent years \parencite{mallet2005,moran2021}.
 It is a phenomenon that can have important evolutionary consequences.
@@ -169,15 +172,17 @@ Consequently, our understanding of the processes that drive the evolution of loc
 resulting in reproductive incompatibility is limited \parencite{butlin2011}. 
 Studies of introgression within hybrid zones have identified highly variable
 rates of introgression among loci \parencite{barton1985,gompert2017}.
-This heterogeneity can arise via genetic drift occurring within hybrid populations,
+This heterogeneity could arise via genetic drift occurring within hybrid populations,
 but will also be caused by differences among loci in the strength of selection 
 against them in a hybrid genomic background \parencite{barton1985,gompert2017}. 
 It has also been observed that the levels of genetic divergence between species 
 are highly variable across the genome \parencite{nosil2009}.
-Much of this heterogeneity is the result of divergent selection acting in different 
-ways in each species \parencite{nosil2009}.
-Regions with particularly high levels of divergence between species have been 
+Much of this heterogeneity is the result of divergent selection acting on each 
+species differently \parencite{nosil2009}.
+Regions with particularly high levels of divergence between closely related species have been 
 coined "genomic islands of divergence" \parencite{wolf2017}. 
+It is assumed, particularly in the case of speciation with gene flow, that these
+genomic island harbor genes that reduce interbreeding between species. 
 When speciation occurs with gene flow, divergent selection can cause 
 adaptive divergence in habitat use, phenology, or mating signals, and reduce the
 frequency or success of interspecific matings. 
@@ -188,6 +193,7 @@ reproductive isolation has not been widely explored.
 A small handful of studies have found evidence for a modest relationship between 
 genetic divergence and selection against introgression \parencite{nikolakis2022,gompert2012a,parchman2013,larson2013}.
 How consistent and widespread this pattern is remains to be seen.
+At least one study has found no association \parencite{jahner2021}.
 
 
 % Although there is a substantial body of theoretical work, there is a limited 
@@ -276,9 +282,9 @@ The Fall line is the boundary between the Southern coastal plain to the South fr
 the Appalachian Highlands to the North \parencite{shankman2007}.
 These regions differ in their underlying geology, topography, and elevation \parencite{shankman2007}.
 The distribution of \terr is restricted to the coastal plain extending from   
-the Mississippi River in the West to Virginia in the East \cref{fig:hybrid-main}.
+the Mississippi River in the West to Virginia in the East (\cref{fig:hybrid-main}).
 The distribution of the American Toad encompasses nearly all of the Eastern North 
-American with the exception of the Southern coastal plain \cref{fig:hybrid-main}.
+American with the exception of the Southern coastal plain (\cref{fig:hybrid-main}).
 The two species have only slight differences in male advertisement call and in 
 morphological appearance \parencite{cocroft1995,weatherby1982}. 
 They also differ slightly in the timing of their spawn \parencite{mount1975} 
@@ -286,6 +292,8 @@ However, there is significant overlap in the spawning period and male Bufondidae
 are famously indiscriminate in their choice of mates \parencite{dordevic2014,weatherby1982}.
 Analysis of morphological variation in central Alabama has suggested there is 
 introgression between them \parencite{weatherby1982}.
+
+% Tension zone
 
 
 % History and prevalence of natural hybridization in toads 
@@ -350,7 +358,7 @@ understanding of speciation if there is ongoing introgression between species
 near the center of the hybrid zone.
 In this study I use genome-wide sequence data to characterize patterns of  
 introgression within the hybrid zone by using model based inference of admixture
-proportions, cline models, and measurement of parental population differentiation.
+proportions, bayesian genomic cline analysis, and estimates of parental population differentiation.
 With these approaches I specifically address the following questions: 
 1) Is there evidence of ongoing hybridization and admixture between the two species,
 2) Do any loci have outstanding patterns of introgression consistent with them
@@ -545,7 +553,7 @@ value of the median of the posterior sample for the $\alpha$ parameter and
 the median of the posterior sample for the $\beta$ parameter.
 I binned loci based on their status as $\alpha$ parameter outliers. I categorized  
 loci as being $\alpha$ outliers greater expected \amer
-ancestry, $\alpha$ outliers with greater expected \terr ancestyr, and estimates 
+ancestry, $\alpha$ outliers with greater expected \terr ancestry, and estimates 
 of $\alpha$ that are not outliers.
 I performed a Kruskal-Wallis test using \scipy v1.10.1 to test whether there were 
 significant differences in values of \fst at each locus between these groups \parencite{scipy}. 
@@ -558,7 +566,7 @@ groups differ significantly from each other \url{github.com/maximtrp/scikit-post
 I prepared reduced-representation sequencing libraries from 173 samples collected 
 for this study (\cref{table:collectedHyb}) and 19 samples available from existing 
 collections (\cref{table:loanedHyb})). 
-\stacks assembled reads into 432,336 loci with a mean length of 253.31 bp.
+The \stacks pipeline assembled reads into 432,336 loci with a mean length of 253.31 bp.
 Prior to filtering the mean coverage per sample was 32X.
 After filtering loci missing from greater than 5\% of samples, filtering sites with   
 minor allele counts less than 3, filtering individuals with greater than 90\% 
@@ -570,11 +578,11 @@ and 93 had been identified as most closely resembling \terr.
 \subsection{Genetic Clustering \& Ancestry Proportions}
 A visual inspection of the \structure results shows that each iteration with  
 same value for K converged on very similar results (\cref{fig:structureIter}). 
-The \structure model with the largest $\Delta$K was the model with a K of two \cref{fig:deltak}.
+The \structure model with the largest $\Delta$K was the model with a K of two (\cref{fig:deltak}).
 Furthermore, individuals are inferred as having ancestry derived largely 
 from only two ancestral groups even for K values of three and four. For these values
 of K, only a small amount of ancestry is attributed to the third or fourth 
-ancestral groups for any individual sample. \cref{fig:allk} 
+ancestral groups for any individual sample (\cref{fig:allk})
 Using a 95\% estimated ancestry proportion as a cutoff for considering individuals to have
 pure ancestry, 36 samples were classified as pure \amer, 75 as pure \terr, and  
 38 as being admixed. 
@@ -583,7 +591,7 @@ and 1 which is consistent with many individuals being the product of advanced
 generation hybrids beyond the $F_1$ generation.
 The transition of admixture proportions from one species to the other 
 increase with distance from the locations of pure individuals with proportions 
-closest to 0.5 being found in the center of this transition \cref{fig:hybrid-main}.
+closest to 0.5 being found in the center of this transition (\cref{fig:hybrid-main}).
 
 \subsection{Patterns of Introgression}
 Visualization of the MCMC output with trace plots and histograms of each parameter 
@@ -603,7 +611,7 @@ relative to the genome-wide average.
 I identified 116 loci as outliers for the $\alpha$ parameter relative to the
 genome-wide distribution of locus specific introgression. 
 Of these, the median of the posterior sample for 24 of these loci was negative
-and for 92 loci was positive \cref{fig:cline}.
+and for 92 loci was positive (\cref{fig:cline}).
 I did not identify any loci for which the estimates of $\beta$ were outliers
 relative to the genome-wide distribution of locus specific introgression. 
 All 16 of the loci identified as having excess ancestry for the $\alpha$ parameter relative to 
@@ -611,22 +619,22 @@ the genome-wide average were also identified as outliers relative to the
 genome-wide distribution of locus specific introgression.
 
 \subsection{Genomic Differentiation}
-Genetic differentiation between \amer and \terr was highly variable \cref{fig:hybrid-fst}. 
+Genetic differentiation between \amer and \terr was highly variable (\cref{fig:hybrid-fst}). 
 Locus-specific \fst between non-admixed \amer and \terr had a mean 
 of 0.07. \fst values for 249 loci were 0. Only a single locus had fixed 
 differences between species with an \fst of 1.0. 
 There is no obvious relationship between $\alpha$ and \fst when looking 
-at the plotted data \cref{fig:hybrid-fst-relationship}.
+at the plotted data (\cref{fig:hybrid-fst-relationship}).
 However, higher $\alpha$ estimates had non-zero values for \fst.
 The Pearson correlation test estimates a weak correlation between $\alpha$ and
 \fst (r=0.29, p=1.62e-23). 
 There is a more apparent relationship between \fst and $\beta$ when looking at 
-plotted data \cref{fig:hybrid-fst-relationship} but a Pearson correlation test estimates only 
+plotted data (\cref{fig:hybrid-fst-relationship}) but a Pearson correlation test estimates only 
 a slightly greater correlation between \fst and $\beta$, albeit with a much   
 smaller p-value (r=0.32, $p=\num{8.28e-30}$). 
 The result of the Kruskal-Wallis test are consistent with there being significant 
 differences between the \fst values of loci with outlier $\alpha$ estimates
-and non-outlier $\alpha$ estimates on average ($p=\num{1.32e-40}$) \cref{fig:hybrid-fst}.
+and non-outlier $\alpha$ estimates on average ($p=\num{1.32e-40}$) (\cref{fig:hybrid-fst}).
 The results of the post hoc pairwise Mann-Whitney tests are consistent with 
 both categories of loci with outlier $\alpha$ estimates  having great \fst values on average than the non-outlier estimates of  
 $\alpha$.
@@ -651,25 +659,22 @@ non-outlier loci and loci with greater \terr ancestry ($p=\num{8.16e-6}$).
 % correlation r = 0.04; P < 6.0 × 10−5; Fig. S11)
 
 \section{Discussion}
-In this study, I investigated the patterns of genetic variation across putative
-a hybrid zone between two species of toads using genome wide sequence data 
-collected from samples distributed across the hybrid zone. 
-
 \subsection{Evidence for ongoing hybridization}
+\mycomment{Should move most of this paragraph to intro}
+% Incompatible combinations of alleles arise through the process of recombination
+% happening from backcrossing \parencite{orr1996,barton1985}
 Even in the absence of the genetic data presented in this study, the contact zone 
-of \amer and \terr seems to bear the hallmarks of a "tension zone" \parencite{barton1985}.
-A tension zones is a hybrid zone model which is characterized by abrupt genotypic 
-clines maintained by a balance between dispersal and selection against certain
-hybrid genotypes \parencite{barton1985}.
-Tension zones are expected to correspond with natural features that reduce    
-dispersal or density of the parent species.
-The ranges of \amer and \terr abut with an abrupt transition and no apparent
-overlap. 
+of \amer and \terr seems to bear the hallmarks of a "tension zone" where 
+species barriers are maintained by a balance between dispersal and selection 
+against individuals carrying certain hybrid genotypes \parencite{barton1985}.
+The ranges of \amer and \terr abut with an abrupt transition and no apparent overlap. 
 Furthermore, the boundary between these species forms a long, smooth arc from Louisianna 
 to Virginia with a position closely corresponding to the fall line, 
 a prominent physiographic transition between the Piedmont Plateau in the North 
-and the southern coastal plain in the South \cref{fig:hybrid-main}.
-Such a sudden transition is difficult to explain except that it is the result of 
+and the southern coastal plain in the South (\cref{fig:hybrid-main}).
+Tension zones are expected to correspond with natural features that reduce
+dispersal or reduce the density of \parencite{barton1979}.
+Such a sudden transition is difficult to explain except if it is not the result of 
 the processes characteristic of tension zones. 
 For there to be no mutually hospitable areas permitting some range overlap is 
 implausible without there being an extreme level of competition or extreme degree 
@@ -681,72 +686,153 @@ Previous analysis of morphological variation by \cite{weatherby1982}
 showing the presence of morphological intermediates across a large region of 
 central Alabama suggested that introgression is occurring.
 
+% Detecting introgression 
 With the genome-wide sequence data obtained in this study, I find evidence of
 substantial gene flow across the hybrid zone of these two species.
 The \structure analysis inferred 38 out of 149 samples as having a proportion of 
-ancestry of at least 5\% of sites attributable to admixture \cref{fig:hybrid-main}. 
-The admixture coefficients inferred in the \structure analysis span the entire 
-range from 0.05\%-0.5\% which would be expected if hybrids are viable, fertile,
-and capable of backcrossing over multiple generations \citationNeeded \cref{fig:hybrid-main}. 
+ancestry of at least 5\% of sites attributable to admixture (\cref{fig:hybrid-main}). 
+The admixture proportions inferred in the \structure analysis range 
+from 0.05\%-0.5\% which is consistent with hybrids being viable, fertile, and 
+capable of backcrossing over multiple generations \citationNeeded (\cref{fig:hybrid-main}). 
 When backcrossing occurs over multiple generations in combination with migration
 of hybrid progeny and selection against introgressing alleles, a cline will form 
 across the hybrid zone with introgressing alleles becoming more uncommon with
 distance from the cline center \parencite{barton1985}.
 The results of the \structure analysis are largely consistent with this.
-Inferred admixture coefficients decrease and approach zero with distance
-from the center of the hybrid zone \cref{fig:hybrid-main}.
-The results of the \structure analysis indicate that the width of the hybrid
-zone is quite wide. 
-At least as wide as the sampling area as there are samples with appreciable
-admixture proportions near the Northeastern and Southwestern edges of 
-the sampling area \cref{fig:hybrid-main}.
+Inferred admixture coefficients are highest at the center of the hybrid zone 
+and decrease and approach zero with distance from the center (\cref{fig:hybrid-main}).
 
-The width of a hybrid zone is largely determined by selection and dispersal.
-
-The reason for a low level of admixture observed even in very distance 
-samples could be due to adaptive introgression.
-
-
-% Presence of non-admixed individuals near the center of the hybrid zone
-% suggests that toads have a high dispersal. I think I should leave this out. 
-% This would also be one thing that could explain the large width of the hybrid zone.
-% It is also possible that the hybrid zone is not even but mosaic. 
-% The number and distribution of samples aren't adequate to say if this is the case
-
-
-It is also possible that some of this inferred admixture is the result of a 
+% Width of hybrid zone
+Admixed samples were located quite far from the center of the hybrid zone. 
+In fact samples with greater than 5\% admixture proportions are located all the
+way at the Northeastern and Southwestern edges of the sampling area. 
+The width of a hybrid zone is a product of the strength of selection for or against
+introgression and the average dispersal distance of individuals within their 
+reproductive lifespan \parencite{barton1985}.
+\cite{breden1987} estimated that 27\% of individual \textit{A. fowleri} breed
+at non-natal breeding ponds with some individuals dispersing at least as much 
+as 2 km.
+Female \amer can migrate at least 1 km between breeding sites and post-breeding
+locations \parencite{forester2006}
+Invasive cane toads (\textit{Rhinella marina}) in Australia are estimated to 
+have expanded their range at a rate of 10-15 km per year shortly after their
+introduction \parencite{urban2008}. 
+The presence of samples with little to no admixture in close proximity to 
+toads with high proportions of admixture shows that dispersal has an important  
+roll in shaping the patterns of this hybrid zone.
+Individuals would be expected to appear more like their neighbors if dispersal
+rates and distances were very low.
+It is also likely that this hybrid zone may be more appropriately described as 
+a mosaic hybrid zone rather than a more simple tension zone \parencite{harrison1986}.
+However, the sampling for this study or too sparse and irregular to definitively 
+test this.
+Another possibility is that some of this inferred admixture is the result of a 
 statistical artifact or due to error. 
-Some reassurance is provided by the result of the PCA which is consistent with 
-the \structure results although it is possible that they could be affected 
-by the same bias or error introduced at by data collection and processing \cref{fig:hybrid-main} \citationNeeded.
+Some reassurance is provided by the result of the PCA which is largely consistent 
+with the \structure results although it is possible that they could be affected 
+by the same bias or error introduced at by data collection and processing (\cref{fig:hybrid-main}) \citationNeeded.
 
-
-% The most intermediate samples are found near the center with increasing purity
-% with distance from the contact zone with a couple of outliers.
-% There are a lot of pure samples, even close to the center of the hybrid zone
-% which suggest selection against introgression must be high.
-
-% These outliers could be the result of artifacts in the analysis or errors made
-% in the lab.
-
-
+% Location of hybrid zone center
+The tension zone model of hybrid zones predicts that location of hybrid zones
+centers will be dependent on the effects of selection along with population 
+density and natural dispersal barriers \parencite{barton1979}.
+The \structure results show that in two areas, there is a clear transition from 
+samples with primarily \amer ancestry to samples with primarily \terr ancestry 
+corresponding with the locations of streams and rivers.
+In the Northern part of the sampling area, transitions occur at the Coosa 
+River and at Waxahatchee Creek (\cref{fig:hybrid-main}). 
+In the Southern part, they occur at Sougahatchee Creek (\cref{fig:hybrid-main}).
+Clearly these are not impassable boundaries as there has been introgression 
+beyond them. 
+However, they likely reduce dispersal and as a result that the center of the hybrid 
+zone is caught in this location as described by \cite{barton1979}.
 
 \subsection{Variability of introgression}
-Used genomic cline instead of geographic cline.
-Theory and evidence point to a balance between migration and selection as the 
-cause for the creation and persistence of hybrid zones .
-Organisms migrate and move into one another's ranges.
+There are two primary parameters of interest in a genomic cline model that 
+can be interpreted in the evolutionary context of hybrid zones.
+The $\alpha$ parameter ...
+The $\beta$ parameter ...
+Extreme estimates of these parameters may be associated with loci that cause  
+reproductive incompatibility between hybridizing species. 
+The Bayesian genomic cline analysis of the genome-wide data in this study yielded extreme 
+estimates for $\alpha$ at some sites.
+Sites were classified as having extreme values in two ways. 
+First, sites could be classified as having excess ancestry if the HDPI does not cover
+zero and is therefore extreme relative to the genome-wide average of cline 
+parameter estimates.
+Second, sites could be classified as being outliers if they are extreme relative  
+to the genome-wide distribution of locus specific effects under the cline model.
+A greater number of sites qualified as outliers for estimates of $\alpha$ than 
+qualified as having excess ancestry.
+There were 116 loci classified as outliers which make up 9.7\% of the total 
+number of sites.
+Of those, 16 were also classified as having excess ancestry making up 1.3\% of all sites.
+This difference is consistent with other studies using both simulated and 
+empirical data which typically find more outlier loci than excess ancestry loci \parencite{gompert2012,}. 
+Both of these methods can produce false positives as these extreme values can
+be produced solely by genetic drift rather than by by selection \parencite{gompert2012}. 
+So not all sites with extreme estimates will be associated with incompatibility loci. 
+The false positive rate is exacerbated when there are many loci with small 
+effects on compatibility. 
+However, these sites should be enriched for loci associated with modest to strong 
+reproductive incompatibility and thus provide an upper estimate of the number of 
+sites that are associated with these modest to strong barriers to gene flow \parencite{gompert2012}. 
 
-Hybrid zones are thought to persist because of a balance between selection
-and migration.
-Incompatible combinations of alleles arise through the process of recombination
-happening from backcrossing \parencite{orr1996,barton1985}
+None of the estimates for $\beta$ were classified as either outliers or as having excess ancestry.
+Simulations have demonstrated that the $\alpha$ parameter is more impacted by  
+selection against hybrid genotypes than the $\beta$ parameter \parencite{gompert2012a}. 
+Other studies have also found no extreme estimates of $\beta$ \parencite{nikolakis2022,gompert2012a}\citationNeeded. 
+One possible interpretation of the absence of extreme values of $\beta$ is that
+selection is only strong enough to have a significant impact on $\alpha$ but it 
+is not strong enough to have a large impact on $\beta$.
+Unlike for $\alpha$, there is not a strong relationship between locally positive 
+selection favoring introgressed geneotypes and $\beta$ \parencite{gompert2012a}.
+Therefore, some of the extreme values for $\alpha$ could be due to adaptive 
+introgression which does have much impact on estimates of $\beta$.
+This is plausible given the large extent of introgression which is potentially 
+due to adaptive introgression.
+There is a negative relationship between $\beta$ and dispersal rate \parencite{gompert2012a}.
+It is also plausible that high dispersal rates, rather than selection is the 
+cause of lower $\beta$ values that do not reach the threshold to qualify as extreme.
+
+% Asymmetry
+Of the 9.7\% of sites that qualified as $\alpha$ outliers, a substantially larger 
+proportion had positive values which represent greater \amer ancestry
+than expected at those sites in admixed individuals. 
+Negative $\alpha$ estimates represent a greater probability of \terr ancestry 
+at a site in within admixed individuals.
+Sites with positive outlier estimates for $\alpha$ made up 7.7\% of all sites 
+whereas those with negative outlier estimates made up just 2\%.
+This asymmetry suggests that introgression flows more in the direction of \amer 
+than it does in the direction of \terr.
+This result is consistent with a pattern evident upon visual inspection of the 
+mapped \structure results.
+Samples collected from sites adjacent to sites with admixed samples appear to 
+have a greater proportion of \amer ancestry than \terr ancestry (\cref{fig:hybrid-main}). 
+Taken together, these observations suggest that introgression at this hybrid 
+zone is asymmetric \parencite{yang2020}.
+Asymmetries in introgression can arise for multiple reasons.
+There could differences in mate choice which make females of one species 
+more selective than females of the other \parencite{baldassarre2014}. 
+There can also be species differences in dispersal tendencies \citationNeeded.  
+Reciprocal-cross differences in reproductive isolation, termed Darwin's Corollary,
+are very common \parencite{turelli2007}.
+If one of the sexes is more prone to dispersal, introgression will flow more 
+freely in one direction that it would in the other. 
+It is possible that this observation is just an artifact of sampling. 
+Particularly if this is a highly mosaic hybrid zone.
+However, many more samples with primarily \terr ancestry were collected than 
+samples with primarily \amer ancestry. 
 
 
-A reference genome for these species would greatly enhance this analysis
-Sampled from what might be considered multiple populations which could be a problem
-Treated a fairly broad area as a single population.
+
+
+% A reference genome for these species would greatly enhance this analysis
+% Sampled from what might be considered multiple populations which could be a problem
+% Treated a fairly broad area as a single population.
+
 % They could be affected by different processes. %Cite study showing spatial and temporal differences across a hybrid zone
+
 
 % % Reference Genome
 % A reference genome for these species would greatly enhance the explanatory power of
@@ -774,6 +860,25 @@ Treated a fairly broad area as a single population.
 
 
 \subsection{Relationship between introgression and differentiation}
+Patterns of genetic differentiation and genomic introgression between
+\amer and \terr are consistent with the hypothesis that regions of the genome
+experiencing divergent selection also affect hybrid fitness.
+As predicted, there is a positive association between locus specific estimates
+of \fst and both the absolute value of the $\alpha$ and the $\beta$ parameter 
+estimates.
+Although this correlation supports the hypothesis that introgression outliers 
+are linked to loci under selection, the association is only a modest one. 
+Despite this, it is notable all of the outlier $\alpha$ estimates as well as the
+highest $\beta$ estimates have non-zero \fst estimates. 
+Whereas sites with lower $\alpha$ and $\beta$ estimates span the entire range 
+from zero to one. 
+
+This may be consistent with expectations of secondary contact as under a scenario
+of speciation with gene flow, a tighter coupling of divergence and resistance 
+to gene flow would be expected.
+
+Caveat, Ancestry inference is dependent on allele frequency differences \parencite{gompert2017}
+
 % Fst and Alpha are not independent so ANOVA assumptions may be violated
 % Alpha outliers are consistent with directional selection?
 % Few loci being outliers suggests not many parts of the genome are responsible 
@@ -783,17 +888,30 @@ Treated a fairly broad area as a single population.
 % False discovery rate when patterns of introgression are affected by epistasis
 % is quite high. Not all regions affecting introgression may be among outliers.  
 % Would be better to look a genome differentiation in the context of a reference genome
-Imperfect association between divergence and introgression is consistent with 
-secondary contact. 
-If speciation happened with gene flow, a tight linkage between the two would be 
-expected.
-Ancestry inference is dependent on allele frequency differences \parencite{gompert2017}
-Association between divergence and introgression is hard to explain from neutral 
-processes and suggests that highly differentiated loci affect hybrid fitness
-depending on the genomic background \parencite{gompert2017}
+% Introgression outliers are potentially linked to loci under selection
+% Imperfect association between divergence and introgression is consistent with 
+% secondary contact. 
+% If speciation happened with gene flow, a tight linkage between the two would be 
+% expected.
+% Ancestry inference is dependent on allele frequency differences \parencite{gompert2017}
+% Association between divergence and introgression is hard to explain from neutral 
+% processes and suggests that highly differentiated loci affect hybrid fitness
+% depending on the genomic background \parencite{gompert2017}
 
 
-\subsection{Conclusion}
+% \subsection{Conclusion}
+% This study shows that there is a significant amount of gene flow between 
+% \amer and \terr. 
+% Apparently gene flow is asymmetric.
+% The results raise some interesting possibilities but this study cannot 
+% definitively address them.
+% Is there adaptive introgression? 
+% Is there very high dispersal?
+% Selection weak?
+% Improved sampling, a quality reference genome, and studies of natural history 
+% can shed light on these.
+% Use geographic cline
+
 % % Multiple populations, potentially differing dynamics
 % One limitation of this study is samples included in analysis are sampled from 
 % a fairly broad area and may be more appropriately treated as separate populations.
