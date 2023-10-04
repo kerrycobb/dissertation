@@ -103,3 +103,48 @@
 \clearpage
 
 }
+
+
+\newcommand{\makePhyloSampleTable}[3]{
+\begin{longtable}{llllllll}
+  \caption{#1} \label{table:#2} \\
+  
+  \hline 
+  \multicolumn{1}{c}{ID} &
+  \multicolumn{1}{c}{Sample ID} & 
+  \multicolumn{1}{c}{Species} & 
+  \multicolumn{1}{c}{Latitude} & 
+  \multicolumn{1}{c}{Longitude} & 
+  \multicolumn{1}{c}{Passed Filtering} & 
+  \multicolumn{1}{c}{Phycoeval} & 
+  \multicolumn{1}{c}{Structure} \\ 
+  \hline 
+  \endfirsthead
+  
+  \multicolumn{4}{c}%
+  {{\tablename\ \thetable{} -- continued from previous page}} \\
+  
+  \hline 
+  \multicolumn{1}{c}{ID} &
+  \multicolumn{1}{c}{Sample ID} & 
+  \multicolumn{1}{c}{Species} & 
+  \multicolumn{1}{c}{Latitude} & 
+  \multicolumn{1}{c}{Longitude} & 
+  \multicolumn{1}{c}{Passed Filtering} & 
+  \multicolumn{1}{c}{Phycoeval} & 
+  \multicolumn{1}{c}{Structure} \\ 
+  \hline 
+  \endhead
+  
+  \hline \multicolumn{4}{r}{{Continued on next page}} \\
+  \endfoot
+  
+  \hline 
+  % \hline
+  \endlastfoot
+  
+  \input{#3}
+\end{longtable}
+\clearpage
+
+}

@@ -137,9 +137,11 @@ The North American toads in the genus \anaxyrus are a group of organisms with a
 poorly understood evolutionary history. 
 Although, not for lack of trying.
 Multiple studies of the evolutionary relationships among species in the genus have produced
-conflicting results \parencite{fontenot2011,graybeal1997,masta2002,pramuk2008,pyron2011,portik2023}.
+conflicting results \parencite{fontenot2011,graybeal1997,masta2002,pramuk2007,pyron2011,portik2023}.
+Particularly within the \amer group composed of \amer, \baxteri, \fowl, 
+\hemiophrys, \houstonensis, \microscaphus, \terr, and \wood.
 Some phylogenies inferred solely from mitochondrial data have even been inconsistent
-with the current taxonomy, with \fowleri forming a polytomy \parencite{fontenot2011,masta2002}.
+with the current taxonomy, with \fowl forming a polytomy \parencite{fontenot2011,masta2002}.
 These conflicting results could be due to methodological differences such as
 the species included, the number of individuals of each species sequenced, inference 
 methods used, or the sequenced loci. 
@@ -147,15 +149,15 @@ But the differences in inferred relationships could also result from real
 biological processes. 
 Incomplete lineage sorting is one source of possible discordance between datasets 
 in phylogenetic inference \parencite{kubatko2007}. 
-Gene flow hybridization is another potential source of discordance \parencite{degnan2009}. 
+Gene flow via hybridization is another potential source of discordance \parencite{degnan2009}. 
 
 
 % Move to another paragraph towards the end
 % Only two studies have specifically examined patterns of genetic diversity within
 % species and included multiple samples per species \parencite{fontenot2011,masta2003}.
 % \cite{fontenot2011} using AFLPs found limited evidence...
-% \cite{masta2003} found two distinct clades of \woodhousii
-% Found polyphyly with \fowleri.
+% \cite{masta2003} found two distinct clades of \wood
+% Found polyphyly with \fowl.
 % Several subspecies have been recognized in the past raising the possibility of
 % significant differentiation within species or possibly even unrecognized diversity.
 % A. americanus charlsmithi
@@ -179,10 +181,10 @@ While incomplete lineage sorting is very likely to have impacted patterns of gen
 variation in \anaxyrus, gene flow due to hybridization is a distinct possibility as well.
 There are numerous reports of natural hybridization between several different 
 species of \anaxyrus \parencite{green1996}. 
-A study of allozyme variation across a hybrid zone between \americanus and 
+A study of allozyme variation across a hybrid zone between \amer and 
 \hemiophrys revealed introgression taking place across a more than 50km wide hybrid zone.
-Hybrid zones are also suspected to exist between \americanus and \terrestris
-and between \woodhousii and \fowleri \parencite{green1996,weatherby1982}.
+Hybrid zones are also suspected to exist between \amer and \terr
+and between \wood and \fowl \parencite{green1996,weatherby1982}.
 Furthermore, numerous laboratory crosses have been performed between pairs of \anaxyrus 
 species with currently overlapping distributions \parencite{blair1972,blair1963}.
 Some of which produce viable and fertile backcross progeny \parencite{blair1972,blair1963}.
@@ -233,9 +235,10 @@ Therefore, environmental variables are also important context for making
 inferences from hybrid zones in addition to understanding the process of 
 diversification more generally.
 North America has had a very complex geologic and climatic history \parencite{lyman2022}.
-The effects of which are clade specific \parencite{nunez2023}.
-Large scale environmental changes can often impact multiple species simultaneously \parencite{oaks2019}.
+The effects of which are often clade specific \parencite{nunez2023}.
+But large scale environmental changes can often impact multiple species simultaneously \parencite{oaks2019}.
 There has been recent development of methods to infer these events \parencite{oaks2019,oaks2022}.
+% Say something about these events and how they are useful
 % - We don't know what factors have driven diversification
 % - Presumably they would be climatic.
 % - Cite studies on the effect of climate for North American taxa
@@ -247,16 +250,21 @@ Population structure...
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Goals of this study
 In this study, I investigate the evolutionary history of North American
-toads in the genus \anaxyrus genome wide sequence data. 
+toads in the genus \anaxyrus using genome wide sequence data. 
 For this I obtained restriction enzyme-associated DNA sequence (RADseq) data
-from samples 12 species of \anaxyrus with dense sampling representing a 
-large portion of the ranges of \amer, \fowler, \terr, and \woodhousii.
+from 12 species of \anaxyrus including dense sampling representing a 
+large portion of the ranges of \amer, \fowl, \terr, and \wood.
 
+With these data I infer evolutionary relationships using different methods.
 
-With these data investigate the following questions
-1) Infer relationships among \anaxyrus with method accounting for incomplete 
-lineage sorting.
-2) 
+Evolutionary relationships are needed for inferring historic gene flow.
+
+I test for shared divergence time which would suggest divergence is being driven
+by the same environmental changes. Or large scale biogeographic processes.
+
+I test for past introgression between lineages.
+
+I determine if there is population structure. 
 
 
 % 1) recent biogeographic 
@@ -270,12 +278,9 @@ lineage sorting.
 
 
 
-
-
-
-
 \section{Methods}
 \subsection{Sampling and DNA Isolation}
+% TODO: How many samples
 I obtained tissue samples from museum tissue collections as well as from individuals   
 I collected from 2017 to 2020. I selected samples to represent as much
 of the range of each species of \textit{Anaxyrus} as possible.
@@ -361,158 +366,326 @@ The pooled libraries were pooled with other projects and sequenced on an Illumin
 HiSeqX by Novogene (China) to obtain paired end, 150 base pair sequences. 
 
 \subsection{Phylogenetic Data Processing}
-I demultiplexed the iTru7 indexes using the \processradtags command from 
-\stacks v2.6.4 \parencites{rochette2019} and allowed for two mismatches for 
-rescuing reads.
+To produce alignments for phylogenetic analysis, I first I demultiplexed the 
+iTru7 indexes using the \processradtags command from \stacks v2.6.4 
+\parencites{rochette2019} and allowed for two mismatches for rescuing reads.
 I removed PCR duplicates using the the \clonefilter command from \stacks.
 To demultiplex individual samples I used \pyrad v0.9.90 and allowed for one 
 mismatch for rescuing reads. 
 I assembled and aligned reads with \pyrad using default parameters and a 
 clustering threshold of 0.8. 
-Using \pyrad, I filtered loci not present in at least 61 samples (?? percent)
-and then filtered samples with fewer than 200 loci.
+Using \pyrad, I filtered loci not present in at least 75\% of samples 
+and filtered samples with fewer than 200 loci.
 
-
-
-\subsection{Population Structure Data Processing}
-To remove PCR duplicates, I used the \clonefilter command from \stacks.
-I demultiplexed inline sample barcodes, trimmed adapter sequence, and filtered 
-reads with low quality scores as well as reads with any uncalled bases using the  
-\processradtags command again and allowed for the rescue of restriction site sequence 
-as well as barcodes with up to two mismatches.  
-
-% I allowed for 14 mismatches between alleles within, as well as between individuals
-% (M and n parameters). This is equivalent to a sequence similarity threshold of   
-% 90\% for the 140 bp length of reads post trimming. 
-% I also allowed for up to 7 gaps between alleles within and between individuals.
-% I used the \populations command from \stacks to filter loci missing in more than   
-% 5\% of individuals, filter all sites with minor allele counts less than 3, filter 
-% any individuals with more than 90\% missing loci, and randomly sample a single
-% SNP from each locus.
-
-
-
-% I demultiplexed plate indexes using the \processradtags command from 
-% Stacks2 v2.6.1 \parencite{rochette2019} and allowed for 2 mismatches for rescuing reads. 
-% I demultiplexed samples and trimmed, filtered, and assembled reads with 
-% ipyrad v0.9.9 \parencite{eaton2020}. I specified the datatype as "pair3rad", 
-% used a clustering threshold of 80\% sequence similarity, and allowed for two  
-% mismatches in the barcode sequence. The remaining parameters were left with the 
-% default settings.
-% I used Ipyrad to filter loci that were absent in greater than 50\% of samples and then filtered
-% samples with fewer than 200 loci. 
-
-
-
-% \subsection{Phylogenetics}
-
-% Excluded any samples with fewer than 500 loci for phylogeny estimation with ipyrad filtering
-
-
-% Check for evidence of hybrids using 
-% program STRUCTURE v2.3.4 \parencite{pritchard2000}
-% PCA using adagenet v2.1.8 \parencite{jombart2011}
-% Exclude any?
-
-\subsection{Phylogenetic relationships}
-I conducted maximum likelihood phylogenetic inference with the program \iqtree
-v1.6.12 \parencite{nguyen2015}.
-I used the \pyrad alignment as input.
+\subsection{Maximum Likelihood}
+Phylogenetic methods that do not account for incomplete lineage sorting  
+do not perform well with data impacted by this process.
+However, methods that do account for incomplete lineage sorting are far more 
+computationally demanding.
+As a result, these methods cannot be performed with a large number of samples.
+I therefore conducted conducted maximum likelihood phylogenetic inference in  
+order to infer a phylogeny with all of the sequenced samples and to be able  
+to identify samples that may be problematic for other methods due to recent 
+admixture or data quality. 
+I conducted the maximum likelihood phylogenetic inference with \iqtree 
+v1.6.12 \parencite{nguyen2015} with the \pyrad alignment as input in order. 
 I ran \iqtree with 1000 ultrafast bootstrap replicates \parencite{hoang2018}
 under the GTR substitution model.
 
-\phycoevol
+\subsection{Multispecies Coalescent}
+In order to account for incomplete lineage sorting in the inference of phylogenetic
+relationships and to infer shared divergence times, I used the program \phycoeval.
+I selected a subset of samples with up to four from each species due to the 
+infeasible run times for \phycoeval with greater numbers of samples (see table 1).
+I used \pyrad to filter loci not present in at least 75\% of samples. 
+Using a custom script I filtered the phylip alignment file produced by \pyrad 
+to exclude sites with more than two  characters and output the filtered alignment 
+to nexus format with a biallelic character encoding. 
+I ran \phycoeval with state frequencies fixed at 0.5.
+I set the mutation rate equal to one so that divergence times are in units of 
+expected substitutions per site. 
+I set the prior on the age of the root as an exponential distribution with a mean
+of 0.01.
+I ran \phycoeval with the assumption of a single effective population size
+shared across all of the branches of the tree.
+The prior on the effective population size was a gamma prior with a shape of
+four and mean of 0.0005
+I ran five independent MCMC chains for 10,000 generations, sampling every 10 
+generations.
+Each chain was started with a comb tree topology with all branches sharing the
+same divergence time. 
+I summarized the posterior sample of tree topologies and parameters using 
+\sumphycoeval.
+To assess convergence and mixing, I used \sumphycoeval to calculate the
+potential scale reduction factor (PSRF) and the effective sample size (ESS).
+I discarded the first 100 samples from each chain as burnin.
+I used \sumphycoeval to rescale the branch lengths of the maximum a posteriori 
+(MAP) tree produced by \sumphycoeval so that the posterior mean root age was 
+16.5 million years ago based on the estimate of \cite{feng2017}.
 
-10,000 steps, sampling every 10
+\subsection{Test for Historic Admixture}
+In order to test for a history of introgression between species of \anaxyrus I used the 
+program \dsuite v0.5r50 \parencite{malinsky2021} to compute the $f$-branch 
+statistic for each pair of \anaxyrus species for which the statistic 
+can be calculated \parencite{reich2009,malinsky2018}. 
+I used \pyrad to filter all loci that were not found in at least 50\% of the 
+samples that passed filtering and excluded one \fowl sample 
+(sample 006 from \ref{physamples}) which falls outside of the \fowl clade 
+inferred by \iqtree.
+For the input tree topology required to run \dsuite, I used the topology inferred
+by \phycoeval and I specified \nebulifer as the outgroup species.
+I ran the \dsuite Dtrios command to compute Patterson's the $f4$-ratio
+statistic for all possible trios with 20 block-jackknife replicates.
+I then ran the Fbranch command from \dsuite to compute the $f$-branch statistics 
+from the computed $f4$-ratio statistics. 
+I plotted the $f$-branch statistics with \dtools v0.1 which is packaged with
+the \dsuite program \parencite{malinsky2021}. 
+
+Say something about how f-branch takes into account correlation among branches
+
+\subsection{Population Structure Data Processing}
+I processed reads differently for the analysis of population structure
+following PCR duplicate filtering. 
+I demultiplexed individual samples, trimmed adapter sequence, and filtered 
+reads with low quality scores as well as reads with any uncalled bases using the 
+\processradtags command and allowed for the rescue of restriction site sequence 
+as well as barcodes with up to two mismatches.  
+I allowed for 14 mismatches between alleles within, as well as between individuals
+(M and n parameters). This is equivalent to a sequence similarity threshold of   
+90\% for the 140 bp length of reads post trimming. 
+I also allowed for up to 7 gaps between alleles within and between individuals.
+I used the \populations command from \stacks to filter loci missing in more than   
+5\% of individuals, filter all sites with minor allele counts less than 3, filter 
+any individuals with more than 90\% missing loci, and randomly sample a single
+SNP from each locus.
+
+% To remove PCR duplicates, I used the \clonefilter command from \stacks.
+% I demultiplexed inline sample barcodes, trimmed adapter sequence, and filtered 
+% reads with low quality scores as well as reads with any uncalled bases using the  
+% \processradtags command again and allowed for the rescue of restriction site sequence 
+% as well as barcodes with up to two mismatches.  
 
 
+\subsection{Population Structure}
+To investigate population structure within \amer, \fowl, \terr, and \wood , I used the demultiplexed
+and de-cloned reads used for the phylogenetic analyses for producing alignments. 
+I assembled and aligned these reads using \stacks for each species separately.
+I allowed for 7 mismatches between alleles within, as well as between individuals
+(M and n parameters). This is equivalent to a sequence similarity threshold of   
+95\% for the 140 bp length of reads post trimming. 
+I also allowed for up to 7 gaps between alleles within and between individuals.
+I used the \populations command from \stacks to filter loci missing from more than
+5\% of samples, filter all sites with minor allele counts less than 3, filter 
+any individuals with more than 90\% missing loci and to randomly sample a single
+site per locus.
 
+I ran the program \structure v2.3.4 \parencite{pritchard2000} for each species  
+separately using the admixture model in order to cluster individuals and estimate
+ancestry proportions for each individual. 
+I ran \structure under four different models differing in the number of 
+populations assumed (K parameter), with the parameter ranging from 1-4.
+I ran 10 iterations of \structure for each value of K for a total of 100,000
+steps and burnin of 50,000 for each iteration.
+I used the R package \pophelper v2.3.1 \parencite{francis2017} to combine
+iterations for each value of K and to select the model producing the largest
+$\Delta$K which is the the model that has the greatest increase in likelihood 
+score from the previous model having one fewer populations as described by \parencite{evanno2005}.
+I also investigated population structure with a non-parametric approach, using
+principle component analysis (PCA) implemented in the R package \adegenet
+\adegenet v2.1.10 \parencite{jombart2008}. 
 
-\subsection{Population structure}
+\subsection{Recent \fowl x \wood hybridization}
 
-% Run for 100,000 iterations with 50,000 burnin
+% I ran structure with all of the \amer group samples together to ensure that 
+% none of the samples have been affected by recent admixture before inferring
+% population structure within each species.
+% Each structure analysis was run with assemblies produced by \stacks.
+% For the analysis of all \amer group samples,
+% I dropped 16 samples 
+% I filtered...
+% Dropped sites with minor allele counts greater than three.
+% I excluded samples...
+% Ran with K 1-4
+% 10 independent runs
+% 100,000 generations and a burnin of 50,000 samples
 
-% Run structure with all americanus group to make sure there aren't hybrids.
-% Run structure with american toad, southern toad, woodhousii, and fowleri to see if there is population structure 
-
-% Filtered loci not found in 75%
-% Filtered variants with minor allele count less than 3.
-% Filtered sites with more than 2 alleles
-
-
-I ran structure with all of the \amer group samples together to ensure that 
-none of the samples have been affected by recent admixture before inferring
-population structure within each species.
-Each structure analysis was run with assemblies produced by \stacks.
-For the analysis of all \amer group samples,
-I dropped 16 samples 
-I filtered...
-Dropped sites with minor allele counts greater than three.
-I excluded samples...
-Ran with K 1-4
-10 independent runs
-100,000 generations and a burnin of 50,000 samples
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\subsection{Phycoeval}
-To see if there is evidence of shared divergence times and to estimate a species tree under multispecies coalescent
-Phycoeval v1.0.0 \parencite{oaks2022} 
-
-\subsection{Dsuite}
-To look for evidence of past admixture.
-% I randomly sampled a single SNP from each locus from each locus using a  
-% custom python script relying on the scikit-allel v1.3.5 package.
-% Using vcftools v0.1.17 \parencite{danecek2011}, I dropped any individuals that 
-% had more than 25\% missing sites and filtered individuals that had more than 
-% 35\% missing data after the missing sites filter was applied. 
-Dsuite \parencite{malinsky2021}
 
 
 \section{Results}
-Average number of reads per individual
-Mean coverage per locus
 
-Total loci and snps after filtering
+\subsection{Assembly and alignment with \pyrad}
+A total of 436,265,266 reads were obtained for all samples. After filtering low
+quality reads and reads without restriction site sequence, 435,650,926 total reads 
+remained for assembly.
+The number of filtered reads per individual was highly variable with a mean of 
+4,538,030 (sd=3,619,076).
+Prior to filtering there were 171,174 loci total loci which was reduced to  
+659 after filtering loci not present in at least 75\% of samples and filtering
+?? samples which had fewer than 200 loci (Table 1).
+Mean sequence read coverage of the loci passing filter was 54x.
+The final alignment contained a total of 184,453 sites with 20,361 SNPs with 
+14.96\% of sites and 14.71\% of SNPs missing.
 
-\subsection{Maximum Likelihood}
-Inferred a single well supported clade (>***\%) for each recognized species. 
+\subsection{Maximum Likelihood Phylogeny}
+The full majority rule consensus tree inferred by \iqtree is presented in \ref{fig:iqtree}. 
+All species were inferred as a single monophyletic group with the exception 
+of \fowl. 
+A single \fowl sample (sample 006) does not form a monophyletic group with other 
+\fowl samples but is instead sister to the the branch containing \wood and \fowl samples.
+A representation of the tree inferred by \iqtree with the tips within
+species specific clades collapsed is presented in \ref{fig:iqtree-collapsed}. 
+Each species specific clade for which there are at least two representatives
+samples all have ultrafast bootstrap support values of 100\%.
+All branches below the the level of the species specific clades have ultrafast 
+bootstrap support values ranging from 70-100\% with the majority being 100\%.
+The most basal internal branch of the tree, marking the split between most of \anaxyrus
+and \punctatus along with the outgroup \nebulifer has an ultrafast bootstrap 
+support value of 99\%.
+The sister branch to to \terr, which contains the spurious \fowl sample (sample 006)
+and the clade containing \fowl and \wood, has an ultrafast bootstrap support 
+value of 96\%.
+The lowest ultrafast bootstrap support value is found on the branch sister 
+to the \cognatus/\speciosus clade with a value of only 70\%.
 
+\subsection{Coalescent Phylogeny}
+The maximum a posteriori (MAP) tree inferred under the multispecies coalescent
+model using \phycoeval has a topology differs from the maximum likelihood topology 
+inferred by \iqtree \cref{fig:phycoeval}.
+The MAP tree produced by \phycoeval does not have any shared divergence times 
+among any  of the 10 internal nodes of the tree.
+The frequency of topologies in the posterior sample that have 10 independent 
+divergence times is 0.5.
+The next most frequent topology in the posterior are topologies with a single 
+shared divergence time and nine independent divergences and occur with a frequency
+of 0.24.
+One major difference between the maximum likelihood tree inferred by \iqtree and 
+the MAP tree inferred by \phycoeval is that the MAP tree has one multifurcation. 
+This multifurcation happens at the ancestor of the \quercicus, \speciosus/\cognatus,
+and \amer group lineages.
+However, this node has a low posterior probability of only 0.51. 
+All other branches in the MAP tree have high posterior probabilities of 0.98 or more. 
+Most divergence events within \anaxyrus have occurred in the past 3.5 million 
+years and most diversification within the \amer group is less than 2.5   
+million years old.
 
+\subsection{Historic Introgression}
+I used the program \dsuite to compute the \fbranch statistic which is an  
+estimate of excess allele sharing between species pairs that is not due to 
+incomplete lineage sorting. 
+I used the species tree topology produced by \phycoeval for estimating 
+the \fbranch statistics. 
+The \fbranch estimates for each species pair are presented with a heatmap in 
+figure \ref{fig:dsuite}.
+Most \fbranch estimates produced by \dsuite were zero or very near zero.
+Only 24 out of 112 \fbranch estimates were greater than 0 and 11 of those were 
+greater than 0.05 \cref{fig:dsuite}.
+\amer and \wood had the largest number of estimates greater than
+zero associated with them with nearly every pairwise comparison greater than 0
+\cref{fig:dsuite}. 
+The highest \fbranch statistic values are between \amer and two other 
+species: \hemiophrys (0.24) and \baxteri (0.22) \cref{fig:dsuite}.
+The values associated with \wood are appreciably lower with none exceeding 
+0.1 \cref{fid:dsuite}.
+The branch preceding \speciosus and \cognatus tested against \punctatus
+along with the tests of \quercicus with \cognatus and \speciosus all exceeded  
+0.1.
+
+\subsection{Population Structure}
+
+\subsection{Hybridization between \fowl and \wood}
 
 
 \section{Discussion}
 
+\subsection{Phylogenetic relationships}
+The topology inferred by \iqtree using maximum likelihood with a concatenated 
+alignment differs from previous studies of the relationships among \anaxyrus.
+There has been a great deal of inconsistency among previous studies. 
+\punctatus is consistently found to be sister to all other \anaxyrus.
+\americanus group is consistently inferred as monophyletic with \microscaphus
+sister to all other \americanus group species.
+A single \fowl sample did not form a monophyletic clade with the remaining \fowl samples.
+Other studies using mitochondrial data or nuclear data with multiple samples per 
+species have also inferred topologies with \fowl being paraphyletic 
+\parencite{masta2002,fontenot2011}.
+Notably, only one species pair (\fowl and \wood) for which there is evidence a 
+hybrid zone are sister to each other. 
+\amer and \hemiophyrs are close to sister as \hemiophyrs and \baxteri have 
+little genetic difference between them \cref{fig:iqtree}.
+It is interesting that \amer and \terr form a hybrid zone while \fowl and \terr
+which are more closely related in sympatry. 
 
-Population structure in A. woodhousii with two overlapping mtdDNA clades 
-with one more associated with the Southwest and one more associated with the 
-great planes \parencite{masta2003}
 
-Phylogeny of toads, doesn't place Americanus and Terrestris as sister, finds
-mitonuclear discordance and Finds two fowleri clades \parencite{fontenot2011}
+All of these studies have included different species, individuals, loci, and 
+have used different methods for alignment and topology inference. 
+These differences in study design could have an impact on this. 
+Choice of locus in particular in combination with a lack of consideration 
+for incomplete lineage sorting could produce this outcome.
+Concatenation of multiple loci can result in erroneous outcomes.
 
 Inconsistent phylogeny \parencite{masta2002}
 Inconsistent phylogeny \parencite{pramuk2007}
 Inconsistent phylogeny \parencite{graybeal1997}
 Inconsistent phylogeny \parencite{pyron2011}
 
-Idea:
+
+\subsection{Coalescent}
+The multispecies coalescent can account for incomplete lineage sorting. 
+The topology of the multispecies coalescent tree is substantially different.
+\punctatus is still sister to all other \anaxyrus
+\speciosus and \cognatus are still sister.
+\americanus group is monophyletic with \microscaphus sister to all other 
+
+\quercicus forms a polytomy with the \cognatus/\speciosus clade and the \americanus
+clade although this node has low posterior probability support (0.51).
+The internode branch lengths in this part of the tree are quite short in the 
+maximum likelihood tree. 
+The placement of \quercicus relative to the \cognatus/\speciosus clade and the 
+\americanus clade has been fairly inconsistent across other studies but these
+other studies have also found short internode branch lengths.
+A polytomy may be a good representation of this node.
+A larger amount of data may be necessary to more confidently determine the 
+relationships.
+
+\amer and \terr are sister
+\fowl and \wood are sister
+This makes more sense with regards to hybridization between these two pairs 
+of species and better explains the sympatry of \americanus and \terrestris 
+with \fowleri and \woodhousii.
+This does make the hybrid zone between \amer and \hemiophrys more surprising. 
+This hybrid zone is quite narrow however. 
+
+\subsection{Divergence Time}
+Only two studies have attempted to estimate the ages of splits within \anaxyurs 
+Feng et al included just two species \textit{Anaxyrus canorus} (not included in this study)
+and \punctatus. The estimated split between these two species was 12.3 million years ago.
+The estimated split between \incillius and \anaxyrus was 16.5 million years ago 
+which was used to scale the branch lengths of the tree inferred with \phycoeval.
+Portick et al. using a concatenation method with a smaller number of loci and 
+greater amount of missing data estimated the split between \incillius and 
+\anaxyrus to be approximately 
+
+
+\amer group diversification largely took place during the Pleistocene.
+A period marked by repeated glaciations. 
+The \phycoeval analysis does not support shared divergence events during this  
+period suggesting that diversification in toads was driven by different 
+
+
+\subsection{Population Structure}
 Given the appearance that there are many secondary contact zones. It seems 
 probable that toad species have undergone range expansions. Following these
 range expansions, are there any barriers that are now reducing gene flow?
 We can test that by looking for population structure within species that 
 aligns with possible biogeographic barriers.
+The maximum likelihood tree along with the \structure analyses do not support
+the existence of any unrecognized species diversity or significant population 
+structure as some mitochondrial studies have suggested.
+
+
+
+\subsection{}
+Population structure in A. woodhousii with two overlapping mtdDNA clades 
+with one more associated with the Southwest and one more associated with the 
+great planes \parencite{masta2003}
+
