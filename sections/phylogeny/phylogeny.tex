@@ -395,8 +395,10 @@ under the GTR substitution model.
 \subsection{Multispecies Coalescent}
 In order to account for incomplete lineage sorting in the inference of phylogenetic
 relationships and to infer shared divergence times, I used the program \phycoeval.
-I selected a subset of samples with up to four from each species due to the 
+I selected a subset of up to four samples from each species due to the 
 infeasible run times for \phycoeval with greater numbers of samples (see table 1).
+I excluded sample 006 from consideration due it having an anomalous   
+position in the maximum likelihood tree.
 I used \pyrad to filter loci not present in at least 75\% of samples. 
 Using a custom script I filtered the phylip alignment file produced by \pyrad 
 to exclude sites with more than two  characters and output the filtered alignment 
@@ -598,16 +600,119 @@ along with the tests of \quercicus with \cognatus and \speciosus all exceeded
 \section{Discussion}
 
 \subsection{Phylogenetic relationships}
-The topology inferred by \iqtree using maximum likelihood with a concatenated 
-alignment differs from previous studies of the relationships among \anaxyrus.
-There has been a great deal of inconsistency among previous studies. 
-\punctatus is consistently found to be sister to all other \anaxyrus.
-\americanus group is consistently inferred as monophyletic with \microscaphus
-sister to all other \americanus group species.
-A single \fowl sample did not form a monophyletic clade with the remaining \fowl samples.
-Other studies using mitochondrial data or nuclear data with multiple samples per 
-species have also inferred topologies with \fowl being paraphyletic 
-\parencite{masta2002,fontenot2011}.
+% Maximum likelihood tree
+The maximum likelihood tree inferred by \iqtree \cref{fig:iqtree, fig:iqtree-collapsed} 
+differs from trees inferred in previous studies of the relationships 
+among \anaxyrus \parencite{fontenot2011,graybeal1997,masta2002,pramuk2007,pyron2011,portik2023}.
+Even among these previous studies there has been a great deal of inconsistency in
+the inferred relationships with the exception of a few taxa. 
+As in all previous studies, the maximum likelihood tree inferred in this 
+study places \punctatus sister to all other \anaxyrus.
+I also found the \americaus group to be monophyletic with \microscaphus sister  
+to all other \americanus group species which is consistent with most previous studies.
+Two previous studies have inferred trees which do not place \fowleri samples
+into a single monophyletic group \parencite{masta2002,fontenot2011}.
+A single \fowl sample included in this study does not fall within a monophyletic 
+group with the remaining \fowl samples but is instead sister to the clade 
+containing all \fowl and \wood samples \cref{fig:iqtree-collapsed}.
+
+% Possible causes
+All of these studies have included different species, individuals, and loci, and 
+also used different methods for alignment and phylogenetic inference. 
+These differences in study design could result in the observed topology differences. 
+The choice of locus in particular has a high likelihood of being the cause of these difference. 
+Due to incomplete lineage sorting, the true histories of each gene may in fact differ \parencite{kingman1982}. 
+The practice of concatenating multiple loci as all of the previous studies of
+\anaxyrus evolutionary relationships have done, can produce erroneous trees  
+with high statistical support \parencite{kubatko2007}.
+
+% Coalescent
+To account for incomplete lineage sorting, I also inferred phylogenetic     
+relationships among \anaxyrus species using the multispecies coalescent 
+method \phycoeval along with a subset of individuals used for the maximum likelihood 
+tree due to increased computational demands of multispecies coalescent methods. 
+The topology of the \phycoeval tree is substantially different from the  
+maximum likelihood tree inferred in this study as well as trees from previous 
+studies \cref{fig:phycoeval} \parencite{fontenot2011,graybeal1997,masta2002,pramuk2007,pyron2011,portik2023}. 
+Unlike in any previous study or in the maximum likelihood tree, \amer and \terr are 
+placed sister to one another, whereas in all other trees it has had closer 
+affinity to the \hemiophrys/\baxteri clade \cref{fig:iqtree-collapsed} \parencite{pyron2011,portik2023}.
+In the \phycoeval tree, the \hemiophrys/\baxteri clade is instead sister
+to the \amer/\fowl/\terr/\wood clade.
+
+An unusual feature of \phycoeval is that it can allow for multifurcations in  
+inferred topologies \parencite{oaks2022}.
+This feature proved relevant for in this study as the inferred tree included
+one multifurcation at the ancestral node of \quercicus, the \cognatus/\speciosus
+clade, and the \americanus group. 
+
+Previous studies have produced trees with quite short internode branches at this
+part of the tree as did the \iqtree analysis in this study which is somewhat 
+consistent with this. 
+These methods can only produce bifurcations and thus would force any true 
+multifurcation into bifurcations and estimate some branch length between them
+which would be expected to be short. 
+In the \phycoeval tree, the posterior probability of this split is low (0.51) so 
+it may not be a perfect representation of the history of these lineages \cref{fig:phycoeval}.
+More data may be necessary to have full resolution in this part of the tree.
+But it is clear that these three lineages diverged at least in rapid succession
+if not simultaneously. 
+But I don't know of any significant implications these alternative scenarios would
+have for our understanding of \anaxyrus evolution.
+
+% \quercicus forms a polytomy with the \cognatus/\speciosus clade and the \americanus
+% clade although this node has low posterior probability support (0.51).
+% The internode branch lengths in this part of the tree are quite short in the 
+% maximum likelihood tree. 
+% The placement of \quercicus relative to the \cognatus/\speciosus clade and the 
+% \americanus clade has been fairly inconsistent across other studies but these
+% other studies have also found short internode branch lengths.
+% A polytomy may be a good representation of this node.
+% A larger amount of data may be necessary to more confidently determine the 
+% relationships.
+
+
+% Hybridization in light of phylogeny
+\amer and \terr are sister
+\fowl and \wood are sister
+This makes more sense with regards to hybridization between these two pairs 
+of species and better explains the sympatry of \americanus and \terrestris 
+with \fowleri and \woodhousii.
+This does make the hybrid zone between \amer and \hemiophrys more surprising. 
+This hybrid zone is quite narrow however. 
+
+Considering the relationships of the maximum likelihood tree with respect to 
+hybridization, it is unsurprising to see \fowl (excluding sample 006) and \wood 
+to be each other's closest relatives and separated by relatively short branch lengths.
+
+Not clear if \fowl sample placement is due to incomplete lineage sorting or
+due to admixture. It does not fit the pattern of previous studies and is located
+near the contact zone of \wood and \fowl. Furthermore the \structure analysis 
+suggests this sample has a lot of admixture which I discuss later.
+
+\amer and \terr on the other hand is more surprising. 
+\terr is more closely related to \fowl than \amer, yet their ranges completely  
+overlap and they appear to have strong reproductive isolation.
+\amer has a range that overlaps significantly with both \wood and \fowl but 
+also appears to have strong reproductive isolation with it's sympatric congeners.
+
+The relationship between \hemiophrys and \amer 
+
+\hemiophrys and \amer are separated but much longer branch lengths on the other
+but do not share any close relatives with which they.
+But 
+The relationship between \amer and \hemiophrys is also unsurprising.
+Despite not being each others 
+The \amer and \hemiophrys as well as \amer and \terr pairs do not   
+
+If we consider these relationships with regards to hybrid zones 
+Interestingly, only a single species pair (\fowl and \wood) for which there is  
+evidence of a hybrid zone are each other's closest relatives.
+The branch lengths between \amer and \hemiophrys as well as between \amer and \terr 
+are long relative to the branches separating \wood and \fowl.
+
+\terr and \fowl are 
+
 Notably, only one species pair (\fowl and \wood) for which there is evidence a 
 hybrid zone are sister to each other. 
 \amer and \hemiophyrs are close to sister as \hemiophyrs and \baxteri have 
@@ -616,44 +721,10 @@ It is interesting that \amer and \terr form a hybrid zone while \fowl and \terr
 which are more closely related in sympatry. 
 
 
-All of these studies have included different species, individuals, loci, and 
-have used different methods for alignment and topology inference. 
-These differences in study design could have an impact on this. 
-Choice of locus in particular in combination with a lack of consideration 
-for incomplete lineage sorting could produce this outcome.
-Concatenation of multiple loci can result in erroneous outcomes.
-
-Inconsistent phylogeny \parencite{masta2002}
-Inconsistent phylogeny \parencite{pramuk2007}
-Inconsistent phylogeny \parencite{graybeal1997}
-Inconsistent phylogeny \parencite{pyron2011}
-
-
 \subsection{Coalescent}
-The multispecies coalescent can account for incomplete lineage sorting. 
-The topology of the multispecies coalescent tree is substantially different.
-\punctatus is still sister to all other \anaxyrus
-\speciosus and \cognatus are still sister.
-\americanus group is monophyletic with \microscaphus sister to all other 
 
-\quercicus forms a polytomy with the \cognatus/\speciosus clade and the \americanus
-clade although this node has low posterior probability support (0.51).
-The internode branch lengths in this part of the tree are quite short in the 
-maximum likelihood tree. 
-The placement of \quercicus relative to the \cognatus/\speciosus clade and the 
-\americanus clade has been fairly inconsistent across other studies but these
-other studies have also found short internode branch lengths.
-A polytomy may be a good representation of this node.
-A larger amount of data may be necessary to more confidently determine the 
-relationships.
 
-\amer and \terr are sister
-\fowl and \wood are sister
-This makes more sense with regards to hybridization between these two pairs 
-of species and better explains the sympatry of \americanus and \terrestris 
-with \fowleri and \woodhousii.
-This does make the hybrid zone between \amer and \hemiophrys more surprising. 
-This hybrid zone is quite narrow however. 
+
 
 \subsection{Divergence Time}
 Only two studies have attempted to estimate the ages of splits within \anaxyurs 
@@ -663,7 +734,10 @@ The estimated split between \incillius and \anaxyrus was 16.5 million years ago
 which was used to scale the branch lengths of the tree inferred with \phycoeval.
 Portick et al. using a concatenation method with a smaller number of loci and 
 greater amount of missing data estimated the split between \incillius and 
-\anaxyrus to be approximately 
+\anaxyrus to be 20.3 mya.
+
+split between \punctatus group and rest of \anaxyrus was estimated to be 14.7 
+
 
 
 \amer group diversification largely took place during the Pleistocene.
