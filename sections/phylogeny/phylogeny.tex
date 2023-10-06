@@ -123,12 +123,14 @@ Chief among them is the interplay between climatic conditions and geologic proce
 Changes in these environmental variables can alter the distributions of organisms
 and result in changes in the connectivity of populations.
 Disconnected populations may undergo genetic divergence from one another due 
-to adaptive evolution in response to changing abiotic or biotic conditions . 
+to adaptive evolution in response to changing abiotic or biotic conditions. 
 Or they might simply diverge via neutral evolution driven by the effects of drift.
 Environmental changes can also reconnect previously isolated populations resulting
 in hybridization and gene flow, another very important process shaping patterns of diversity.
 Understanding the interplay of all of these factors is critical for understanding
 the evolutionary history of organisms.
+A critical step to understanding these processes is to obtain an accurate 
+reconstruction  of the evolutionary history of organisms. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -138,18 +140,21 @@ poorly understood evolutionary history.
 Although, not for lack of trying.
 Multiple studies of the evolutionary relationships among species in the genus have produced
 conflicting results \parencite{fontenot2011,graybeal1997,masta2002,pramuk2007,pyron2011,portik2023}.
-Particularly within the \amer group composed of \amer, \baxteri, \fowl, 
+Particularly within the \americanus group composed of \amer, \baxteri, \fowl, 
 \hemiophrys, \houstonensis, \microscaphus, \terr, and \wood.
-Some phylogenies inferred solely from mitochondrial data have even been inconsistent
-with the current taxonomy, with \fowl forming a polytomy \parencite{fontenot2011,masta2002}.
+Two phylogenetic studies inferred trees with \fowl forming a polytomy making 
+them inconsistent with the current taxonomy of \anaxyrus \parencite{fontenot2011,masta2002}.
 These conflicting results could be due to methodological differences such as
 the species included, the number of individuals of each species sequenced, inference 
 methods used, or the sequenced loci. 
 But the differences in inferred relationships could also result from real
 biological processes. 
-Incomplete lineage sorting is one source of possible discordance between datasets 
-in phylogenetic inference \parencite{kubatko2007}. 
-Gene flow via hybridization is another potential source of discordance \parencite{degnan2009}. 
+Incomplete lineage sorting is one potential source of discordance among datasets 
+which include different loci that arises from real biological processes and 
+impacts phylogenetic inference \parencite{kubatko2007}. 
+Incomplete lineage sorting could also produce the polytypic relationship among
+\fowl. 
+
 
 
 % Move to another paragraph towards the end
@@ -177,6 +182,9 @@ Gene flow via hybridization is another potential source of discordance \parencit
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Potential for introgression in anaxyrus
+Gene flow is another potential source of discordance among genes which could  
+drive the differences in inferred relationships among studies using different 
+loci and could also produce the pattern seen in \fowl \parencite{degnan2009}. 
 While incomplete lineage sorting is very likely to have impacted patterns of genetic  
 variation in \anaxyrus, gene flow due to hybridization is a distinct possibility as well.
 There are numerous reports of natural hybridization between several different 
@@ -184,7 +192,8 @@ species of \anaxyrus \parencite{green1996}.
 A study of allozyme variation across a hybrid zone between \amer and 
 \hemiophrys revealed introgression taking place across a more than 50km wide hybrid zone.
 Hybrid zones are also suspected to exist between \amer and \terr
-and between \wood and \fowl \parencite{green1996,weatherby1982}.
+and between \wood and \fowl though no study has yet been conducted to characterize
+these putative hybrid zones \parencite{green1996,weatherby1982}.
 Furthermore, numerous laboratory crosses have been performed between pairs of \anaxyrus 
 species with currently overlapping distributions \parencite{blair1972,blair1963}.
 Some of which produce viable and fertile backcross progeny \parencite{blair1972,blair1963}.
@@ -229,22 +238,31 @@ inferences that can be made regarding hybrid zones in this genus.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Effect of environment on toads
-Ultimately, environmental change is what leads to population divergence and subsequent 
-or concurrent gene flow except in cases of vicariant dispersal.
+Ultimately, environmental change is what leads many populations divergence and 
+and may lead to subsequent or concurrent gene flow.
 Therefore, environmental variables are also important context for making 
 inferences from hybrid zones in addition to understanding the process of 
 diversification more generally.
+To date, there have not been any studies conducted to understand how the 
+environment as driven diversification in North American toads. 
 North America has had a very complex geologic and climatic history \parencite{lyman2022}.
 The effects of which are often clade specific \parencite{nunez2023}.
-But large scale environmental changes can often impact multiple species simultaneously \parencite{oaks2019}.
-There has been recent development of methods to infer these events \parencite{oaks2019,oaks2022}.
+But large scale environmental changes can impact multiple species simultaneously \parencite{oaks2019}.
+There has been recent development in methods to infer these events \parencite{oaks2019,oaks2022}. %Cite hickerson
+The identification of multiple pairs of lineages that underwent divergence at 
+the same time could provide evidence about environmental changes driving 
+diversification. %Citation neeed
+Present day population structure could also provide further understanding by 
+revealing environmental factors that reduce gene flow assuming the biological 
+limits of present day species have not evolved dramatically from the ancestral 
+condition.
+
 % Say something about these events and how they are useful
 % - We don't know what factors have driven diversification
 % - Presumably they would be climatic.
 % - Cite studies on the effect of climate for North American taxa
 % - Environment can affect whole communities simultaneously.
 % - Are there environmental factors influencing within species genetic variation?
-Population structure...
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -254,18 +272,20 @@ toads in the genus \anaxyrus using genome wide sequence data.
 For this I obtained restriction enzyme-associated DNA sequence (RADseq) data
 from 12 species of \anaxyrus including dense sampling representing a 
 large portion of the ranges of \amer, \fowl, \terr, and \wood.
-
-With these data I infer evolutionary relationships using different methods.
-
-Evolutionary relationships are needed for inferring historic gene flow.
-
-I test for shared divergence time which would suggest divergence is being driven
-by the same environmental changes. Or large scale biogeographic processes.
-
-I test for past introgression between lineages.
-
-I determine if there is population structure. 
-
+With these data I infer evolutionary relationships using maximum likelihood analysis  
+of a concatenated dataset of many broadly distributed samples in addition to 
+using a multispecies coalescent analysis of a subset of the data.
+I also test for the presence of shared divergence times which might suggest
+\anaxyrus diversification has been driven by the same environmental changes
+and also estimate the absolute timing of all divergences within the genus.
+With the robust estimate of phylogenetic relationships among \anaxyrus species, 
+I test for the presence of past introgression among species.
+In order to identify the types of environmental factors that might have played
+a role in isolating populations that would eventually diverge as species,
+I investigate population structure within a subset of \anaxyrus species.
+Finally, I estimate proportions admixture between \fowl and \wood to test
+the hypothesis that these species form a hybrid zone in the central United  
+States where their ranges meet.
 
 % 1) recent biogeographic 
 % processes have reduced or eliminated gene flow between populations within species; 
@@ -274,8 +294,6 @@ I determine if there is population structure.
 % 4) large-scale biogeographic processes have driven diversification in Anaxyrus; 
 % and 5) the current taxonomy of Anaxyrus is not consistent with evolutionary 
 % relationships among populations within named groups. 
-
-
 
 
 \section{Methods}
@@ -608,9 +626,9 @@ Even among these previous studies there has been a great deal of inconsistency i
 the inferred relationships with the exception of a few taxa. 
 As in all previous studies, the maximum likelihood tree inferred in this 
 study places \punctatus sister to all other \anaxyrus.
-I also found the \americaus group to be monophyletic with \microscaphus sister  
+I also found the \americanus group to be monophyletic with \microscaphus sister  
 to all other \americanus group species which is consistent with most previous studies.
-Two previous studies have inferred trees which do not place \fowleri samples
+Two previous studies have inferred trees which do not place \fowl samples
 into a single monophyletic group \parencite{masta2002,fontenot2011}.
 A single \fowl sample included in this study does not fall within a monophyletic 
 group with the remaining \fowl samples but is instead sister to the clade 
@@ -673,11 +691,15 @@ have for our understanding of \anaxyrus evolution.
 
 
 % Hybridization in light of phylogeny
+Given the interest of hybridization in \anaxyrus and the promise of this 
+group for understanding speciation it is important to consider the 
+implications of these relationships with regards to hybridization.  
+
 \amer and \terr are sister
 \fowl and \wood are sister
 This makes more sense with regards to hybridization between these two pairs 
-of species and better explains the sympatry of \americanus and \terrestris 
-with \fowleri and \woodhousii.
+of species and better explains the sympatry of \amer and \terr 
+with \fowl and \wood.
 This does make the hybrid zone between \amer and \hemiophrys more surprising. 
 This hybrid zone is quite narrow however. 
 
@@ -715,19 +737,13 @@ are long relative to the branches separating \wood and \fowl.
 
 Notably, only one species pair (\fowl and \wood) for which there is evidence a 
 hybrid zone are sister to each other. 
-\amer and \hemiophyrs are close to sister as \hemiophyrs and \baxteri have 
+\amer and \hemiophrys are close to sister as \hemiophrys and \baxteri have 
 little genetic difference between them \cref{fig:iqtree}.
 It is interesting that \amer and \terr form a hybrid zone while \fowl and \terr
 which are more closely related in sympatry. 
 
-
-\subsection{Coalescent}
-
-
-
-
 \subsection{Divergence Time}
-Only two studies have attempted to estimate the ages of splits within \anaxyurs 
+Only two studies have attempted to estimate the ages of splits within \anaxyrus 
 Feng et al included just two species \textit{Anaxyrus canorus} (not included in this study)
 and \punctatus. The estimated split between these two species was 12.3 million years ago.
 The estimated split between \incillius and \anaxyrus was 16.5 million years ago 
@@ -746,7 +762,7 @@ The \phycoeval analysis does not support shared divergence events during this
 period suggesting that diversification in toads was driven by different 
 
 
-\subsection{Population Structure}
+\subsection{Population Structure and Hybridization}
 Given the appearance that there are many secondary contact zones. It seems 
 probable that toad species have undergone range expansions. Following these
 range expansions, are there any barriers that are now reducing gene flow?
@@ -757,9 +773,9 @@ the existence of any unrecognized species diversity or significant population
 structure as some mitochondrial studies have suggested.
 
 
-
-\subsection{}
 Population structure in A. woodhousii with two overlapping mtdDNA clades 
 with one more associated with the Southwest and one more associated with the 
 great planes \parencite{masta2003}
 
+
+\subsection{Conclusion}

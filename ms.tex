@@ -33,6 +33,7 @@
 \usepackage{longtable}
 \usepackage[utf8]{inputenc}
 \usepackage[scientific-notation=true]{siunitx}
+\usepackage{pdfpages}
 
 % Set up color palettes 
 \definecolor{pgreen}     {RGB}{50,162,81}
@@ -45,11 +46,12 @@
 
 \usepackage{hyperref}
 \hypersetup{pdfborder={0 0 0},
-            colorlinks=true,
-            % colorlinks=false,
-            urlcolor=porange,
-            linkcolor=pauburn,
-            citecolor=pteal
+            % colorlinks=true,
+            colorlinks=false,
+            % urlcolor=porange,
+            % linkcolor=pauburn,
+            % linkcolor=pauburn,
+            % citecolor=pteal
             }
 
 \usepackage[capitalize]{cleveref}
@@ -94,7 +96,13 @@
 }
 
 % Manuscript %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\doublespacing
 \begin{document}
+
+% \clearpage
+% \thispagestyle{empty}
+% \includepdf{sections/title-page.pdf}
+
 \begin{linenumbers}
 
 % \input{sections/abstract.tex}
@@ -120,25 +128,25 @@
 % \input{sections/phylogeny/phylogeny-abstract.tex}
 \input{sections/phylogeny/phylogeny.tex}
 % \input{sections/phylogeny/phylogeny-acknowledgments.tex}
-% \printbibliography[heading=subbibintoc]
+\printbibliography[heading=subbibintoc]
 \input{sections/phylogeny/phylogeny-figures.tex}
 \input{sections/phylogeny/phylogeny-tables.tex}
 
 
-% % Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % % Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \chapter{Hybrid Zone}
-% % \input{sections/chapter-2/chapter-2-abstract.tex}
+% % % \input{sections/chapter-2/chapter-2-abstract.tex}
 % \input{sections/hybrid/hybrid.tex}
-% % \input{sections/chapter-2/chapter-2-acknowledgments.tex}
+% % % \input{sections/chapter-2/chapter-2-acknowledgments.tex}
 % \printbibliography[heading=subbibintoc]
 % \input{sections/hybrid/hybrid-figures.tex}
 % \input{sections/hybrid/hybrid-tables.tex}
 
 
-% % Chapter 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % % Chapter 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \chapter{Comparison of Linked versus Unlinked Character Models for Species Tree Inference}
 % \input{sections/simulation/simulation.tex}
-% \input{sections/simulation/simulation-acknowledgments.tex}
+% % \input{sections/simulation/simulation-acknowledgments.tex}
 % \printbibliography[heading=subbibintoc]
 % \input{sections/simulation/fig-2-10-legend.tex} %Captions for figures 2-10
 % \input{sections/simulation/simulation-figures.tex}
