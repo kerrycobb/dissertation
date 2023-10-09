@@ -302,7 +302,7 @@ States where their ranges meet.
 I obtained tissue samples from museum tissue collections as well as from individuals   
 I collected from 2017 to 2020. I selected samples to represent as much
 of the range of each species of \textit{Anaxyrus} as possible.
-I also included one \textit{Rhinella marina} and one \textit{Incillius nebulifer} 
+I also included one \textit{Rhinella marina} and one \textit{incilius nebulifer} 
 for as outgroups for phylogenetic analyses.
 
 I isolated DNA from tissues by first lysing a piece of tissue approximately 
@@ -450,7 +450,7 @@ statistic for each pair of \anaxyrus species for which the statistic
 can be calculated \parencite{reich2009,malinsky2018}. 
 I used \pyrad to filter all loci that were not found in at least 50\% of the 
 samples that passed filtering and excluded one \fowl sample 
-(sample 006 from \ref{physamples}) which falls outside of the \fowl clade 
+(sample 006 from \cref{physamples}) which falls outside of the \fowl clade 
 inferred by \iqtree.
 For the input tree topology required to run \dsuite, I used the topology inferred
 by \phycoeval and I specified \nebulifer as the outgroup species.
@@ -547,13 +547,13 @@ The final alignment contained a total of 184,453 sites with 20,361 SNPs with
 14.96\% of sites and 14.71\% of SNPs missing.
 
 \subsection{Maximum Likelihood Phylogeny}
-The full majority rule consensus tree inferred by \iqtree is presented in \ref{fig:iqtree}. 
+The full majority rule consensus tree inferred by \iqtree is presented in \cref{fig:iqtree}. 
 All species were inferred as a single monophyletic group with the exception 
 of \fowl. 
 A single \fowl sample (sample 006) does not form a monophyletic group with other 
 \fowl samples but is instead sister to the the branch containing \wood and \fowl samples.
 A representation of the tree inferred by \iqtree with the tips within
-species specific clades collapsed is presented in \ref{fig:iqtree-collapsed}. 
+species specific clades collapsed is presented in \cref{fig:iqtree-collapsed}. 
 Each species specific clade for which there are at least two representatives
 samples all have ultrafast bootstrap support values of 100\%.
 All branches below the the level of the species specific clades have ultrafast 
@@ -594,8 +594,8 @@ estimate of excess allele sharing between species pairs that is not due to
 incomplete lineage sorting. 
 I used the species tree topology produced by \phycoeval for estimating 
 the \fbranch statistics. 
-The \fbranch estimates for each species pair are presented with a heatmap in 
-figure \ref{fig:dsuite}.
+The \fbranch estimates for each species pair are presented with a heat map in 
+figure \cref{fig:dsuite}.
 Most \fbranch estimates produced by \dsuite were zero or very near zero.
 Only 24 out of 112 \fbranch estimates were greater than 0 and 11 of those were 
 greater than 0.05 \cref{fig:dsuite}.
@@ -606,9 +606,13 @@ The highest \fbranch statistic values are between \amer and two other
 species: \hemiophrys (0.24) and \baxteri (0.22) \cref{fig:dsuite}.
 The values associated with \wood are appreciably lower with none exceeding 
 0.1 \cref{fid:dsuite}.
-The branch preceding \speciosus and \cognatus tested against \punctatus
-along with the tests of \quercicus with \cognatus and \speciosus all exceeded  
-0.1.
+The highest being between \ameri and \wood with a value of 0.098 \cref{fig:dsuite}.
+The \wood \fbranch values for \baxteri and \hemiophrys are 0.082 and 0.086 
+respectively \cref{fig:dsuite}.
+The \fbranch value between \wood and \microscaphus is 0.05.
+Finally, the smallest \wood \fbranch values are in the tests with \cognatus and 
+\speciosus at 0.023 and 0.029 respectively.
+
 
 \subsection{Population Structure}
 
@@ -623,7 +627,7 @@ The maximum likelihood tree inferred by \iqtree \cref{fig:iqtree, fig:iqtree-col
 differs from trees inferred in previous studies of the relationships 
 among \anaxyrus \parencite{fontenot2011,graybeal1997,masta2002,pramuk2007,pyron2011,portik2023}.
 Even among these previous studies there has been a great deal of inconsistency in
-the inferred relationships with the exception of a few taxa. 
+the inferred relationships except in for the position of a few taxa.
 As in all previous studies, the maximum likelihood tree inferred in this 
 study places \punctatus sister to all other \anaxyrus.
 I also found the \americanus group to be monophyletic with \microscaphus sister  
@@ -638,11 +642,18 @@ containing all \fowl and \wood samples \cref{fig:iqtree-collapsed}.
 All of these studies have included different species, individuals, and loci, and 
 also used different methods for alignment and phylogenetic inference. 
 These differences in study design could result in the observed topology differences. 
-The choice of locus in particular has a high likelihood of being the cause of these difference. 
-Due to incomplete lineage sorting, the true histories of each gene may in fact differ \parencite{kingman1982}. 
+The choice of locus in particular has a high likelihood of being the cause of these differences. 
+Due to incomplete lineage sorting, the true histories of each gene may in fact 
+differ from one another and not reflect the history of the species \parencite{kingman1982}. 
 The practice of concatenating multiple loci as all of the previous studies of
 \anaxyrus evolutionary relationships have done, can produce erroneous trees  
 with high statistical support \parencite{kubatko2007}.
+Despite the inappropriateness of concatenated analysis with genome-wide data,
+it was reassuring to find that all but one individual clustered with members
+of it's own species. 
+\anaxyrus can be challenging to identify, particularly in a preserved state. 
+The maximum likelihood tree does not suggest that any samples in the dataset 
+have been misidentified which could be problematic for other analyses.
 
 % Coalescent
 To account for incomplete lineage sorting, I also inferred phylogenetic     
@@ -663,7 +674,6 @@ inferred topologies \parencite{oaks2022}.
 This feature proved relevant for in this study as the inferred tree included
 one multifurcation at the ancestral node of \quercicus, the \cognatus/\speciosus
 clade, and the \americanus group. 
-
 Previous studies have produced trees with quite short internode branches at this
 part of the tree as did the \iqtree analysis in this study which is somewhat 
 consistent with this. 
@@ -673,10 +683,10 @@ which would be expected to be short.
 In the \phycoeval tree, the posterior probability of this split is low (0.51) so 
 it may not be a perfect representation of the history of these lineages \cref{fig:phycoeval}.
 More data may be necessary to have full resolution in this part of the tree.
-But it is clear that these three lineages diverged at least in rapid succession
+But it is clear that these three lineages diverged at least in very rapid succession
 if not simultaneously. 
-But I don't know of any significant implications these alternative scenarios would
-have for our understanding of \anaxyrus evolution.
+% But I don't know of any significant implications these alternative scenarios would
+% have for our understanding of \anaxyrus evolution.
 
 % \quercicus forms a polytomy with the \cognatus/\speciosus clade and the \americanus
 % clade although this node has low posterior probability support (0.51).
@@ -690,10 +700,153 @@ have for our understanding of \anaxyrus evolution.
 % relationships.
 
 
-% Hybridization in light of phylogeny
-Given the interest of hybridization in \anaxyrus and the promise of this 
-group for understanding speciation it is important to consider the 
-implications of these relationships with regards to hybridization.  
+\subsection{Divergence Time}
+Only three previous studies have produced estimates for age of the \anaxyrus
+lineage \cref{frazao2015,feng2017,portik2023}.
+The \cref{frazao2015} phylogeny places \incilius sister to \rhinella rather 
+than \incilius which is not supported by most recent studies making 
+the approximately 23 mya estimate for the origin of the genus questionable \cref{feng2017,portik2023,pyron2011}. 
+\cref{portik2023} estimate the split between \anaxyrus and \incilius to be
+20.3 mya (95\% HPD: 17.8-22.5) whereas \cref{feng2017} estimate a much earlier 
+age of 16.5 mya (95\% CI: 14.0-19.4).
+The dataset from \cref{feng2017} included near complete coverage from 95 nuclear loci 
+whereas the \cref{portik2023} has a higher degree of missing data (95\%)
+and includes both mitochondrial as well as nuclear loci. 
+For these reasons I consider the \cref{feng2017} estimate to be the most reliable
+and chose it for the rescaling the branch lengths of the \phycoeval tree.
+
+Scaling the root of the \phycoeval tree I estimated with the \cref{feng2017} estiate
+puts the time since the most recent common ancestor (MRCA) of extant \anaxyrus 
+some time between 11.9 mya when \punctatus diverged from other \anaxyrus and 16.5 mya
+when \anaxyrus split form \incilius \cref{fig:phycoeval}.
+This range is is not inconsistent with the estimate of 12.3 mya (95\% CI: 9.7-15.2) 
+made by \cite{feng2017}.
+But it would suggests that it must have happened almost immediately before the 
+split leading to \punctatus. 
+\cite{portik2023} estimate the age of MRCA of \anaxyrus to be approximately halfway 
+between the 14.7 mya \punctatus split and the 20.3 mya split with \incilius at 16.7 mya. 
+This study and the previous ones, have a high degree of uncertainty around the 
+ages of these basal splits in the \anaxyrus tree. 
+But it seems that that the split between \incilius and \anaxyrus likely happened 
+somewhere around the start or just before the middle of the Miocene epoch.
+The MRCA of \anaxyrus and the split between the \boreas group with a Western 
+distribution, likely occurred prior to the middle of the Miocene. 
+My estimate for the split between \punctatus and other \anaxyrus would be 
+right at the middle of the Miocene at a time when both precipitation and 
+temperature underwent a decline in the North American interior and there was
+expansion of grasslands \parencite{morales-garcia2020}.
+The timing of the multifurcation of the \quercicus, \cognatus/\speciosus, and 
+\americanus group lineages coincides with a previously identified shift in the
+ecomorphology of ungulate mammals inhabiting North America \parencite{morales-garcia2020}. 
+
+I estimate that diversification of the \americanus group has all happened in the 
+past 3.4 million years. This accounts for a large portion of the diversity of  
+\anaxyrus and includes two additional un-sampled species which other studies  
+have found to be nested within this clades \cite{portik2023,pyron2011}. 
+Those being \houstonensis and \californicus.
+This means that most diversification within \anaxyrus took place just before  
+and during the Pleistocene 2.58 million to 11,700 years ago. 
+This is a period marked by extreme climatic variation and repeated glacial cycles 
+that transformed the climate and geography of the North American continent \parencite{holman1995,holman2003}.
+Surprisingly, there is no evidence from the \phycoeval analysis that any single 
+one of these cycles was a driver of multiple diversification events and instead 
+each event occurred independently during this period of \anaxyrus evolution.
+
+\subsection{Historic Introgression}
+Despite widespread compatibility among contemporary \anaxyrus species
+and the existence of at least three contemporary hybrid zones, there is not 
+strong evidence of widespread or extensive introgression among species in the 
+evolutionary history of \anaxyrus. 
+The highest \fbranch statistics were calculated between \amer and \hemiophrys and 
+between \amer and \baxter with values of 0.24 and 0.22 respectively \cref{fig:dsuite}.
+One of the contemporary \anaxyrus hybrid zones is one that exists between \amer and \hemiophrys.
+It may be that the high \fbranch estimate is a result of this contemporary 
+hybridization rather than from past introgression between \amer and \hemiophrys.
+The single \hemiophrys sample included in this study is from a location in 
+close proximity to the range of \amer \cref{fig:americanus-map} \parentcite{conant1998}.
+\cite{green1983} reported clinal variation of allozyme alleles at 5 different loci
+across an approximately 100 km transect in southeastern Manitoba, Canada.
+However, there is also a high \fbranch score between \amer and \baxteri which do 
+not have ranges that are close to one another.
+It is possible the introgression took place between \amer and the ancestor 
+of \hemiophrys and \baxteri. 
+\baxteri is believed to be a relict of a one more southerly distribution of 
+\hemiophrys during a Pleistocene glacial period \parencite{henrich1968}.
+Unfortunately, it was not possible to directly test for introgression between
+\amer and the common ancestor to \hemiophrys and \baxteri due to limitations of 
+the \fbranch test \parencite{malinsky2021}.
+
+Several other \fbranch tests returned non-zero values.
+Five of the \wood \fbranch statistics were 
+More than half of the \wood \fbranch statistics were greater than zero but 
+were relatively low compared to the results for \amer \cref{fig:dsuite}.
+Hybridization between all of these species is plausible as \wood occurs in 
+sympatry at some part of its range with all of them. 
+Contemporary hybridization involving \wood has been reported with \amer, 
+\microscaphus, and \speciousus. 
+
+% Particularly with \amer, \baxteri, \hemiophrys, and \microscaphus with which it 
+% is closely related and with which I found the highest \fbranch scores \cref{fig:phycoeval}.
+% Perhaps this is also driven by introgression among common ancestors, 
+% which again, I was not able to test directly due to limitation of the 
+% \fbranch statistic.
+% However, the highest \fbranch value for \wood was for \amer () which could 
+% reflect recent or ongoing hybridization between the two as they exist in 
+% sympatry at the edges of their respective ranges \cite{conant1998}.
+
+
+\subsection{Population Structure and Hybridization}
+The population \structure analyses conducted for \fowl, \terr, and \wood  
+did not yield evidence for the existence of distinct populations within these 
+species. 
+\cite{masta2003} found two divergent clades of \wood using mitochondrial data.
+\cite{conant1998} two distinct populations of \wood have been recognized on 
+the basis of morphological differences with considering the southwest population
+to be a subspecies \text{Anaxyrus woodhousii australis}
+It is possible that I simply did not include samples from the range of a 
+distinct population.
+I may not have sampled from this clade.
+
+
+
+Differentiated samples of \wood may not have been included.
+
+
+For \amer there is evidence for the existence of three somewhat differentiated groups 
+that emerge along three different geographic axis at the center of which   
+there is a high degree of admixture.
+
+
+
+subspecies \textit{A. anaxyrus charlesmithi}
+subspecies \textit{A. woodhousii australis}
+
+
+Given the appearance that there are many secondary contact zones. It seems 
+probable that toad species have undergone range expansions. Following these
+range expansions, are there any barriers that are now reducing gene flow?
+We can test that by looking for population structure within species that 
+aligns with possible biogeographic barriers.
+The maximum likelihood tree along with the \structure analyses do not support
+the existence of any unrecognized species diversity or significant population 
+structure as some mitochondrial studies have suggested.
+
+
+Population structure in A. woodhousii with two overlapping mtdDNA clades 
+with one more associated with the Southwest and one more associated with the 
+great planes \parencite{masta2003}
+
+
+\subsection{Conclusion}
+The evolutionary history of \anaxyrus inferred in this study has some important 
+implications for understanding the contemporary hybridization in \an
+
+
+Given the great interest in hybridization within \anaxyrus and the promise of this 
+group for furthering our understanding speciation, it is important to consider the 
+implications of the evolutionary history inferred in this study.
+
+
 
 \amer and \terr are sister
 \fowl and \wood are sister
@@ -741,41 +894,6 @@ hybrid zone are sister to each other.
 little genetic difference between them \cref{fig:iqtree}.
 It is interesting that \amer and \terr form a hybrid zone while \fowl and \terr
 which are more closely related in sympatry. 
-
-\subsection{Divergence Time}
-Only two studies have attempted to estimate the ages of splits within \anaxyrus 
-Feng et al included just two species \textit{Anaxyrus canorus} (not included in this study)
-and \punctatus. The estimated split between these two species was 12.3 million years ago.
-The estimated split between \incillius and \anaxyrus was 16.5 million years ago 
-which was used to scale the branch lengths of the tree inferred with \phycoeval.
-Portick et al. using a concatenation method with a smaller number of loci and 
-greater amount of missing data estimated the split between \incillius and 
-\anaxyrus to be 20.3 mya.
-
-split between \punctatus group and rest of \anaxyrus was estimated to be 14.7 
-
-
-
-\amer group diversification largely took place during the Pleistocene.
-A period marked by repeated glaciations. 
-The \phycoeval analysis does not support shared divergence events during this  
-period suggesting that diversification in toads was driven by different 
-
-
-\subsection{Population Structure and Hybridization}
-Given the appearance that there are many secondary contact zones. It seems 
-probable that toad species have undergone range expansions. Following these
-range expansions, are there any barriers that are now reducing gene flow?
-We can test that by looking for population structure within species that 
-aligns with possible biogeographic barriers.
-The maximum likelihood tree along with the \structure analyses do not support
-the existence of any unrecognized species diversity or significant population 
-structure as some mitochondrial studies have suggested.
-
-
-Population structure in A. woodhousii with two overlapping mtdDNA clades 
-with one more associated with the Southwest and one more associated with the 
-great planes \parencite{masta2003}
 
 
 \subsection{Conclusion}
