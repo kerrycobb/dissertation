@@ -191,9 +191,10 @@ There are numerous reports of natural hybridization between several different
 species of \anaxyrus \parencite{green1996}. 
 A study of allozyme variation across a hybrid zone between \amer and 
 \hemiophrys revealed introgression taking place across a more than 50km wide hybrid zone.
-Hybrid zones are also suspected to exist between \amer and \terr
-and between \wood and \fowl though no study has yet been conducted to characterize
-these putative hybrid zones \parencite{green1996,weatherby1982}.
+In the previous chapter I presented the results of a study on the hybrid zone
+between \amer and \terr.
+\cite{meacham1962} presented compelling evidence on the basis of morphological 
+variation for the existence of a hybrid zone between \fowl and \wood in East Texas.
 Furthermore, numerous laboratory crosses have been performed between pairs of \anaxyrus 
 species with currently overlapping distributions \parencite{blair1972,blair1963}.
 Some of which produce viable and fertile backcross progeny \parencite{blair1972,blair1963}.
@@ -279,7 +280,7 @@ I also test for the presence of shared divergence times which might suggest
 \anaxyrus diversification has been driven by the same environmental changes
 and also estimate the absolute timing of all divergences within the genus.
 With the robust estimate of phylogenetic relationships among \anaxyrus species, 
-I test for the presence of past introgression among species.
+I test for the presence of ongoing and historic introgression among \anaxyrus species.
 In order to identify the types of environmental factors that might have played
 a role in isolating populations that would eventually diverge as species,
 I investigate population structure within a subset of \anaxyrus species.
@@ -443,14 +444,14 @@ I used \sumphycoeval to rescale the branch lengths of the maximum a posteriori
 (MAP) tree produced by \sumphycoeval so that the posterior mean root age was 
 16.5 million years ago based on the estimate of \cite{feng2017}.
 
-\subsection{Test for Historic Admixture}
-In order to test for a history of introgression between species of \anaxyrus I used the 
+\subsection{Introgression}
+In order to test for introgression between species of \anaxyrus I used the 
 program \dsuite v0.5r50 \parencite{malinsky2021} to compute the $f$-branch 
 statistic for each pair of \anaxyrus species for which the statistic 
 can be calculated \parencite{reich2009,malinsky2018}. 
 I used \pyrad to filter all loci that were not found in at least 50\% of the 
 samples that passed filtering and excluded one \fowl sample 
-(sample 006 from \cref{physamples}) which falls outside of the \fowl clade 
+% (sample 006 from \cref{tab:phylo}) which falls outside of the \fowl clade 
 inferred by \iqtree.
 For the input tree topology required to run \dsuite, I used the topology inferred
 by \phycoeval and I specified \nebulifer as the outgroup species.
@@ -462,6 +463,7 @@ I plotted the $f$-branch statistics with \dtools v0.1 which is packaged with
 the \dsuite program \parencite{malinsky2021}. 
 
 Say something about how f-branch takes into account correlation among branches
+% Add the \structure methods for \fowl and \wood here 
 
 \subsection{Population Structure Data Processing}
 I processed reads differently for the analysis of population structure
@@ -588,7 +590,7 @@ Most divergence events within \anaxyrus have occurred in the past 3.5 million
 years and most diversification within the \amer group is less than 2.5   
 million years old.
 
-\subsection{Historic Introgression}
+\subsection{Introgression}
 I used the program \dsuite to compute the \fbranch statistic which is an  
 estimate of excess allele sharing between species pairs that is not due to 
 incomplete lineage sorting. 
@@ -605,8 +607,8 @@ zero associated with them with nearly every pairwise comparison greater than 0
 The highest \fbranch statistic values are between \amer and two other 
 species: \hemiophrys (0.24) and \baxteri (0.22) \cref{fig:dsuite}.
 The values associated with \wood are appreciably lower with none exceeding 
-0.1 \cref{fid:dsuite}.
-The highest being between \ameri and \wood with a value of 0.098 \cref{fig:dsuite}.
+0.1 \cref{fig:dsuite}.
+The highest being between \amer and \wood with a value of 0.098 \cref{fig:dsuite}.
 The \wood \fbranch values for \baxteri and \hemiophrys are 0.082 and 0.086 
 respectively \cref{fig:dsuite}.
 The \fbranch value between \wood and \microscaphus is 0.05.
@@ -623,7 +625,7 @@ Finally, the smallest \wood \fbranch values are in the tests with \cognatus and
 
 \subsection{Phylogenetic relationships}
 % Maximum likelihood tree
-The maximum likelihood tree inferred by \iqtree \cref{fig:iqtree, fig:iqtree-collapsed} 
+The maximum likelihood tree inferred by \iqtree \cref{fig:iqtree,fig:iqtree-collapsed} 
 differs from trees inferred in previous studies of the relationships 
 among \anaxyrus \parencite{fontenot2011,graybeal1997,masta2002,pramuk2007,pyron2011,portik2023}.
 Even among these previous studies there has been a great deal of inconsistency in
@@ -702,20 +704,20 @@ if not simultaneously.
 
 \subsection{Divergence Time}
 Only three previous studies have produced estimates for age of the \anaxyrus
-lineage \cref{frazao2015,feng2017,portik2023}.
-The \cref{frazao2015} phylogeny places \incilius sister to \rhinella rather 
+lineage \cite{frazao2015,feng2017,portik2023}.
+The \cite{frazao2015} phylogeny places \incilius sister to \rhinella rather 
 than \incilius which is not supported by most recent studies making 
-the approximately 23 mya estimate for the origin of the genus questionable \cref{feng2017,portik2023,pyron2011}. 
-\cref{portik2023} estimate the split between \anaxyrus and \incilius to be
-20.3 mya (95\% HPD: 17.8-22.5) whereas \cref{feng2017} estimate a much earlier 
+the approximately 23 mya estimate for the origin of the genus questionable \cite{feng2017,portik2023,pyron2011}. 
+\cite{portik2023} estimate the split between \anaxyrus and \incilius to be
+20.3 mya (95\% HPD: 17.8-22.5) whereas \cite{feng2017} estimate a much earlier 
 age of 16.5 mya (95\% CI: 14.0-19.4).
-The dataset from \cref{feng2017} included near complete coverage from 95 nuclear loci 
-whereas the \cref{portik2023} has a higher degree of missing data (95\%)
+The dataset from \cite{feng2017} included near complete coverage from 95 nuclear loci 
+whereas the \cite{portik2023} has a higher degree of missing data (95\%)
 and includes both mitochondrial as well as nuclear loci. 
-For these reasons I consider the \cref{feng2017} estimate to be the most reliable
+For these reasons I consider the \cite{feng2017} estimate to be the most reliable
 and chose it for the rescaling the branch lengths of the \phycoeval tree.
 
-Scaling the root of the \phycoeval tree I estimated with the \cref{feng2017} estiate
+Scaling the root of the \phycoeval tree I estimated with the \cite{feng2017} estiate
 puts the time since the most recent common ancestor (MRCA) of extant \anaxyrus 
 some time between 11.9 mya when \punctatus diverged from other \anaxyrus and 16.5 mya
 when \anaxyrus split form \incilius \cref{fig:phycoeval}.
@@ -752,57 +754,156 @@ Surprisingly, there is no evidence from the \phycoeval analysis that any single
 one of these cycles was a driver of multiple diversification events and instead 
 each event occurred independently during this period of \anaxyrus evolution.
 
-\subsection{Historic Introgression}
-Despite widespread compatibility among contemporary \anaxyrus species
-and the existence of at least three contemporary hybrid zones, there is not 
-strong evidence of widespread or extensive introgression among species in the 
-evolutionary history of \anaxyrus. 
+\subsection{Hybridization and Introgression}
+There are numerous reports of hybridization among many different pairs of 
+\anaxyrus species. 
+However, the consequences of this hybridization are largely unknown. 
+Using the \fbranch test, I found support for a modest level of introgression 
+among several pairs of species which have been previously reported to hybridize. 
+Most of which presently exist in sympatry with one another.
 The highest \fbranch statistics were calculated between \amer and \hemiophrys and 
-between \amer and \baxter with values of 0.24 and 0.22 respectively \cref{fig:dsuite}.
-One of the contemporary \anaxyrus hybrid zones is one that exists between \amer and \hemiophrys.
-It may be that the high \fbranch estimate is a result of this contemporary 
-hybridization rather than from past introgression between \amer and \hemiophrys.
-The single \hemiophrys sample included in this study is from a location in 
-close proximity to the range of \amer \cref{fig:americanus-map} \parentcite{conant1998}.
-\cite{green1983} reported clinal variation of allozyme alleles at 5 different loci
-across an approximately 100 km transect in southeastern Manitoba, Canada.
-However, there is also a high \fbranch score between \amer and \baxteri which do 
-not have ranges that are close to one another.
-It is possible the introgression took place between \amer and the ancestor 
+between \amer and \baxteri with values of 0.24 and 0.22 respectively \cref{fig:dsuite}.
+One known \anaxyrus hybrid zones is one that exists between \amer and \hemiophrys.
+\cite{green1983} reported clinal variation of allozyme alleles at five different 
+loci across an approximately 100 km transect in southeastern Manitoba, Canada.
+This sharp cline of variation suggests that reproductive isolation between these
+species is quite high. 
+It could be that introgression is occurring beyond this narrow hybrid zone
+but the sample included in this study was sampled from a location in close 
+proximity to the range of \amer \cref{fig:americanus-map} \parencite{conant1998}.
+Thus, it is difficult to say if they detected introgression is shared by 
+\hemiophrys as a whole or is only present within a hybrid zone.
+Interestingly, there is also a high \fbranch score between \amer and \baxteri
+which do no have ranges that are close to on another. 
+It is possible that introgression from \amer occurred before the divergence  
 of \hemiophrys and \baxteri. 
-\baxteri is believed to be a relict of a one more southerly distribution of 
-\hemiophrys during a Pleistocene glacial period \parencite{henrich1968}.
-Unfortunately, it was not possible to directly test for introgression between
-\amer and the common ancestor to \hemiophrys and \baxteri due to limitations of 
-the \fbranch test \parencite{malinsky2021}.
+\baxteri is believed to be a relict of a more southerly distribution of 
+\hemiophrys during a recent Pleistocene glacial period \parencite{henrich1968}.
+Unfortunately, it is not possible to directly test for this scenario with \dsuite
+due to limitations of the \fbranch test \parencite{malinsky2021}.
 
-Several other \fbranch tests returned non-zero values.
-Five of the \wood \fbranch statistics were 
-More than half of the \wood \fbranch statistics were greater than zero but 
-were relatively low compared to the results for \amer \cref{fig:dsuite}.
+Several other \fbranch tests returned non-zero values although these were much
+lower.
+More than half of the \wood \fbranch statistics were greater than zero \amer \cref{fig:dsuite}.
 Hybridization between all of these species is plausible as \wood occurs in 
-sympatry at some part of its range with all of them. 
+sympatry at some part of its range with nearly all of them. 
 Contemporary hybridization involving \wood has been reported with \amer, 
-\microscaphus, and \speciousus. 
+\cognatus, \microscaphus, and \speciosus \parencite{sullivan1986}. 
+There is presently little to no overlap between \wood and \hemiophrys however
+there could have been in the recent past as due to Pleistocene glaciation  
+pushing the range of \hemiophrys further south \parencite{henrich1968}. 
+The two non-zero \fbranch values for \quercicus with \punctatus and \speciosus 
+are perplexing.  
+The distribution of \quercicus is confined to the pine woodlands of the 
+Southeastern United States whereas the other two species are found in the  
+short arid grasslands and deserts of the Southwest \parencite{conant1998}. 
+The \fbranch statistic for the comparison between \punctatus and the common 
+ancestor of \speciosus and \cognatus is more plausible given their broadly
+overlapping distributions in the present day \parencite{conant1998}.
 
-% Particularly with \amer, \baxteri, \hemiophrys, and \microscaphus with which it 
-% is closely related and with which I found the highest \fbranch scores \cref{fig:phycoeval}.
-% Perhaps this is also driven by introgression among common ancestors, 
-% which again, I was not able to test directly due to limitation of the 
-% \fbranch statistic.
-% However, the highest \fbranch value for \wood was for \amer () which could 
-% reflect recent or ongoing hybridization between the two as they exist in 
-% sympatry at the edges of their respective ranges \cite{conant1998}.
+Unfortunately, there were many comparisons among \anaxyrus that could not be 
+made using the \fbranch test due to the structure of the phylogeny. 
+Particularly among ancestral species between which past introgression could
+be driving the pattern seen across the extant diversity which is a known 
+caveat with the \fbranch test \parencite{malinsky2021}.
+The results presented here are consistent with introgression being an 
+important factor in the evolutionary history of \anaxyrus but gaps remain.
+These are gaps that could potentially be addressed with more powerful 
+likelihood or pseudo-likelihood methods. 
+
+The d-statistic class of methods for detecting introgression are not able to   
+test for introgression between sister species so could not shed any light 
+on putative hybridization between \fowl and \wood. 
+In order to test for introgression between \fowl and \wood I used the program 
+structure along with PCA.  
+The results of both \structure and PCA are consistent with the existence of  
+a hybrid zone between these two species.
+Two \wood samples, one from Arkansas and the other from Texas, have large proportions 
+of inferred ancestry from \fowl. 
+Several \fowl samples have large admixture proportions from \wood as well.  
+The transition of ancestry proportions forms a steady East West gradient with 
+one outlier present in Louisiana \cref{fig:structure-fowleri-woodhousii}.
+The PCA results largely corroborate the results of the \structure analysis with 
+\wood samples clustered tightly together, most \fowl samples clustering tightly
+with a few deviating toward the center of the first principal compoenent axis, 
+and finally two samples right in the center of the first principal component axis.
+These results suggest the hybrid zone between \fowl and \wood is quite wide, on 
+the order of hundreds of kilometers \cref{fig:structure-fowleri-woodhousii}.
+
+This brings the number of confirmed \anaxyrus hybrid zones to three along with 
+the \amer/\terr and \amer/\hemiophrys hybrid zones. 
+Based on the \phycoeval phylogeny, all of these species emerged within the past 
+2.5 million years.
+This important context sheds light on the tempo of diversification within \anaxyrus.
+The sister species pairs \fowl/\wood and \amer/\terr diverged only 0.7 and 1.0 mya
+respectively \cref{fig:phycoeval}.
+Neither of these species pairs has evolved a degree of reproductive isolation 
+and/or character displacement that permits them to exist in sympatry with one 
+another. 
+Hybridization between species with older divergence times appears to be much 
+less frequent with the exception of hybridization between \amer and \hemiophrys. 
+\fowl occurs in sympatry across large regions with both \amer and \terr and 
+\wood overlaps significantly with \amer \parencite{conant1998}.
+This is likely possible due to a higher degree of reproductive isolation that 
+has evolved between these species pairs in the form of differences in 
+advertisement call and timing of reproduction ??Citation, possibly as a result 
+of reinforcement.
+This pattern suggests that pre-zygotic reproductive incompatibility tends to 
+evolve more rapidly in \anaxyrus.
+However, the hybrid zone between \amer and \hemiophrys complicates things 
+as these two species are much more divergent from one another. 
+Perhaps they have more recently come into secondary contact and there has not
+been sufficient time to evolve pre-zygotic barriers to reproduction. 
+This would support the idea that mating barriers between sympatric species 
+have evolved through reinforcement and not under some other selective pressure. 
 
 
-\subsection{Population Structure and Hybridization}
+\subsection{Population Structure}
+An examination of population structure can potentially provide clues about the 
+historical factors that have shaped a species' diversification.
+The geographic barriers that result in the reduction of gene flow within species
+could be the same type of barrier that has resulted in past speciation events 
+involving a species or its close relatives.
+The \structure analysis of the \amer samples reveals population structure within 
+this species which materializes as a gradient along three geographic axis at the center of  
+which there is a high degree of admixture \cref{fig:structure-americanus}.
+This variation corresponds loosely with the proposed subspecies 
+\textit{A. anaxyrus charlesmithi} with a range that includes the Southwestern 
+part of the \amer range in Oklahoma, Arkansas, and Missouri \parencite{bragg1954}.
+This population structure, separates \amer into a Western population, a Southern population, and
+a Northeastern population \cref{fig:structure-americanus}.
+At the center of the range are highly admixed samples and with distance from 
+this center, samples differentiate along the three different geographic axes.
+This pattern is recapitulated in the PCA plots showing the same three axes of 
+variation. 
+Using the $delta$K method for choosing the best fitting \structure model  
+favors the model with a K of two which separates \amer into Western and Eastern
+populations. 
+However, the K of three fits well with the results of the PCA, 
+makes sense in a geographic context, and shows a more stark transition of 
+admixture proportions from the Western group and Eastern groups.
+
+
+
 The population \structure analyses conducted for \fowl, \terr, and \wood  
 did not yield evidence for the existence of distinct populations within these 
 species. 
+Despite previous studies finding evidence for two distinct \wood populations 
+\cite{masta2003,shannon1955}, I found \wood no evidence of this in my dataset.
+
+
+% found two divergent clades of \wood using mitochondrial data.
+
+
+
+
 \cite{masta2003} found two divergent clades of \wood using mitochondrial data.
 \cite{conant1998} two distinct populations of \wood have been recognized on 
 the basis of morphological differences with considering the southwest population
 to be a subspecies \text{Anaxyrus woodhousii australis}
+\cite{shannon1955} subspecies \textit{A. woodhousii australis} described on the  
+basis of morphology.
+
 It is possible that I simply did not include samples from the range of a 
 distinct population.
 I may not have sampled from this clade.
@@ -818,18 +919,8 @@ there is a high degree of admixture.
 
 
 
-subspecies \textit{A. anaxyrus charlesmithi}
+subspecies \textit{A. anaxyrus charlesmithi} \parencite{bragg1954}
 subspecies \textit{A. woodhousii australis}
-
-
-Given the appearance that there are many secondary contact zones. It seems 
-probable that toad species have undergone range expansions. Following these
-range expansions, are there any barriers that are now reducing gene flow?
-We can test that by looking for population structure within species that 
-aligns with possible biogeographic barriers.
-The maximum likelihood tree along with the \structure analyses do not support
-the existence of any unrecognized species diversity or significant population 
-structure as some mitochondrial studies have suggested.
 
 
 Population structure in A. woodhousii with two overlapping mtdDNA clades 
@@ -837,9 +928,12 @@ with one more associated with the Southwest and one more associated with the
 great planes \parencite{masta2003}
 
 
+
+
+
 \subsection{Conclusion}
 The evolutionary history of \anaxyrus inferred in this study has some important 
-implications for understanding the contemporary hybridization in \an
+implications for understanding the contemporary hybridization in \anaxyrus
 
 
 Given the great interest in hybridization within \anaxyrus and the promise of this 
@@ -848,52 +942,3 @@ implications of the evolutionary history inferred in this study.
 
 
 
-\amer and \terr are sister
-\fowl and \wood are sister
-This makes more sense with regards to hybridization between these two pairs 
-of species and better explains the sympatry of \amer and \terr 
-with \fowl and \wood.
-This does make the hybrid zone between \amer and \hemiophrys more surprising. 
-This hybrid zone is quite narrow however. 
-
-Considering the relationships of the maximum likelihood tree with respect to 
-hybridization, it is unsurprising to see \fowl (excluding sample 006) and \wood 
-to be each other's closest relatives and separated by relatively short branch lengths.
-
-Not clear if \fowl sample placement is due to incomplete lineage sorting or
-due to admixture. It does not fit the pattern of previous studies and is located
-near the contact zone of \wood and \fowl. Furthermore the \structure analysis 
-suggests this sample has a lot of admixture which I discuss later.
-
-\amer and \terr on the other hand is more surprising. 
-\terr is more closely related to \fowl than \amer, yet their ranges completely  
-overlap and they appear to have strong reproductive isolation.
-\amer has a range that overlaps significantly with both \wood and \fowl but 
-also appears to have strong reproductive isolation with it's sympatric congeners.
-
-The relationship between \hemiophrys and \amer 
-
-\hemiophrys and \amer are separated but much longer branch lengths on the other
-but do not share any close relatives with which they.
-But 
-The relationship between \amer and \hemiophrys is also unsurprising.
-Despite not being each others 
-The \amer and \hemiophrys as well as \amer and \terr pairs do not   
-
-If we consider these relationships with regards to hybrid zones 
-Interestingly, only a single species pair (\fowl and \wood) for which there is  
-evidence of a hybrid zone are each other's closest relatives.
-The branch lengths between \amer and \hemiophrys as well as between \amer and \terr 
-are long relative to the branches separating \wood and \fowl.
-
-\terr and \fowl are 
-
-Notably, only one species pair (\fowl and \wood) for which there is evidence a 
-hybrid zone are sister to each other. 
-\amer and \hemiophrys are close to sister as \hemiophrys and \baxteri have 
-little genetic difference between them \cref{fig:iqtree}.
-It is interesting that \amer and \terr form a hybrid zone while \fowl and \terr
-which are more closely related in sympatry. 
-
-
-\subsection{Conclusion}
