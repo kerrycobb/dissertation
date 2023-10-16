@@ -34,6 +34,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[scientific-notation=true]{siunitx}
 \usepackage{pdfpages}
+\usepackage[strings]{underscore} % Fixes ! Missing $ inserted. error caused with biblatex
 
 % Set up color palettes 
 \definecolor{pgreen}     {RGB}{50,162,81}
@@ -123,18 +124,18 @@
 % \chapter{Introduction}
 % \input{sections/introduction.tex}
 
-% % Chapter 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \chapter{Hybrid Zone}
-% % % \input{sections/chapter-2/chapter-2-abstract.tex}
-% \input{sections/hybrid/hybrid.tex}
-% % % \input{sections/chapter-2/chapter-2-acknowledgments.tex}
-% \printbibliography[heading=subbibintoc]
-% \input{sections/hybrid/hybrid-figures.tex}
-% \input{sections/hybrid/hybrid-tables.tex}
+% Chapter 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Hybrid Zone}
+% % \input{sections/chapter-2/chapter-2-abstract.tex}
+\input{sections/hybrid/hybrid.tex}
+% % \input{sections/chapter-2/chapter-2-acknowledgments.tex}
+\printbibliography[heading=subbibintoc]
+\input{sections/hybrid/hybrid-figures.tex}
+\input{sections/hybrid/hybrid-tables.tex}
 
 
 % % % Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Phylogeography}
+\chapter{Evolutionary History}
 % \input{sections/phylogeny/phylogeny-abstract.tex}
 \input{sections/phylogeny/phylogeny.tex}
 % \input{sections/phylogeny/phylogeny-acknowledgments.tex}
