@@ -35,6 +35,16 @@
 \usepackage[scientific-notation=true]{siunitx}
 \usepackage{pdfpages}
 \usepackage[strings]{underscore} % Fixes ! Missing $ inserted. error caused with biblatex
+\usepackage{titlesec}
+% \titleformat{\chapter}[display]
+  % {\centering \normalsize \huge  \color{black}}{}{10pt}{}
+
+\titleformat{\chapter}[display]
+{\centering \normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Large}
+
+% this alters "before" spacing (the second length argument) to 0
+\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+
 
 % Set up color palettes 
 \definecolor{pgreen}     {RGB}{50,162,81}
@@ -96,46 +106,48 @@
   {../toad-evolution/phycoevol}
 }
 
+
 % Manuscript %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \doublespacing
 \begin{document}
 
 % \clearpage
-% \thispagestyle{empty}
-% \includepdf{sections/title-page.pdf}
+\thispagestyle{empty}
+\includepdf{sections/title-page.pdf}
 
 % \begin{linenumbers}
 
-% \input{sections/abstract.tex}
-% \addcontentsline{toc}{chapter}{Abstract}
+\input{sections/abstract.tex}
+\addcontentsline{toc}{chapter}{Abstract}
 
-% \input{sections/acknowledgments.tex}
-% \addcontentsline{toc}{chapter}{Acknowledgedments}
+\input{sections/acknowledgments.tex}
+\addcontentsline{toc}{chapter}{Acknowledgedments}
 
+\renewcommand*\contentsname{Table of Contents}
 \tableofcontents
-\addcontentsline{toc}{chapter}{Table of Contents}
-
-\listoffigures
-\addcontentsline{toc}{chapter}{List of Figures}
 
 \listoftables
 \addcontentsline{toc}{chapter}{List of Tables}
 
-% \chapter{Introduction}
-% \input{sections/introduction.tex}
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+
+\chapter{Introduction}
+\input{sections/introduction.tex}
+\printbibliography[heading=subbibintoc]
 
 % Chapter 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Hybrid Zone}
-% % \input{sections/chapter-2/chapter-2-abstract.tex}
+\chapter{Genomic Evidence for Hybridization and Introgression in a North American Toad (\anaxyrus) Hybrid Zone}
+% \input{sections/chapter-2/chapter-2-abstract.tex}
 \input{sections/hybrid/hybrid.tex}
-% % \input{sections/chapter-2/chapter-2-acknowledgments.tex}
+% \input{sections/chapter-2/chapter-2-acknowledgments.tex}
 \printbibliography[heading=subbibintoc]
 \input{sections/hybrid/hybrid-figures.tex}
 \input{sections/hybrid/hybrid-tables.tex}
 
 
-% % % Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Evolutionary History}
+% Chapter 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Phylogenomic Insights Into the Evolutionary History of \anaxyrus Toads (Anura: Bufonidae)}
 % \input{sections/phylogeny/phylogeny-abstract.tex}
 \input{sections/phylogeny/phylogeny.tex}
 % \input{sections/phylogeny/phylogeny-acknowledgments.tex}
@@ -143,13 +155,13 @@
 \input{sections/phylogeny/phylogeny-figures.tex}
 \input{sections/phylogeny/phylogeny-tables.tex}
 
-% % % Chapter 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \chapter{Comparison of Linked versus Unlinked Character Models for Species Tree Inference}
-% \input{sections/simulation/simulation.tex}
-% % \input{sections/simulation/simulation-acknowledgments.tex}
-% \printbibliography[heading=subbibintoc]
-% \input{sections/simulation/fig-2-10-legend.tex} %Captions for figures 2-10
-% \input{sections/simulation/simulation-figures.tex}
+% Chapter 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Comparison of Linked versus Unlinked Character Models for Species Tree Inference}
+\input{sections/simulation/simulation.tex}
+% \input{sections/simulation/simulation-acknowledgments.tex}
+\printbibliography[heading=subbibintoc]
+\input{sections/simulation/fig-2-10-legend.tex} %Captions for figures 2-10
+\input{sections/simulation/simulation-figures.tex}
 
 
 % References %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
